@@ -3,19 +3,19 @@
 
 This project focuses on the classification of pollen grains, taking into account their characteristic views (Equatorial and Polar). The system is structured in three distinct phases:
 
-**Phase 1:** Separation of pollen into views (Equatorial and Polar) using pseudo-labeling.
+**Phase 1:** Refinement of selected models and classification of datasets.
 
-**Phase 2:** Refinement of selected models and classification of datasets generated in Phase 1.
+**Phase 2:** Separation of the test set into views (Equatorial and Polar) using pseudo-labeling.
 
-**Phase 3:** Classification of the original dataset and comparison of classification metrics with those obtained from datasets separated by views.
+**Phase 3:** Classification of the test set and evaluation of classification metrics.
 
-**Important note:** In the article, the methodology is divided into two main parts. Due to revisions, the phases were renamed to parts, so Part 1 corresponds to Phase 1, and Part 2 corresponds to Phase 2. Phase 3 was removed from the methodology and is only mentioned in the results section onward.
+To quickly run all tests, follow this menu:
 
 **To run all the tests quickly, follow this menu:**
 
 ## Table of Contents
 
-- [Pollen_classification_view](#pollen_classification_view)
+- [Pollen_classification_CBAM](#pollen_classification_view)
   - [Installation](#installation)
 - [Usage](#usage)
   - [Phase 1](#phase-1)
@@ -53,11 +53,11 @@ conda activate tfGpu
 
 **2. Clone the repository**
 ```bash
-git clone https://github.com/jczars/Pollen_classification_view.git
+git clone https://github.com/jczars/Pollen-Classification-CBAM.git
 ```
 **3. Install dependencies**
 ```bash
-cd Pollen_classification_view/
+cd Pollen-Classification-CBAM/
 pip install -r requirements.txt
 ```
 
@@ -84,7 +84,7 @@ By following these steps, you’ll have an isolated environment for the project 
 
 **7. Navigate to the project directory**
 ```bash
-cd Pollen_classification_view
+cd Pollen-Classification-CBAM
 ```
 
 **8. Adjust the Python Path (if needed)**
