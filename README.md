@@ -204,7 +204,7 @@ In this steps, pre-trained models are refined to classify the datasets generated
 To execute the tests, a spreadsheet containing the experimental configurations is required. The default configuration file can be found in the folder:
 
 ```bash
-results/phase2/reports/config_FT_vistas_121124.xlsx
+results/AT_densenet+cbam_exp/config_AT_cr_180225.xlsx
 ```
 **Execution**:
 Use the following command to run the fine-tuning script:
@@ -224,9 +224,9 @@ Default Configuration
 last_test_index = 0
 k_fold_number = 1
 num_k_folds = 10
-num_tests = 11
+num_tests = 3
 ```
-This configuration runs 11 tests, covering all k-folds (k=1 to k=10) for each test.
+This configuration runs 3 tests, covering all k-folds (k=1 to k=10) for each test.
 
 **Recovery Example**:
 If a test fails at index 6 with k=9, use the following configuration to resume:
@@ -244,16 +244,19 @@ one folder to save the trained models and another folder to save the reports.
 The folder naming convention follows the pattern: id_test, model_name, and reports.
 * results/AT_densenet+cbam_exp/0_DenseNet201
 * results/AT_densenet+cbam_exp/0_DenseNet201_reports
+
 The reports saved in reports include:
 * **CSV** files containing metrics and detailed predictions.
 * Classification report
 * List of correct classifications
 * List of incorrect classifications
 * Confusion matrix
+
 **Graphs** in JPG format, such as:
 * Confusion matrix
 * Training performance graph
 * Boxplot of probabilities
+
 This structure ensures organized storage and easy access to the results of each test.
 
 [Table of contentes](#table-of-contents)
