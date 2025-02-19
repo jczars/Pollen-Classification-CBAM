@@ -112,123 +112,8 @@ unset PYTHONPATH
 [Table of contentes](#table-of-contents)
 
 # Usage
+
 ## Phase 1
-The project is divided into phases, following the outline of phase 1.
-**Phase 1**: Separate pollen into views (Equatorial and Polar) using pseudo-labeling.
-
-## Prepare the BI_5 Dataset
-The BI_5 dataset is the primary dataset used in this phase. It contains labeled and unlabeled images, essential for the pseudo-labeling and classification tasks.
-
-**Steps to Obtain and Prepare the Dataset**
-
-**1. Create the BD Folder:**
-Before downloading the dataset, ensure the BD folder exists in the project root directory. Use the following command to create it:
-
-```bash
-mkdir -p ./BD
-cd ./BD
-```
-
-**2. Download the Dataset:**
-Download the dataset directly using the link below. If gdown is not installed, you can install it using pip install gdown.
-
-```bash
-pip install gdown
-```
-
-```bash
-gdown "https://drive.google.com/uc?id=1n6bl72RNBORUeW2ONr_d6_VtKpvVA_cA"
-```
-
-**3. Extracting the Dataset:**
-After downloading, extract the dataset into the ./BD/ directory:
-```bash
-unzip BI_Cr_5.zip
-```
-
-**4. Verify the Dataset:**
-After extraction, ensure that the dataset is correctly organized as described in the Project Folder Structure section. Check if the folder structure matches the expected layout for proper use in the project. [Project Folder Structure](#project-Folder-Structure)
-
-**5. Return to the Project's Root Directory**
-After verifying the dataset, return to the project's root directory to proceed with the next steps:
-```bash
-cd ..
-```
-
-## Running Pseudo-Labeling:
-After preparing the initial dataset BI_5, the next step is to train pre-trained networks with pseudo-labeling.
-
-**Main Scripts**:
-**Strategy 1**: pseudo_reload_train.py
-Path:
-./Pollen_classification_view/phase1/pseudo_reload_train.py
-
-**Behavior:**
-
-During the first training session, named "time_step 0," a pre-trained network is loaded, fine-tuned using the DFT strategy, and trained with random initialization.
-For subsequent time_steps, the model from the previous time_step is reloaded and retrained.
-
-**Strategy 2**: pseudo_train.py
-Path:
-
-./Pollen_classification_view/phase1/pseudo_train.py
-
-**Behavior**:
-
-All training sessions are initialized with random weights.
-
-**Recovery Script**:
-If the training process fails due to memory consumption or other issues, use the recovery script:
-
-pseudo_reload_train_recovery.py
-
-This script detects the last completed time_step and resumes training from that point.
-Stopping Rules for Pseudo-Labeling
-
-**Pseudo-labeling stops when**:
-The entire unlabeled dataset has been labeled.
-The pseudo-label selection phase does not identify any additional images from the unlabeled dataset.
-Thresholds used in the tests include 0.95, 0.99, and 0.995.
-
-**Execution Examples**:
-
-__Single Test__
-To execute a single test, specify the start_index and end_index parameters:
-```bash
-python3 phase1/pseudo_reload_train.py --path results/phase1/reports_cr/config_pseudo_label_pre_cr.xlsx --start_index 1 --end_index 1
-```
-This command will execute only test index 5.
-
-**All Tests**
-To execute all tests configured in the spreadsheet, starting from index 0:
-```bash
-python3 phase1/pseudo_reload_train.py --path results/phase1/reports_cr/config_pseudo_label_pre_cr.xlsx --start_index 0
-```
-**Recovery**
-To resume tests after a failure:
-```bash
-python3 phase1/pseudo_reload_train_recovery.py --path results/phase1/reports_cr/config_pseudo_label_pre_cr.xlsx --start_index 0
-```
-In this case, test 0 crashed! To restart the training we run the script above.
-
-**Expected Results**:
-
-The results are stored in the "Reports" folder where the spreadsheet is located. The folder naming convention follows the pattern: id_test, model_name, and reports.
-
-The output includes:
-
-1. **CSV** files containing detailed metrics and predictions.
-2. **Graphs** in JPG format, such as:
-* Confusion matrix
-* Training performance plot
-* Boxplot of probabilities
-
-This structure ensures organized storage and easy access to the results of each test.
-
-[Table of contentes](#table-of-contents)
-
-
-## Phase 2
 ### Preprocess
 
 **1. dowload dataset**:
@@ -324,7 +209,7 @@ results/phase2/reports/config_FT_vistas_121124.xlsx
 **Execution**:
 Use the following command to run the fine-tuning script:
 ```bash
-python phase2/FT_DFT_K10_xlsx.py results/phase2/reports_cr_13_400/config_FT_vt_cr_281124.xlsx
+python src/AT_DenseNet_CBAM_K10_xlsx.py results/AT_densenet+cbam_exp/config_AT_cr_180225.xlsx
 ```
 **Failure Management**:
 During the tests, especially when using memory-intensive networks like DenseNet201, failures may occur due to full memory consumption. To address this, a spreadsheet with control variables tracks the progress of the tests, allowing for recovery.
@@ -354,49 +239,26 @@ num_tests = 1
 This setup ensures the tests are resumed in a controlled and efficient manner.
 
 **Expected Results**:
-The results are stored in the "reports" folder where the spreadsheet is located. The folder naming convention follows the pattern: id_test, model_name, and reports.
-
-The output includes:
-
-1. **CSV** files containing detailed metrics and predictions.
-2. **Graphs** in JPG format, such as:
+The results are stored in the "results" folder where the spreadsheet is located. Two folders are created for each trained model:
+one folder to save the trained models and another folder to save the reports.
+The folder naming convention follows the pattern: id_test, model_name, and reports.
+* results/AT_densenet+cbam_exp/0_DenseNet201
+* results/AT_densenet+cbam_exp/0_DenseNet201_reports
+The reports saved in reports include:
+* **CSV** files containing metrics and detailed predictions.
+* Classification report
+* List of correct classifications
+* List of incorrect classifications
 * Confusion matrix
-* Training performance plot
+**Graphs** in JPG format, such as:
+* Confusion matrix
+* Training performance graph
 * Boxplot of probabilities
 This structure ensures organized storage and easy access to the results of each test.
 
 [Table of contentes](#table-of-contents)
 
-## Phase 3
-### Preprocess
 
-**1. Prepare the Dataset for Cross-Validation and Data Augmentation**:
-This script divides the dataset into separate folders to perform cross-validation and then applies data augmentation using a balancing strategy, where the goal variable specifies the target number of images per class. The script counts the samples in each class, and any class below the defined target is augmented until the target size is reached.
-
-**Inputs**:
-A YAML configuration file (example: config_origin_format.yaml) that defines the parameters for the script execution.
-
-**Expected Outputs**:
-At the end of the execution, the script generates a balanced dataset with additional images for classes that initially have fewer samples. The balanced dataset is saved in the specified output folder.
-
-**Example of Execution**:
-To run the script, make sure the configuration file (config_origin_format.yaml) is set up correctly and execute the following command:
-
-```bash
-python preprocess/split_aug_bd_k.py --config preprocess/config_origin_format.yaml
-```
-
-### Fine-tuning
-
-The same procedure from Phase 2 will be applied in this stage, with some observations. 
-The script used will be the same: FT_DFT_K10_xlsx.py. The test spreadsheet will be: results/phase3/reports_cr_400/config_FT_Orig_cr_281124.xlsx. It is important to verify whether the paths to the databases are correct. Relative paths have been used to avoid the need for adjustments during execution. However, if any issues arise, adjustments should be made directly in the spreadsheet.
-
-**Execution**:
-Use the following command to run the fine-tuning script:
-```bash
-python phase2/FT_DFT_K10_xlsx.py results/phase3/reports_cr_400/config_FT_Orig_cr_281124.xlsx
-```
-[Table of contentes](#table-of-contents)
 
 # Results
 
