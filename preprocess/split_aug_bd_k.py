@@ -68,7 +68,7 @@ def process_augmentation(config):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Run data augmentation with specified configuration.")
-    parser.add_argument("--config", type=str, default="./preprocess/config_origin_format_seg.yaml", 
+    parser.add_argument("--config", type=str, default="preprocess/config_split_aug_B23.yaml", 
                         help="Path to the configuration YAML file.")
     args = parser.parse_args()
 

@@ -986,7 +986,7 @@ if __name__ == "__main__":
     None
     """
     # Define the default path for the sheet
-    default_path_sheet = "results/phase2/AT_densenet_cbam/config_AT_cr_131224.xlsx"
+    default_path_sheet = "results/AT_densenet+cbam_exp/config_AT_cr_180225.xlsx"
 
     # Argument parser
     parser = argparse.ArgumentParser(description="Run the training and evaluation process.")

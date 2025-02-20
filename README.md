@@ -261,6 +261,13 @@ This structure ensures organized storage and easy access to the results of each 
 
 [Table of contentes](#table-of-contents)
 
+## Phase 2
+### Separar o teste em vistas
+Para separa o teste em vistas foram utilizados os arquivos seprated_test.py e config_seprated.yaml, que estão na pasta preprocess
+
+### Configurar os relatórios do teste em vistas
+
+
 
 
 # Results
