@@ -8,7 +8,7 @@ goal: 400
 k_folds: 10
 
 # Base directory where the image data is stored
-base_dir: './BD/CPD1_seg_200125/'
+base_dir: './BD/CPD1_Cr_Rs/'
 
 # List of views (e.g., EQUATORIAL and POLAR) to be processed
 views: None
