@@ -161,27 +161,7 @@ Usage: To run the resizing script with the configuration file, use the following
 python3 preprocess/resize_img_bd.py --config preprocess/config_resize.yaml
 ```
 
-**4. Separated dataset**:
-This script separates the Cropped Pollen Grains dataset into two distinct views: Equatorial and Polar. It uses a configuration file (config_separeted.yaml) to define the input and output paths, along with other processing parameters.
-
-**Expected Results**:
-At the end of the execution, the script generates reports and separates images into the specified views (Equatorial and Polar), saving them in the respective folders within the database.
-
-**Usage**:
-To run the script, ensure that the configuration file is properly set up, then execute the following command:
-```bash
-python3 preprocess/separeted_bd.py --config preprocess/config_separeted.yaml
-```
-Ensure that the classes are correctly specified in the config_separeted.yaml file before running the script.
-
-**Attention**
-When tested on a different GPU, the pseudo-labeling showed significant differences that resulted in a different number of classes than those used in the article. To avoid this issue, which may influence the final result, weight 13 of the DenseNet201 network will be made available.
-
-```bash
-gdown https://drive.google.com/uc?id=1YIENLYSaRljIq1mZclMdvUUrq6XVS9hz
-```
-
-**5. Prepare the Dataset for Cross-Validation and Data Augmentation**:
+**4. Prepare the Dataset for Cross-Validation and Data Augmentation**:
 This script divides the dataset into separate folders to perform cross-validation and then applies data augmentation using a balancing strategy, where the goal variable specifies the target number of images per class. The script counts the samples in each class, and any class below the defined target is augmented until the target size is reached.
 
 **Inputs**:
@@ -194,7 +174,7 @@ At the end of the execution, the script generates a balanced dataset with additi
 To run the script, make sure the configuration file (config_balanced.yaml) is set up correctly and execute the following command:
 
 ```bash
-python preprocess/split_aug_bd_k.py --config preprocess/config_balanced_views.yaml
+python preprocess/split_aug_bd_k.py --config preprocess/config_aug_bd.yaml
 ```
 
 ### Fine-tuning
@@ -265,7 +245,120 @@ This structure ensures organized storage and easy access to the results of each 
 ### Separar o teste em vistas
 Para separa o teste em vistas foram utilizados os arquivos seprated_test.py e config_seprated.yaml, que estão na pasta preprocess
 
-### Configurar os relatórios do teste em vistas
+
+**Phase 2**: Separate pollen into views (Equatorial and Polar) using pseudo-labeling.
+
+## Prepare the BI_5 Dataset
+The BI_5 dataset is the primary dataset used in this phase. It contains labeled and unlabeled images, essential for the pseudo-labeling and classification tasks.
+
+**Steps to Obtain and Prepare the Dataset**
+
+**1. Create the BD Folder:**
+Before downloading the dataset, ensure the BD folder exists in the project root directory. Use the following command to create it:
+
+```bash
+mkdir -p ./BD
+cd ./BD
+```
+
+**2. Download the Dataset:**
+Download the dataset directly using the link below. If gdown is not installed, you can install it using pip install gdown.
+
+```bash
+pip install gdown
+```
+
+```bash
+gdown "https://drive.google.com/uc?id=1n6bl72RNBORUeW2ONr_d6_VtKpvVA_cA"
+```
+
+**3. Extracting the Dataset:**
+After downloading, extract the dataset into the ./BD/ directory:
+```bash
+unzip BI_Cr_5.zip
+```
+
+**4. Verify the Dataset:**
+After extraction, ensure that the dataset is correctly organized as described in the Project Folder Structure section. Check if the folder structure matches the expected layout for proper use in the project. [Project Folder Structure](#project-Folder-Structure)
+
+**5. Return to the Project's Root Directory**
+After verifying the dataset, return to the project's root directory to proceed with the next steps:
+```bash
+cd ..
+```
+
+## Running Pseudo-Labeling:
+After preparing the initial dataset BI_5, the next step is to train pre-trained networks with pseudo-labeling.
+
+**Main Scripts**:
+**Strategy 1**: pseudo_reload_train.py
+Path:
+./Pollen_classification_view/phase1/pseudo_reload_train.py
+
+**Behavior:**
+
+During the first training session, named "time_step 0," a pre-trained network is loaded, fine-tuned using the DFT strategy, and trained with random initialization.
+For subsequent time_steps, the model from the previous time_step is reloaded and retrained.
+
+**Strategy 2**: pseudo_train.py
+Path:
+
+./Pollen_classification_view/phase1/pseudo_train.py
+
+**Behavior**:
+
+All training sessions are initialized with random weights.
+
+**Recovery Script**:
+If the training process fails due to memory consumption or other issues, use the recovery script:
+
+pseudo_reload_train_recovery.py
+
+This script detects the last completed time_step and resumes training from that point.
+Stopping Rules for Pseudo-Labeling
+
+**Pseudo-labeling stops when**:
+The entire unlabeled dataset has been labeled.
+The pseudo-label selection phase does not identify any additional images from the unlabeled dataset.
+Thresholds used in the tests include 0.95, 0.99, and 0.995.
+
+**Execution Examples**:
+
+__Single Test__
+To execute a single test, specify the start_index and end_index parameters:
+```bash
+python3 phase1/pseudo_reload_train.py --path results/phase1/reports_cr/config_pseudo_label_pre_cr.xlsx --start_index 1 --end_index 1
+```
+This command will execute only test index 5.
+
+**All Tests**
+To execute all tests configured in the spreadsheet, starting from index 0:
+```bash
+python3 phase1/pseudo_reload_train.py --path results/phase1/reports_cr/config_pseudo_label_pre_cr.xlsx --start_index 0
+```
+**Recovery**
+To resume tests after a failure:
+```bash
+python3 phase1/pseudo_reload_train_recovery.py --path results/phase1/reports_cr/config_pseudo_label_pre_cr.xlsx --start_index 0
+```
+In this case, test 0 crashed! To restart the training we run the script above.
+
+**Expected Results**:
+
+The results are stored in the "Reports" folder where the spreadsheet is located. The folder naming convention follows the pattern: id_test, model_name, and reports.
+
+The output includes:
+
+1. **CSV** files containing detailed metrics and predictions.
+2. **Graphs** in JPG format, such as:
+* Confusion matrix
+* Training performance plot
+* Boxplot of probabilities
+
+This structure ensures organized storage and easy access to the results of each test.
+
+[Table of contentes](#table-of-contents)
+
 
 
 
