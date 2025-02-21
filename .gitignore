@@ -1,4 +1,6 @@
 BD/CPD1_TEST_190225
-results/AT_densenet+cbam_exp/0_DenseNet201
+results/phase1/AT_densenet+cbam_exp/0_DenseNet201
+results/phase1/AT_densenet+cbam_exp/1_DenseNet201
+results/phase1/AT_densenet+cbam_exp/2_DenseNet201
 .sync.ffs_db
 memory_log.log

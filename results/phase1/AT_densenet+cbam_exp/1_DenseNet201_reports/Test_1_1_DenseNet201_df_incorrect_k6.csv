@@ -1,0 +1,6 @@
+,file,y_true,y_pred,confidence,true_label,predicted_label,status
+2,arecaceae/arecaceae_10.jpg,1,20,0.9994332,arecaceae,syagrus,Incorrect
+4,arecaceae/arecaceae_31.jpg,1,20,0.9205874,arecaceae,syagrus,Incorrect
+69,syagrus/syagrus_08.jpg,20,1,0.99785125,syagrus,arecaceae,Incorrect
+76,urochloa/urochloa (31).jpg,22,1,0.9168576,urochloa,arecaceae,Incorrect
+77,urochloa/urochloa (33).jpg,22,7,0.51972216,urochloa,dipteryx,Incorrect

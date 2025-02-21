@@ -1,0 +1,4 @@
+,file,y_true,y_pred,confidence,true_label,predicted_label,status
+26,dipteryx/dipteryx_17.jpg,7,2,0.99947625,dipteryx,arrabidaea,Incorrect
+41,matayba/matayba_04.jpg,12,8,0.9708082,matayba,eucalipto,Incorrect
+71,syagrus/syagrus_32.jpg,20,9,0.6467477,syagrus,faramea,Incorrect

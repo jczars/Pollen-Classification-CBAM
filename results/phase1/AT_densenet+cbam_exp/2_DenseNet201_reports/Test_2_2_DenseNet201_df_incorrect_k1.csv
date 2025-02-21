@@ -1,0 +1,9 @@
+,file,y_true,y_pred,confidence,true_label,predicted_label,status
+148,ochroma pyramidale/ochroma (14).jpg,43,38,0.22319469,ochroma pyramidale,mimosa_ditans,Incorrect
+162,paullinia_spicata/paullinia (2).jpg,47,57,0.43335205,paullinia_spicata,serjania_hebecarpa,Incorrect
+163,paullinia_spicata/paullinia (20).jpg,47,57,0.48562473,paullinia_spicata,serjania_hebecarpa,Incorrect
+172,poaceae_sp/poaceae_sp (34).jpg,49,72,0.9766258,poaceae_sp,zea_mays,Incorrect
+185,schinus_sp/schinus_sp (32).jpg,53,24,0.9353184,schinus_sp,faramea_sp,Incorrect
+201,serjania_laruotteana/serjania_laruotteana (10).jpg,58,56,0.83797723,serjania_laruotteana,serjania_erecta,Incorrect
+203,serjania_laruotteana/serjania_laruotteana (6).jpg,58,56,0.67814124,serjania_laruotteana,serjania_erecta,Incorrect
+224,tabebuia_chysotricha/tabebuia_chysotricha (30).jpg,64,65,0.98863995,tabebuia_chysotricha,tabebuia_rosealba,Incorrect
