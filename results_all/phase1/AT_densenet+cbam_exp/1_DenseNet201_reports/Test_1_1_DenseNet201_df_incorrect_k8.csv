@@ -1,0 +1,3 @@
+,file,y_true,y_pred,confidence,true_label,predicted_label,status
+48,myrcia/myrcia_23.jpg,14,3,0.72799486,myrcia,cecropia,Incorrect
+68,syagrus/syagrus_04.jpg,20,1,0.91754127,syagrus,arecaceae,Incorrect
