@@ -242,10 +242,6 @@ This structure ensures organized storage and easy access to the results of each 
 [Table of contentes](#table-of-contents)
 
 ## Phase 2
-### Separar o teste em vistas
-Para separa o teste em vistas foram utilizados os arquivos seprated_test.py e config_seprated.yaml, que estão na pasta preprocess
-
-
 **Phase 2**: Separate pollen into views (Equatorial and Polar) using pseudo-labeling.
 
 ## Prepare the BI_5 Dataset
@@ -327,19 +323,19 @@ Thresholds used in the tests include 0.95, 0.99, and 0.995.
 __Single Test__
 To execute a single test, specify the start_index and end_index parameters:
 ```bash
-python3 phase2/pseudo_reload_train.py --path results/phase2/reports_cr/config_pseudo_label_pre_cr.xlsx --start_index 1 --end_index 1
+python3 phase2/pseudo_reload_train.py --path results/phase2/recports_cr/config_pseudo_label_pre_cr.xlsx --start_index 1 --end_index 1
 ```
 This command will execute only test index 5.
 
 **All Tests**
 To execute all tests configured in the spreadsheet, starting from index 0:
 ```bash
-python3 phase1/pseudo_reload_train.py --path results/phase1/reports_cr/config_pseudo_label_pre_cr.xlsx --start_index 0
+python3 phase2/pseudo_reload_train.py --path results/phase2/recports_cr/config_pseudo_label_pre_cr.xlsx --start_index 0
 ```
 **Recovery**
 To resume tests after a failure:
 ```bash
-python3 phase1/pseudo_reload_train_recovery.py --path results/phase1/reports_cr/config_pseudo_label_pre_cr.xlsx --start_index 0
+python3 phase2/pseudo_reload_train_recovery.py --path results/phase2/recports_cr/config_pseudo_label_pre_cr.xlsx --start_index 0
 ```
 In this case, test 0 crashed! To restart the training we run the script above.
 
@@ -360,7 +356,9 @@ This structure ensures organized storage and easy access to the results of each 
 [Table of contentes](#table-of-contents)
 
 
-
+## Phase 3
+### Separar o teste em vistas
+Para separa o teste em vistas foram utilizados os arquivos seprated_test.py e config_seprated.yaml, que estão na pasta preprocess
 
 
 # Results
