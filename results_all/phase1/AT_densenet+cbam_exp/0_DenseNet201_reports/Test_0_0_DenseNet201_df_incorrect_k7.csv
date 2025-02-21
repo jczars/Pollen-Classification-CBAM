@@ -1,4 +1,0 @@
-,file,y_true,y_pred,confidence,true_label,predicted_label,status
-85,eucalyptus/Myr.E.camaX400wF(1866)(0)A-8.png,6,8,0.78572667,eucalyptus,myrtus,Incorrect
-89,eucalyptus/Myr.E.camaX400wF(1869)(0)D-1.png,6,5,0.9993513,eucalyptus,erica,Incorrect
-310,salvia/Lam.S.triX400wF(2190)(0)C-8.png,14,5,0.660842,salvia,erica,Incorrect

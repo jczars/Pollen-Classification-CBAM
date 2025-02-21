@@ -1,4 +1,0 @@
-,file,y_true,y_pred,confidence,true_label,predicted_label,status
-11,cecropia/cecropia_33.jpg,3,13,0.9956962,cecropia,mimosa,Incorrect
-45,mimosa/mimosa_05.jpg,13,3,0.5314661,mimosa,cecropia,Incorrect
-59,schinus/schinus_25.jpg,17,14,0.9995958,schinus,myrcia,Incorrect
