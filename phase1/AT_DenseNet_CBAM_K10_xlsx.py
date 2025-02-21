@@ -986,7 +986,7 @@ if __name__ == "__main__":
     None
     """
     # Define the default path for the sheet
-    default_path_sheet = "results/AT_densenet+cbam_exp/config_AT_cr_180225.xlsx"
+    default_path_sheet = "results/phase1/AT_densenet+cbam_exp/config_AT_cr_180225.xlsx"
 
     # Argument parser
     parser = argparse.ArgumentParser(description="Run the training and evaluation process.")
@@ -994,7 +994,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
     """_exemple
 
-        python FT_DFT_K10_xlsx.py "results/AT_densenet+cbam_gen_seg/config_AT_cr_180225.xlsx"
+        python FT_DFT_K10_xlsx.py "results/phase1/AT_densenet+cbam_exp/config_AT_cr_180225.xlsx"
     """
     
 
