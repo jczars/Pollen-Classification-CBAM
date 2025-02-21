@@ -248,6 +248,7 @@ def run_split(params):
     goal = params['goal']
 
     base_path = os.path.dirname(os.path.dirname(base_dir))
+    print(f"base_path: {base_path}")
     base_name = os.path.basename(os.path.normpath(base_dir))
     new_base_name = f"{base_name}_{goal}"
     new_base_dir = os.path.join(base_path, new_base_name)
