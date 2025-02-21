@@ -1,6 +1,15 @@
+#BD
 BD/CPD1_TEST_190225
+BD/POLLEN23E_RC
+BD/POLLEN23E_RC_400
+BD/POLLEN73S_RC
+BD/POLLEN73S_RC_400
+
+#ignore models
 results/phase1/AT_densenet+cbam_exp/0_DenseNet201
 results/phase1/AT_densenet+cbam_exp/1_DenseNet201
 results/phase1/AT_densenet+cbam_exp/2_DenseNet201
+
+#outher files
 .sync.ffs_db
 memory_log.log
