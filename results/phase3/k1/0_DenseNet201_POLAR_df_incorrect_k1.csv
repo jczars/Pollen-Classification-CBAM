@@ -1,0 +1,2 @@
+,file,y_true,y_pred,confidence,true_label,predicted_label,status
+192,vitis/Vit.V.viniX400wF(4983)(0)F-24.png,19,3,0.6919726,pinus,ceratonia,Incorrect
