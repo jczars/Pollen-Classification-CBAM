@@ -189,7 +189,7 @@ results/AT_densenet+cbam_exp/config_AT_cr_180225.xlsx
 **Execution**:
 Use the following command to run the fine-tuning script:
 ```bash
-python src/AT_DenseNet_CBAM_K10_xlsx.py results/AT_densenet+cbam_exp/config_AT_cr_180225.xlsx
+python phase1/AT_DenseNet_CBAM_K10_xlsx.py results/phase1/AT_densenet+cbam_exp/config_AT_cr_180225.xlsx
 ```
 **Failure Management**:
 During the tests, especially when using memory-intensive networks like DenseNet201, failures may occur due to full memory consumption. To address this, a spreadsheet with control variables tracks the progress of the tests, allowing for recovery.
@@ -293,7 +293,7 @@ After preparing the initial dataset BI_5, the next step is to train pre-trained 
 **Main Scripts**:
 **Strategy 1**: pseudo_reload_train.py
 Path:
-./Pollen_classification_view/phase1/pseudo_reload_train.py
+./Pollen-Classification-CBAM/phase2/pseudo_reload_train.py
 
 **Behavior:**
 
@@ -303,7 +303,7 @@ For subsequent time_steps, the model from the previous time_step is reloaded and
 **Strategy 2**: pseudo_train.py
 Path:
 
-./Pollen_classification_view/phase1/pseudo_train.py
+./Pollen-Classification-CBAM/phase2/pseudo_train.py
 
 **Behavior**:
 
@@ -327,7 +327,7 @@ Thresholds used in the tests include 0.95, 0.99, and 0.995.
 __Single Test__
 To execute a single test, specify the start_index and end_index parameters:
 ```bash
-python3 phase1/pseudo_reload_train.py --path results/phase1/reports_cr/config_pseudo_label_pre_cr.xlsx --start_index 1 --end_index 1
+python3 phase2/pseudo_reload_train.py --path results/phase2/reports_cr/config_pseudo_label_pre_cr.xlsx --start_index 1 --end_index 1
 ```
 This command will execute only test index 5.
 
