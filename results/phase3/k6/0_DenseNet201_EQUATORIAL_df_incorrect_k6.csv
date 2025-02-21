@@ -1,0 +1,3 @@
+,file,y_true,y_pred,confidence,true_label,predicted_label,status
+102,olea/Ole.O.euroX400wF(4266)(0)F-121.png,9,16,0.5954878,erica,sinapis,Incorrect
+121,origanum/Lam.O.micX400wF(884)(0)A-9.png,10,3,0.99861884,eucalyptus,ceratonia,Incorrect

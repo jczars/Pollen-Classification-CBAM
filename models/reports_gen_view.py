@@ -111,52 +111,82 @@ def generate_classification_report(y_true_mapped, categories, y_pred, present_la
 
     return df_report
 
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+from sklearn.metrics import confusion_matrix
+
 def generate_confusion_matrix(y_true_mapped, categories, y_pred, present_labels, normalize=False):
     """
     Generates and displays a confusion matrix, ensuring alignment between true categories 
-    and predicted labels.
+    and predicted labels. Highlights missing classes and misclassified cases.
+
+    Parameters:
+        y_true_mapped (array-like): True labels mapped to indices.
+        categories (list): List of all class names.
+        y_pred (array-like): Predicted labels.
+        present_labels (list): Sorted list of labels present in the test set.
+        normalize (bool, optional): Whether to normalize the confusion matrix values. Defaults to False.
+
+    Returns:
+        fig (matplotlib.figure.Figure): The generated confusion matrix figure.
+        df_cm (pandas.DataFrame): Confusion matrix as a DataFrame.
     """
-    num_classes = len(categories)  # Total de classes possíveis
+
+    num_classes = len(categories)  # Total number of possible classes
     absent_labels = sorted(set(range(num_classes)) - set(present_labels))
 
-    # Matriz de confusão reduzida (apenas classes presentes)
+    # Reduced confusion matrix (only for present classes)
     cm_reduced = confusion_matrix(y_true_mapped, y_pred, labels=present_labels)
 
-    # Normalizar se necessário
+    # Normalize if required
     if normalize:
         cm_reduced = np.divide(cm_reduced.astype('float'), cm_reduced.sum(axis=1, keepdims=True), 
                                where=cm_reduced.sum(axis=1, keepdims=True) != 0)
 
-    # Criar matriz de confusão expandida (tamanho fixo num_classes x num_classes)
+    # Create full-size confusion matrix (num_classes x num_classes)
     full_cm = np.zeros((num_classes, num_classes))
     for i, real in enumerate(present_labels):
         for j, pred in enumerate(present_labels):
             full_cm[real, pred] = cm_reduced[i, j]
 
-    # Criar DataFrame corretamente alinhado
+    # Create a DataFrame correctly aligned
     df_cm = pd.DataFrame(full_cm, index=categories, columns=categories)
 
-    # Criar Heatmap
+    # Generate heatmap
     fig, ax = plt.subplots(figsize=(12, 10))
     cmap = sns.color_palette("Blues", as_cmap=True)  
 
-    sns.heatmap(df_cm, annot=True, fmt=".2f" if normalize else "g", cmap=cmap, 
+    mat = full_cm  # Alias for readability
+    sns.heatmap(mat, annot=True, fmt=".2f" if normalize else "g", cmap=cmap, 
                 xticklabels=categories, yticklabels=categories, cbar=True, linewidths=0.5, ax=ax)
 
-    # Corrigir labels ausentes e rotação
+    # Highlight missing labels and adjust rotation
     for i in absent_labels:
         ax.get_yticklabels()[i].set_backgroundcolor("yellow")  
         ax.get_xticklabels()[i].set_backgroundcolor("yellow")  
     
-    ax.set_xticklabels(ax.get_xticklabels(), fontsize=10, rotation=90)  # Rotação corrigida
+    ax.set_xticklabels(ax.get_xticklabels(), fontsize=10, rotation=90)  # Fixed rotation
     ax.set_yticklabels(ax.get_yticklabels(), fontsize=10, rotation=0)
 
+    # Annotate non-diagonal cells with custom background and text color
+    for i in range(len(mat)):
+        for j in range(len(mat)):
+            value = mat[i, j]
+            if i != j:  # Only for off-diagonal elements
+                if value > 0:
+                    ax.add_patch(plt.Rectangle((j, i), 1, 1, fill=True, color='lightcoral', alpha=0.5))
+                ax.text(j + 0.5, i + 0.5, f'{value:.2f}' if normalize else f'{int(value)}', 
+                        ha='center', va='center', color='black', fontsize=10)
+
     plt.xlabel("Predicted")
-    plt.ylabel("Real")
-    plt.title("Confusion Matrix" + (" (Normalized)" if normalize else "") + "\n(Yellow Background = Classes Missing in Test)")
-    
+    plt.ylabel("Actual")
+    plt.title("Confusion Matrix" + (" (Normalized)" if normalize else "") + "\n(Yellow = Missing Classes)")
+
     plt.tight_layout()
     return fig, df_cm
+
 
 
 def plot_confidence_boxplot(df_correct):
