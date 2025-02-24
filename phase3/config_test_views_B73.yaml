@@ -1,0 +1,7 @@
+path_model: "results/phase1/AT_densenet+cbam_exp/2_DenseNet201/"
+path_full_labels: "BD/POLLEN73S_RC_400/Test/k1"  
+path_test: "BD/B73_TEST_VIEW/"   # Directory to save the distribution chart
+save_dir: "results/phase3/"  # Directory to save the distribution graph
+save: 1  # 1 to save resized images, 0 to not save
+verbose: 1  # 1 for detailed output, 0 for silent mode
+size: 224

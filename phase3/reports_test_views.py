@@ -116,15 +116,20 @@ def run(params):
     #listar arquivos
     categories = sorted(os.listdir(params['path_full_labels']))
     print(f"total categories: {len(categories)}, categories: {categories}") 
-    
-    
+
+    #Create folders test
+    path=params['path_test']
+    name_test=path.split("/")[1]
+    path_save=f"{params['save_dir']}{name_test}/"
+    print(f"path_dst: {path_save}")
+    os.makedirs(path_save, exist_ok=True) 
 
     for i in range(10):
         reset_environment()
         k=i+1
         
         #create folders
-        folder=f"{params['save_dir']}k{k}"
+        folder=f"{path_save}k{k}"
         print(f"folder: {folder}")
         os.makedirs(folder, exist_ok=True) 
 
@@ -174,11 +179,11 @@ if __name__ == "__main__":
     args = parse_args()
 
     # Load configuration from YAML file
-    config_file = args.config if args.config else 'phase3/config_test_views.yaml'
+    config_file = args.config if args.config else 'phase3/config_test_views_B23.yaml'
     params = load_config(config_file)
 
     #run(params)
-    #python 1_create_bd/separeted_bd.py --config 1_create_bd/config_separeted.yaml
+    #python phase3/reports_test_views.py --config phase3/config_test_views_B23.yaml
     
     debug = True
     

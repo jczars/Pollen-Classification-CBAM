@@ -214,7 +214,7 @@ if __name__ == "__main__":
     args = parse_args()
 
     # Load configuration from YAML file
-    config_file = args.config if args.config else './preprocess/config_separeted.yaml'
+    config_file = args.config if args.config else 'phase3/config_separeted.yaml'
     params = load_config(config_file)
 
     #run(params)
