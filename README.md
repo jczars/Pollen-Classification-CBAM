@@ -117,7 +117,8 @@ unset PYTHONPATH
 ### Preprocess
 
 **1. dowload dataset**:
-**Cretan Pollen Dataset v1 (CPD-1)**
+**Cretan Pollen Dataset v1 (CPD-1):**
+
 This is the selected dataset. Download the dataset to the BD folder. If the BD folder does not exist, create it in the root directory of the project.
 Download the database available at: https://zenodo.org/records/4756361. Choose the Cropped Pollen Grains version and place it in the BD folder.
 ```bash
@@ -138,7 +139,8 @@ This installs the unrar tool, which is necessary for extracting .rar files.
 unrar x Cropped_Pollen_Grains.rar
 ```
 
-**2. Renaming Dataset Classes**
+**2. Renaming Dataset Classes:**
+
 The database class names follow the syntax “1.Thymbra” (e.g., "1.Thymbra", "2.Erica"). We will rename the folders to follow a simpler format like “thymbra”.
 Use the rename_folders.py script to rename the classes:
 
@@ -147,12 +149,14 @@ python3 preprocess/rename_folders.py --path_data BD/Cropped\ Pollen\ Grains/
 ```
 This command runs the rename_folders.py script to rename the class folders inside the Cropped Pollen Grains directory. Each folder name will be converted to lowercase for consistency.
 
-**3. Resize images dataset**
+**3. Resize images dataset:**
+
 This script reads the images from the Cropped Pollen Grains dataset and checks if they are in the standard size of 224 x 224. If any images do not meet these dimensions, the script creates a new dataset with all images resized to the specified size.
 
 The resizing process uses a configuration file (config_resize.yaml) to define input and output paths, along with other parameters.
 
 **Expected Result**:
+
 A new dataset folder containing all images resized to 224 x 224, ensuring consistency across the dataset.
 
 Usage: To run the resizing script with the configuration file, use the following command:
@@ -162,6 +166,7 @@ python3 preprocess/resize_img_bd.py --config preprocess/config_resize.yaml
 ```
 
 **4. Prepare the Dataset for Cross-Validation and Data Augmentation**:
+
 This script divides the dataset into separate folders to perform cross-validation and then applies data augmentation using a balancing strategy, where the goal variable specifies the target number of images per class. The script counts the samples in each class, and any class below the defined target is augmented until the target size is reached.
 
 **Inputs**:
