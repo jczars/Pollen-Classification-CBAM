@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
-from sklearn.metrics import classification_report, confusion_matrix
+from sklearn.metrics import accuracy_score, precision_recall_fscore_support, cohen_kappa_score
+from sklearn.metrics import classification_report, confusion_matrix 
 import seaborn as sns
 import matplotlib.pyplot as plt
 from keras.preprocessing.image import ImageDataGenerator
@@ -111,12 +112,6 @@ def generate_classification_report(y_true_mapped, categories, y_pred, present_la
 
     return df_report
 
-import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
-from sklearn.metrics import confusion_matrix
-
 def generate_confusion_matrix(y_true_mapped, categories, y_pred, present_labels, normalize=False):
     """
     Generates and displays a confusion matrix, ensuring alignment between true categories 
@@ -221,8 +216,34 @@ def plot_confidence_boxplot(df_correct):
     plt.tight_layout()
     return fig
 
+def calculate_metrics(y_true, y_pred):
+    """
+    Calculates and returns evaluation metrics: precision, recall, fscore, and kappa score.
+
+    Parameters:
+        y_true (list): True labels.
+        y_pred (list): Predicted labels.
+
+    Returns:
+        dict: Dictionary containing precision, recall, fscore, and kappa score.
+    """
+    accuracy = accuracy_score(y_true, y_pred)
+    precision, recall, fscore, _ = precision_recall_fscore_support(y_true, y_pred, average='weighted')
+    kappa = cohen_kappa_score(y_true, y_pred)
+    
+    metrics_dict = {
+        'accuracy': round(accuracy, 3),
+        'precision': round(precision, 3),
+        'recall': round(recall, 3),
+        'fscore': round(fscore, 3),
+        'kappa': round(kappa, 3)
+    }
+    
+    return metrics_dict
+
 if __name__ == "__main__":
     help(load_data_test)
     help(predict_data_generator)
     help(generate_classification_report)
     help(generate_confusion_matrix)
+    help(calculate_metrics)
