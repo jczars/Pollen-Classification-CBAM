@@ -183,23 +183,27 @@ python preprocess/split_aug_bd_k.py --config preprocess/config_aug_bd.yaml
 ```
 
 ### Fine-tuning
-In this steps, pre-trained models are refined to classify the datasets generated in preprocess. The selected models include DenseNet201, MobileNet, InceptionV3, ResNet152V2 and Xception. The fine-tuning process follows the DFT (Deeply Fine-Tuning) strategy to optimize the network performance.
+In this steps, pre-trained models are refined to classify the datasets generated in preprocess. The selected models include DenseNet201 and Xception. The fine-tuning process follows the DFT (Deeply Fine-Tuning) strategy to optimize the network performance.
 
 **Required Configuration**:
+
 To execute the tests, a spreadsheet containing the experimental configurations is required. The default configuration file can be found in the folder:
 
 ```bash
 results/AT_densenet+cbam_exp/config_AT_cr_180225.xlsx
 ```
 **Execution**:
+
 Use the following command to run the fine-tuning script:
 ```bash
 python phase1/AT_DenseNet_CBAM_K10_xlsx.py results/phase1/AT_densenet+cbam_exp/config_AT_cr_180225.xlsx
 ```
 **Failure Management**:
+
 During the tests, especially when using memory-intensive networks like DenseNet201, failures may occur due to full memory consumption. To address this, a spreadsheet with control variables tracks the progress of the tests, allowing for recovery.
 
 **Control Variables**:
+
 last_test_index: Index of the last completed test.
 k_fold_number: Number of the current k-fold to be executed.
 num_k_folds: Number of remaining k-folds to complete the cycle.
@@ -214,6 +218,7 @@ num_tests = 3
 This configuration runs 3 tests, covering all k-folds (k=1 to k=10) for each test.
 
 **Recovery Example**:
+
 If a test fails at index 6 with k=9, use the following configuration to resume:
 ```bash
 last_test_index = 6
@@ -224,6 +229,7 @@ num_tests = 1
 This setup ensures the tests are resumed in a controlled and efficient manner.
 
 **Expected Results**:
+
 The results are stored in the "results" folder where the spreadsheet is located. Two folders are created for each trained model:
 one folder to save the trained models and another folder to save the reports.
 The folder naming convention follows the pattern: id_test, model_name, and reports.
