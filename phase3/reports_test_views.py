@@ -1,8 +1,10 @@
 # Add the current directory to the PYTHONPATH
 import argparse
+import csv
 import os
 import sys
 
+import openpyxl
 import pandas as pd
 import yaml
 from keras import models
@@ -32,6 +34,29 @@ def reset_environment():
     """
 
     maneger_gpu.reset_keras()
+
+def save_metrics(k,metrics, csv_filename):
+    
+    """
+    Save the evaluation metrics to an Excel file.
+
+    Parameters:
+    - metrics (dict): A dictionary containing the evaluation metrics.
+    - path_xlsx (str): The path to the Excel file where the metrics will be saved.
+
+    Returns:
+    - None
+    """
+    # Criar e abrir o arquivo CSV para escrita
+    with open(csv_filename, mode="w", newline="") as file:
+        writer = csv.writer(file)
+
+        # Escrever o cabeçalho
+        writer.writerow(["k","accuracy", "precision", "recall", "fscore", "kappa"])
+        
+        # Escrever os valores no CSV
+        writer.writerow([k, metrics['accuracy'], metrics['precision'], metrics['recall'], metrics['fscore'], metrics['kappa']]) 
+
 
 def gen_views(params, model, categories, k, folder, nm_model, view):
     # Equatorial views
@@ -84,6 +109,8 @@ def gen_views(params, model, categories, k, folder, nm_model, view):
                                         present_labels,
                                         normalize=False)
     boxplot_fig=reports.plot_confidence_boxplot(df_correct)
+
+    metrics = reports.calculate_metrics(y_true_mapped, y_pred)
             
     # Save metrics and reports
     save_dir=folder
@@ -97,7 +124,10 @@ def gen_views(params, model, categories, k, folder, nm_model, view):
         matrix_fig.savefig(f'{save_dir}/{nm_model}_{view}_confusion_matrix_k{k}.jpg')
         boxplot_fig.savefig(f'{save_dir}/{nm_model}_{view}_boxplot_k{k}.jpg')
 
+        save_metrics(k,metrics, f"{save_dir}/{nm_model}_{view}_metrics_k{k}.csv")
+
         print(f"✅ Relatório salvo em: {save_dir}")
+
     
 def run(params):
     """
