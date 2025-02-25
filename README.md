@@ -373,35 +373,48 @@ This structure ensures organized storage and easy access to the results of each 
 [Table of contentes](#table-of-contents)
 
 
-# Phase 3
-## Separate the Test into Views
+# Phase 3  
+## Separating the Test Dataset into Views  
 
-To separate the test database into views, the following procedures were performed:
+To partition the test dataset into different views, the following steps were performed:  
 
-- **Pseudo Labeling**: Used to separate the test dataset.
-- **Applied Script**: `separated_test.py`
-- **Configuration File**: `config_separated.yaml`
-- **Saved Results**: The results were saved in the `BD` directory.
-- **Example Path**: `BD/CPD1_TEST_VIEW`
+- **Pseudo Labeling**: Applied to segment the test dataset.  
+- **Script Used**: `separated_test.py`  
+- **Configuration File**: `config_separated.yaml`  
+- **Results Directory**: The processed data was saved in the `BD` directory.  
+- **Example Path**: `BD/CPD1_TEST_VIEW`  
 
-## Generate Test Reports
+### Running the Script  
+To execute the separation process, use the following command:  
+```bash
+python3 phase3/separated_test.py --config phase3/config_separated.yaml
+```  
 
-To generate classification reports with the test dataset, the `reports_test_views.py` script was used with specific configuration files. A YAML file was created for each dataset.
+## Generating Test Reports  
 
-### Configuration Files
-- **Script**: `reports_test_views.py`
-- **Sample YAML File**: `config_test_views.yaml`
+To generate classification reports based on the test dataset, the script `reports_test_views.py` was executed using specific configuration files. A separate YAML file was created for each dataset.  
 
-### Generated Results
-The following results were produced:
+### Configuration Files  
+- **Script**: `reports_test_views.py`  
+- **Example YAML File**: `config_test_views.yaml`  
 
-- **Classification Report**
-- **Confusion Matrix**
-- **Boxplot**
-- **Metrics**
-- **Correct and Incorrect Classification DataFrames**:
-- `df_correct`: Contains the correctly classified samples.
-- `df_incorrect`: Contains the incorrectly classified samples.
+### Running the Script  
+To execute the report generation process, run:  
+```bash
+python3 phase3/reports_test_views.py --config phase3/config_test_views_B23.yaml
+```  
+
+### Generated Results  
+The following outputs were produced:  
+
+- **Classification Report**  
+- **Confusion Matrix**  
+- **Boxplot**  
+- **Metrics**  
+- **Correct and Incorrect Classification DataFrames**:  
+  - `df_correct`: Contains correctly classified samples.  
+  - `df_incorrect`: Contains incorrectly classified samples.  
+
 
 
 # Results
