@@ -261,6 +261,7 @@ The BI_5 dataset is the primary dataset used in this phase. It contains labeled 
 **Steps to Obtain and Prepare the Dataset**
 
 **1. Create the BD Folder:**
+
 Before downloading the dataset, ensure the BD folder exists in the project root directory. Use the following command to create it:
 
 ```bash
@@ -269,6 +270,7 @@ cd ./BD
 ```
 
 **2. Download the Dataset:**
+
 Download the dataset directly using the link below. If gdown is not installed, you can install it using pip install gdown.
 
 ```bash
@@ -280,15 +282,18 @@ gdown "https://drive.google.com/uc?id=1n6bl72RNBORUeW2ONr_d6_VtKpvVA_cA"
 ```
 
 **3. Extracting the Dataset:**
+
 After downloading, extract the dataset into the ./BD/ directory:
 ```bash
 unzip BI_Cr_5.zip
 ```
 
 **4. Verify the Dataset:**
+
 After extraction, ensure that the dataset is correctly organized as described in the Project Folder Structure section. Check if the folder structure matches the expected layout for proper use in the project. [Project Folder Structure](#project-Folder-Structure)
 
-**5. Return to the Project's Root Directory**
+**5. Return to the Project's Root Directory:**
+
 After verifying the dataset, return to the project's root directory to proceed with the next steps:
 ```bash
 cd ..
@@ -361,15 +366,42 @@ The output includes:
 * Confusion matrix
 * Training performance plot
 * Boxplot of probabilities
+* The results of the experiments are saved in the configuration spreadsheet. Example: config_pseudo_label_pre_cr.xls
 
 This structure ensures organized storage and easy access to the results of each test.
 
 [Table of contentes](#table-of-contents)
 
 
-## Phase 3
-### Separar o teste em vistas
-Para separa o teste em vistas foram utilizados os arquivos seprated_test.py e config_seprated.yaml, que estão na pasta preprocess
+# Phase 3
+## Separate the Test into Views
+
+To separate the test database into views, the following procedures were performed:
+
+- **Pseudo Labeling**: Used to separate the test dataset.
+- **Applied Script**: `separated_test.py`
+- **Configuration File**: `config_separated.yaml`
+- **Saved Results**: The results were saved in the `BD` directory.
+- **Example Path**: `BD/CPD1_TEST_VIEW`
+
+## Generate Test Reports
+
+To generate classification reports with the test dataset, the `reports_test_views.py` script was used with specific configuration files. A YAML file was created for each dataset.
+
+### Configuration Files
+- **Script**: `reports_test_views.py`
+- **Sample YAML File**: `config_test_views.yaml`
+
+### Generated Results
+The following results were produced:
+
+- **Classification Report**
+- **Confusion Matrix**
+- **Boxplot**
+- **Metrics**
+- **Correct and Incorrect Classification DataFrames**:
+- `df_correct`: Contains the correctly classified samples.
+- `df_incorrect`: Contains the incorrectly classified samples.
 
 
 # Results
