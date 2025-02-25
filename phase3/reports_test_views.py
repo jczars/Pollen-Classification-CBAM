@@ -35,30 +35,49 @@ def reset_environment():
 
     maneger_gpu.reset_keras()
 
-def save_metrics(k,metrics, csv_filename):
-    
+def save_metrics(k,view,metrics, csv_filename):
+    # Verifica se o arquivo já existe para evitar reescrita do cabeçalho
     """
-    Save the evaluation metrics to an Excel file.
+    Saves metrics for a given view in a CSV file.
 
-    Parameters:
-    - metrics (dict): A dictionary containing the evaluation metrics.
-    - path_xlsx (str): The path to the Excel file where the metrics will be saved.
+    Parameters
+    ----------
+    k : int
+        The value of k for the current experiment.
+    view : str
+        The name of the view for the current experiment.
+    metrics : dict
+        A dictionary containing the metrics to be saved, with keys
+        'accuracy', 'precision', 'recall', 'fscore', and 'kappa'.
+    csv_filename : str
+        The name of the CSV file to save the metrics in.
 
-    Returns:
-    - None
+    Returns
+    -------
+    None
+
+    Notes
+    -----
+    If the file does not exist, a header row will be written with the
+    column names. If the file does exist, the metrics will be appended as
+    a new row.
     """
-    # Criar e abrir o arquivo CSV para escrita
-    with open(csv_filename, mode="w", newline="") as file:
+    file_exists = os.path.exists(csv_filename)
+
+    # Create and open CSV file for writing
+    with open(csv_filename, mode="a", newline="") as file:
         writer = csv.writer(file)
 
-        # Escrever o cabeçalho
-        writer.writerow(["k","accuracy", "precision", "recall", "fscore", "kappa"])
+        # If the file does not exist, write the header
+        if not file_exists:
+            writer.writerow(["k","view", "accuracy", "precision", "recall", "fscore", "kappa"])
         
-        # Escrever os valores no CSV
-        writer.writerow([k, metrics['accuracy'], metrics['precision'], metrics['recall'], metrics['fscore'], metrics['kappa']]) 
+        # Write the values to the CSV
+        writer.writerow([k, view, metrics['accuracy'], metrics['precision'], metrics['recall'], metrics['fscore'], metrics['kappa']]) 
+    
+    print(f"Metrics for k={k}, view={view} saved successfully in {csv_filename}.")
 
-
-def gen_views(params, model, categories, k, folder, nm_model, view):
+def gen_views(params, model, categories, k, folder, path_save, nm_model, view):
     # Equatorial views
     
     """
@@ -124,7 +143,7 @@ def gen_views(params, model, categories, k, folder, nm_model, view):
         matrix_fig.savefig(f'{save_dir}/{nm_model}_{view}_confusion_matrix_k{k}.jpg')
         boxplot_fig.savefig(f'{save_dir}/{nm_model}_{view}_boxplot_k{k}.jpg')
 
-        save_metrics(k,metrics, f"{save_dir}/{nm_model}_{view}_metrics_k{k}.csv")
+        save_metrics(k,view, metrics, f"{path_save}/{nm_model}_metrics.csv")
 
         print(f"✅ Relatório salvo em: {save_dir}")
 
@@ -174,8 +193,8 @@ def run(params):
         model.summary()  # Print model summary
 
         # Reports views
-        gen_views(params, model, categories, k, folder, nm_model, "EQUATORIAL")
-        gen_views(params, model, categories, k, folder, nm_model, "POLAR")
+        gen_views(params, model, categories, k, folder, path_save, nm_model, "EQUATORIAL")
+        gen_views(params, model, categories, k, folder, path_save, nm_model, "POLAR")
     
 def parse_args():
     
