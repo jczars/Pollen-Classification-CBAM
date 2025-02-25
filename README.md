@@ -357,16 +357,16 @@ In this case, test 0 crashed! To restart the training we run the script above.
 
 **Expected Results**:
 
-The results are stored in the "Reports" folder where the spreadsheet is located. The folder naming convention follows the pattern: id_test, model_name, and reports.
+- The results are stored in the "Reports" folder where the spreadsheet is located. The folder naming convention follows the pattern: id_test, model_name, and reports.
 
-The output includes:
+- The output includes:
 
-1. **CSV** files containing detailed metrics and predictions.
-2. **Graphs** in JPG format, such as:
-* Confusion matrix
-* Training performance plot
-* Boxplot of probabilities
-* The results of the experiments are saved in the configuration spreadsheet. Example: config_pseudo_label_pre_cr.xls
+- 1. **CSV** files containing detailed metrics and predictions.
+- 2. **Graphs** in JPG format, such as:
+- * Confusion matrix
+- * Training performance plot
+- * Boxplot of probabilities
+- * The results of the experiments are saved in the configuration spreadsheet. Example: config_pseudo_label_pre_cr.xls
 
 This structure ensures organized storage and easy access to the results of each test.
 
