@@ -1,0 +1,13 @@
+path_model: "./results/phase3/reports_cr_400/0_DenseNet201/0_DenseNet201_bestLoss_5.keras"
+nome: "GradCAM_class_well_k5.png"
+conv_layer_name: "relu"
+img_size: 224
+
+path_data: "./BD/CPD1_Cr_Rs/"
+images_labels:
+- "vitis/Vit.V.viniX400wF(4980)(0)C-12.png"
+- "vitis/Vit.V.viniX400wF(4979)(0)B-16.png" 
+- "pistacia/Ana.P.tereX400wF(3227)(0)F-4.png" 
+- "pistacia/Ana.P.tereX400wF(3224)(0)C-10.png"
+- "olea/Ole.O.euroX400wF(4263)(0)C-105.png"
+- "olea/Ole.O.euroX400wF(4261)(0)A-38.png"

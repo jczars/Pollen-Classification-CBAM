@@ -35,7 +35,7 @@ def reset_environment():
 
     maneger_gpu.reset_keras()
 
-def save_metrics(k,view,metrics, csv_filename):
+def save_metrics_csv(k,view,metrics, csv_filename):
     # Verifica se o arquivo já existe para evitar reescrita do cabeçalho
     """
     Saves metrics for a given view in a CSV file.
@@ -77,7 +77,118 @@ def save_metrics(k,view,metrics, csv_filename):
     
     print(f"Metrics for k={k}, view={view} saved successfully in {csv_filename}.")
 
-def gen_views(params, model, categories, k, folder, path_save, nm_model, view):
+import os
+import pandas as pd
+
+def save_metrics_xlsx0(k, view, metrics, xlsx_filename):
+    """
+    Saves metrics for a given view in an Excel file.
+
+    Parameters
+    ----------
+    k : int
+        The value of k for the current experiment.
+    view : str
+        The name of the view for the current experiment.
+    metrics : dict
+        A dictionary containing the metrics to be saved, with keys
+        'accuracy', 'precision', 'recall', 'fscore', and 'kappa'.
+    xlsx_filename : str
+        The name of the Excel file to save the metrics in.
+
+    Returns
+    -------
+    None
+
+    Notes
+    -----
+    If the file does not exist, a new one will be created with the 
+    appropriate header. If it exists, the new data will be appended.
+    """
+    # Define the new row of data
+    new_data = {
+        "k": [k],
+        "view": [view],
+        "accuracy": [metrics["accuracy"]],
+        "precision": [metrics["precision"]],
+        "recall": [metrics["recall"]],
+        "fscore": [metrics["fscore"]],
+        "kappa": [metrics["kappa"]],
+    }
+    
+    # Convert to DataFrame
+    new_df = pd.DataFrame(new_data)
+    
+    # Check if the file exists
+    if os.path.exists(xlsx_filename):
+        # Load existing data and append new data
+        existing_df = pd.read_excel(xlsx_filename)
+        final_df = pd.concat([existing_df, new_df], ignore_index=True)
+    else:
+        # If file does not exist, create a new one
+        final_df = new_df
+    
+    # Save to Excel
+    final_df.to_excel(xlsx_filename, index=False)
+
+    print(f"Metrics for k={k}, view={view} saved successfully in {xlsx_filename}.")
+
+
+def save_metrics_xlsx(k, view, metrics, xlsx_filename):
+    """
+    Saves metrics for a given view in an Excel file, organizing each view in a separate sheet.
+
+    Parameters
+    ----------
+    k : int
+        The value of k for the current experiment.
+    view : str
+        The name of the view for the current experiment.
+    metrics : dict
+        A dictionary containing the metrics to be saved, with keys
+        'accuracy', 'precision', 'recall', 'fscore', and 'kappa'.
+    xlsx_filename : str
+        The name of the Excel file to save the metrics in.
+
+    Returns
+    -------
+    None
+
+    Notes
+    -----
+    Each `view` will be stored in a separate sheet. If the file exists,
+    the new data will be appended to the corresponding sheet.
+    """
+    new_data = {
+        "k": [k],
+        "accuracy": [metrics["accuracy"]],
+        "precision": [metrics["precision"]],
+        "recall": [metrics["recall"]],
+        "fscore": [metrics["fscore"]],
+        "kappa": [metrics["kappa"]],
+    }
+    
+    new_df = pd.DataFrame(new_data)
+
+    # Se o arquivo já existe, carregar as abas existentes
+    if os.path.exists(xlsx_filename):
+        with pd.ExcelWriter(xlsx_filename, mode="a", if_sheet_exists="overlay", engine="openpyxl") as writer:
+            try:
+                existing_df = pd.read_excel(xlsx_filename, sheet_name=view)
+                final_df = pd.concat([existing_df, new_df], ignore_index=True)
+            except ValueError:
+                final_df = new_df  # Se a aba ainda não existe, cria do zero
+            
+            final_df.to_excel(writer, sheet_name=view, index=False)
+    else:
+        # Se o arquivo não existe, criar um novo com a aba correspondente
+        with pd.ExcelWriter(xlsx_filename, mode="w", engine="openpyxl") as writer:
+            new_df.to_excel(writer, sheet_name=view, index=False)
+
+    print(f"Metrics for k={k}, view={view} saved successfully in {xlsx_filename} (Sheet: {view}).")
+
+
+def gen_views(params, model, categories, k, path_save, nm_model, view):
     # Equatorial views
     
     """
@@ -132,7 +243,11 @@ def gen_views(params, model, categories, k, folder, path_save, nm_model, view):
     metrics = reports.calculate_metrics(y_true_mapped, y_pred)
             
     # Save metrics and reports
-    save_dir=folder
+    save_dir = os.path.join(os.path.dirname(path_save.rstrip("/")), os.path.basename(path_save.rstrip("/")) + f"_{view}")
+    print(f"path_save: {path_save}")
+    print(f"view_dir: {save_dir}")
+    os.makedirs(save_dir, exist_ok=True) 
+
     if save_dir:
         df_mat = pd.DataFrame(cm, index=categories, columns=categories)
         df_correct.to_csv(f'{save_dir}/{nm_model}_{view}_df_correct_k{k}.csv')
@@ -143,7 +258,7 @@ def gen_views(params, model, categories, k, folder, path_save, nm_model, view):
         matrix_fig.savefig(f'{save_dir}/{nm_model}_{view}_confusion_matrix_k{k}.jpg')
         boxplot_fig.savefig(f'{save_dir}/{nm_model}_{view}_boxplot_k{k}.jpg')
 
-        save_metrics(k,view, metrics, f"{path_save}/{nm_model}_metrics.csv")
+        save_metrics_xlsx(k,view, metrics, f"{path_save}/{nm_model}_metrics.xlsx")
 
         print(f"✅ Relatório salvo em: {save_dir}")
 
@@ -168,19 +283,24 @@ def run(params):
 
     #Create folders test
     path=params['path_test']
-    name_test=path.split("/")[1]
+    #name_test=path.split("/")[1]
+    name_test = os.path.basename(os.path.normpath(path))  # Obtém o último diretório do caminho
     path_save=f"{params['save_dir']}{name_test}/"
     print(f"path_dst: {path_save}")
     os.makedirs(path_save, exist_ok=True) 
 
+    path=params['path_model']
+    #name_model=path.split("/")[-2]
+    name_model = os.path.basename(os.path.normpath(path))  # Obtém o último diretório do modelo
+    path_save=f"{path_save}{name_model}/"
+    print(f"path_dst: {path_save}")
+    os.makedirs(path_save, exist_ok=True) 
+
+
+
     for i in range(10):
         reset_environment()
         k=i+1
-        
-        #create folders
-        folder=f"{path_save}k{k}"
-        print(f"folder: {folder}")
-        os.makedirs(folder, exist_ok=True) 
 
         # Load model
         print(f"\n[INFO] load model")
@@ -193,8 +313,8 @@ def run(params):
         model.summary()  # Print model summary
 
         # Reports views
-        gen_views(params, model, categories, k, folder, path_save, nm_model, "EQUATORIAL")
-        gen_views(params, model, categories, k, folder, path_save, nm_model, "POLAR")
+        gen_views(params, model, categories, k, path_save, nm_model, "EQUATORIAL")
+        gen_views(params, model, categories, k, path_save, nm_model, "POLAR")
     
 def parse_args():
     
@@ -228,7 +348,7 @@ if __name__ == "__main__":
     args = parse_args()
 
     # Load configuration from YAML file
-    config_file = args.config if args.config else 'phase3/config_test_views_B23.yaml'
+    config_file = args.config if args.config else 'phase3/config_test_views.yaml'
     params = load_config(config_file)
 
     #run(params)

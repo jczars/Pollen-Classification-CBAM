@@ -1,0 +1,10 @@
+path_model: "./results/phase2/reports_cr_13_400/0_DenseNet201/0_DenseNet201_bestLoss_1.keras"
+nome: "GradCAM_class_wrog_eq_k1.png"
+conv_layer_name: "relu"
+img_size: 224
+
+path_data: "./BD/CPD1_Dn_VTcr_281124/EQUATORIAL_400/Test/k1/"
+images_labels:
+- "ceratonia/Fab.C.silX400wF(481)(0)G-6.png"
+- "origanum/Lam.O.micX400wF(888)(0)E-6.png"
+
