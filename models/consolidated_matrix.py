@@ -3,10 +3,9 @@ import os
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
-from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, cohen_kappa_score
-from sklearn.metrics import classification_report
+from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, cohen_kappa_score, classification_report
 
-def sum_and_plot_confusion_matrices0(folder_path, output_csv_path, output_image_path, normalize=False):
+def sum_and_plot_confusion_matrices(folder_path, output_csv_path, output_image_path, normalize=False):
     """
     Reads all confusion matrix CSV files with a specific naming pattern in a folder, sums them, 
     and plots the resulting matrix as an image.
@@ -21,15 +20,14 @@ def sum_and_plot_confusion_matrices0(folder_path, output_csv_path, output_image_
         pd.DataFrame: DataFrame of the summed confusion matrix.
     """
 
-    test_id, model_name, view = extract_test_info(folder_path)
-    print(f"test_id {test_id} model_name {model_name} view {view}")
+    test_id, model_name = extract_test_info(folder_path)
+    print(f"test_id {test_id} model_name {model_name}")
 
     print(f"Test_{test_id}_{test_id}_{model_name}_mat_conf_k")
 
     # List all CSV files matching the naming pattern in the folder
     csv_files = [os.path.join(folder_path, f) for f in os.listdir(folder_path) 
-                 if f.startswith(f"{test_id}_{model_name}_{view}_confusion_matrix_k") and f.endswith('.csv')]
-    #0_DenseNet201_EQUATORIAL_confusion_matrix_k1.csv
+                 if f.startswith(f"Test_{test_id}_{test_id}_{model_name}_mat_conf_k") and f.endswith('.csv')]
 
     if not csv_files:
         print("No valid matrices found in the folder.")
@@ -86,315 +84,8 @@ def sum_and_plot_confusion_matrices0(folder_path, output_csv_path, output_image_
 
     return matrix_sum
 
-import os
-import pandas as pd
-import seaborn as sns
-import matplotlib.pyplot as plt
-import numpy as np
-from pathlib import Path
 
-import pandas as pd
-import numpy as np
-import seaborn as sns
-import matplotlib.pyplot as plt
-from pathlib import Path
-
-import pandas as pd
-import numpy as np
-import seaborn as sns
-import matplotlib.pyplot as plt
-from pathlib import Path
-
-def sum_and_plot_confusion_matrices1(folder_path, output_csv_path, output_image_path, normalize=False):
-    """
-    Reads all confusion matrix CSV files with a specific naming pattern in a folder, sums them, 
-    and plots the resulting matrix as an image.
-
-    Parameters:
-        folder_path (str): Path to the folder containing confusion matrix CSV files.
-        output_csv_path (str): Path to save the summed confusion matrix as a CSV file.
-        output_image_path (str): Path to save the plotted confusion matrix image.
-        normalize (bool): Whether to normalize the confusion matrix values.
-
-    Returns:
-        pd.DataFrame or None: DataFrame of the summed confusion matrix, or None if no valid matrices were found.
-    """
-    folder = Path(folder_path)
-    csv_files = list(folder.glob("*_confusion_matrix_k*.csv"))
-
-    if not csv_files:
-        print("⚠️ Nenhuma matriz de confusão válida encontrada na pasta.")
-        return None
-
-    matrix_sum = None  # Inicializa a matriz acumulada
-
-    # Processamento das matrizes
-    for file in csv_files:
-        try:
-            df = pd.read_csv(file, index_col=0)
-            df = df.fillna(0)  # Garante que valores NaN são tratados
-
-            if matrix_sum is None:
-                matrix_sum = df.copy()
-            else:
-                matrix_sum = matrix_sum.add(df, fill_value=0)
-        except Exception as e:
-            print(f"❌ Erro ao processar {file}: {e}")
-
-    if matrix_sum is None:
-        print("⚠️ Nenhuma matriz foi processada corretamente.")
-        return None
-
-    # Garantindo que a matriz final contém apenas valores numéricos
-    matrix_sum = matrix_sum.apply(pd.to_numeric, errors='coerce').fillna(0)
-    matrix_sum.to_csv(output_csv_path)
-    print(f"✅ Matriz consolidada salva em: {output_csv_path}")
-
-    # Preparar dados para o gráfico
-    mat = matrix_sum.values.astype(float)  # Garantir que a matriz seja float
-    categories = matrix_sum.index.tolist()
-
-    # Normalização (evita divisão por zero)
-    if normalize:
-        row_sums = mat.sum(axis=1, keepdims=True)
-        row_sums[row_sums == 0] = 1  # Evita divisão por zero
-        mat = mat / row_sums
-        fmt = ".2f"
-    else:
-        fmt = "g"  # Evita erro de formato para números inteiros e floats
-
-    # Plot da matriz de confusão
-    fig, ax = plt.subplots(figsize=(9, 9), dpi=100)
-    sns.set(font_scale=0.8)
-    sns.heatmap(mat, cmap="Blues", annot=True, fmt=fmt, xticklabels=categories,
-                yticklabels=categories, cbar=True, linewidths=0.5, ax=ax)
-
-    ax.set_xlabel("Predicted Labels", fontsize=12)
-    ax.set_ylabel("True Labels", fontsize=12)
-    ax.set_title(f"Consolidated Confusion Matrix{' (Normalized)' if normalize else ''}", fontsize=14)
-
-    ax.set_xticklabels(ax.get_xticklabels(), rotation=45, ha='right', fontsize=10)
-    ax.set_yticklabels(ax.get_yticklabels(), rotation=0, ha='right', fontsize=10)
-
-    # Annotate non-diagonal cells with custom background and text color
-    for i in range(len(mat)):
-        for j in range(len(mat)):
-            value = mat[i, j]
-            if i != j:  # Only for off-diagonal elements
-                if value > 0:
-                    ax.add_patch(plt.Rectangle((j, i), 1, 1, fill=True, color='lightcoral', alpha=0.5))
-                ax.text(j + 0.5, i + 0.5, f'{value:.2f}' if normalize else f'{int(value)}', 
-                        ha='center', va='center', color='black', fontsize=10)
-
-    plt.tight_layout()
-    fig.savefig(output_image_path)
-    plt.close(fig)
-    print(f"✅ Matriz de confusão salva como imagem: {output_image_path}")
-
-    return matrix_sum
-
-import pandas as pd
-import numpy as np
-import seaborn as sns
-import matplotlib.pyplot as plt
-from pathlib import Path
-
-def sum_and_plot_confusion_matrices2(folder_path, output_csv_path, output_image_path, normalize=False):
-    """
-    Reads all confusion matrix CSV files with a specific naming pattern in a folder, sums them, 
-    and plots the resulting matrix as an image.
-
-    Parameters:
-        folder_path (str): Path to the folder containing confusion matrix CSV files.
-        output_csv_path (str): Path to save the summed confusion matrix as a CSV file.
-        output_image_path (str): Path to save the plotted confusion matrix image.
-        normalize (bool): Whether to normalize the confusion matrix values.
-
-    Returns:
-        pd.DataFrame or None: DataFrame of the summed confusion matrix, or None if no valid matrices were found.
-    """
-    folder = Path(folder_path)
-    csv_files = list(folder.glob("*_confusion_matrix_k*.csv"))
-
-    if not csv_files:
-        print("⚠️ Nenhuma matriz de confusão válida encontrada na pasta.")
-        return None
-
-    matrix_sum = None  # Inicializa a matriz acumulada
-
-    # Processamento das matrizes
-    for file in csv_files:
-        try:
-            df = pd.read_csv(file, index_col=0)
-            df = df.fillna(0)  # Garante que valores NaN são tratados
-
-            if matrix_sum is None:
-                matrix_sum = df.copy()
-            else:
-                matrix_sum = matrix_sum.add(df, fill_value=0)
-        except Exception as e:
-            print(f"❌ Erro ao processar {file}: {e}")
-
-    if matrix_sum is None:
-        print("⚠️ Nenhuma matriz foi processada corretamente.")
-        return None
-
-    # Garantindo que a matriz final contém apenas valores numéricos
-    matrix_sum = matrix_sum.apply(pd.to_numeric, errors='coerce').fillna(0)
-    matrix_sum.to_csv(output_csv_path)
-    print(f"✅ Matriz consolidada salva em: {output_csv_path}")
-
-    # Preparar dados para o gráfico
-    mat = matrix_sum.values.astype(float)  # Garantir que a matriz seja float
-    categories = matrix_sum.index.tolist()
-
-    # Normalização (evita divisão por zero)
-    if normalize:
-        row_sums = mat.sum(axis=1, keepdims=True)
-        row_sums[row_sums == 0] = 1  # Evita divisão por zero
-        mat = mat / row_sums
-        fmt = ".2f"
-    else:
-        fmt = "g"  # Evita erro de formato para números inteiros e floats
-
-    # Identificar classes ausentes (sem exemplos reais)
-    absent_classes = [i for i in range(len(mat)) if mat[i].sum() == 0]
-
-    # Plot da matriz de confusão
-    fig, ax = plt.subplots(figsize=(9, 9), dpi=100)
-    sns.set(font_scale=0.8)
-    heatmap = sns.heatmap(mat, cmap="Blues", annot=True, fmt=fmt, xticklabels=categories,
-                           yticklabels=categories, cbar=True, linewidths=0.5, ax=ax)
-
-    ax.set_xlabel("Predicted Labels", fontsize=12)
-    ax.set_ylabel("True Labels", fontsize=12)
-    ax.set_title(f"Consolidated Confusion Matrix{' (Normalized)' if normalize else ''}", fontsize=14)
-
-    ax.set_xticklabels(ax.get_xticklabels(), rotation=45, ha='right', fontsize=10)
-    ax.set_yticklabels(ax.get_yticklabels(), rotation=0, ha='right', fontsize=10)
-
-    # Destacar classes ausentes em amarelo
-    for i in absent_classes:
-        ax.add_patch(plt.Rectangle((0, i), len(mat), 1, fill=True, color='yellow', alpha=0.3))
-        ax.add_patch(plt.Rectangle((i, 0), 1, len(mat), fill=True, color='yellow', alpha=0.3))
-
-    plt.tight_layout()
-    fig.savefig(output_image_path)
-    plt.close(fig)
-    print(f"✅ Matriz de confusão salva como imagem: {output_image_path}")
-
-    return matrix_sum
-
-import pandas as pd
-import numpy as np
-import seaborn as sns
-import matplotlib.pyplot as plt
-from pathlib import Path
-
-import pandas as pd
-import numpy as np
-import seaborn as sns
-import matplotlib.pyplot as plt
-from pathlib import Path
-
-def sum_and_plot_confusion_matrices(folder_path, output_csv_path, output_image_path, normalize=False):
-    """
-    Reads all confusion matrix CSV files with a specific naming pattern in a folder, sums them, 
-    and plots the resulting matrix as an image.
-
-    Parameters:
-        folder_path (str): Path to the folder containing confusion matrix CSV files.
-        output_csv_path (str): Path to save the summed confusion matrix as a CSV file.
-        output_image_path (str): Path to save the plotted confusion matrix image.
-        normalize (bool): Whether to normalize the confusion matrix values.
-
-    Returns:
-        pd.DataFrame or None: DataFrame of the summed confusion matrix, or None if no valid matrices were found.
-    """
-    folder = Path(folder_path)
-    csv_files = list(folder.glob("*_confusion_matrix_k*.csv"))
-
-    if not csv_files:
-        print("⚠️ No valid confusion matrix found in the folder.")
-        return None
-
-    matrix_sum = None  # Initialize the accumulated matrix
-
-    # Processing matrices
-    for file in csv_files:
-        try:
-            df = pd.read_csv(file, index_col=0)
-            df = df.fillna(0)  # Ensure NaN values are handled
-
-            if matrix_sum is None:
-                matrix_sum = df.copy()
-            else:
-                matrix_sum = matrix_sum.add(df, fill_value=0)
-        except Exception as e:
-            print(f"❌ Error processing {file}: {e}")
-
-    if matrix_sum is None:
-        print("⚠️ No matrix was processed correctly.")
-        return None
-
-    # Ensure the final matrix contains only numeric values
-    matrix_sum = matrix_sum.apply(pd.to_numeric, errors='coerce').fillna(0)
-    matrix_sum.to_csv(output_csv_path)
-    print(f"✅ Consolidated matrix saved at: {output_csv_path}")
-
-    # Prepare data for plotting
-    mat = matrix_sum.values.astype(float)  # Ensure the matrix is float
-    categories = matrix_sum.index.tolist()
-
-    # Normalization (avoid division by zero)
-    if normalize:
-        row_sums = mat.sum(axis=1, keepdims=True)
-        row_sums[row_sums == 0] = 1  # Avoid division by zero
-        mat = mat / row_sums
-        fmt = ".2f"
-    else:
-        fmt = "g"  # Avoid format error for integers and floats
-
-    # Identify absent classes (no real examples)
-    absent_classes = [i for i in range(len(mat)) if mat[i].sum() == 0]
-
-    # Plot the confusion matrix
-    fig, ax = plt.subplots(figsize=(9, 9), dpi=100)
-    sns.set(font_scale=0.8)
-    heatmap = sns.heatmap(mat, cmap="Blues", annot=True, fmt=fmt, xticklabels=categories,
-                           yticklabels=categories, cbar=True, linewidths=0.5, ax=ax)
-
-    ax.set_xlabel("Predicted Labels", fontsize=12)
-    ax.set_ylabel("True Labels", fontsize=12)
-    ax.set_title(f"Consolidated Confusion Matrix{' (Normalized)' if normalize else ''}\n(Yellow = Missing Classes)", fontsize=14)
-
-    ax.set_xticklabels(ax.get_xticklabels(), rotation=45, ha='right', fontsize=10)
-    ax.set_yticklabels(ax.get_yticklabels(), rotation=0, ha='right', fontsize=10)
-
-    # Annotate non-diagonal cells with custom background and text color
-    for i in range(len(mat)):
-        for j in range(len(mat)):
-            value = mat[i, j]
-            if i != j:  # Only for off-diagonal elements
-                if value > 0:
-                    ax.add_patch(plt.Rectangle((j, i), 1, 1, fill=True, color='lightcoral', alpha=0.5))
-                ax.text(j + 0.5, i + 0.5, f'{value:.2f}' if normalize else f'{int(value)}', 
-                        ha='center', va='center', color='black', fontsize=10)
-
-    # Highlight labels of absent classes with yellow background
-    for i in absent_classes:
-        ax.get_xticklabels()[i].set_backgroundcolor('yellow')
-        ax.get_yticklabels()[i].set_backgroundcolor('yellow')
-
-    plt.tight_layout()
-    fig.savefig(output_image_path)
-    plt.close(fig)
-    print(f"✅ Confusion matrix saved as image: {output_image_path}")
-
-    return matrix_sum
-
-
-def classification_report_from_conf_matrix0(conf_matrix_df):
+def classification_report_from_conf_matrix(conf_matrix_df):
     """
     Generates a classification report from a confusion matrix loaded into a DataFrame.
 
@@ -434,57 +125,6 @@ def classification_report_from_conf_matrix0(conf_matrix_df):
 
     # Return the classification report DataFrame
     return class_report_df
-
-import numpy as np
-import pandas as pd
-from sklearn.metrics import classification_report, accuracy_score, precision_score, recall_score, f1_score, cohen_kappa_score
-
-def classification_report_from_conf_matrix(conf_matrix_df):
-    """
-    Generates a classification report from a confusion matrix loaded into a DataFrame.
-
-    Parameters:
-        conf_matrix_df (pd.DataFrame): DataFrame containing the confusion matrix.
-
-    Returns:
-        pd.DataFrame: DataFrame containing the detailed per-class report.
-    """
-    # Convert the confusion matrix into a NumPy array
-    conf_matrix = conf_matrix_df.values.astype(int)  # Garante que os valores sejam inteiros
-    labels = conf_matrix_df.index.tolist()
-
-    # Rebuild the true and predicted labels
-    y_true = np.concatenate([
-        np.full(int(conf_matrix[i, j]), labels[i]) 
-        for i in range(len(labels)) 
-        for j in range(len(labels)) if conf_matrix[i, j] > 0
-    ])
-    y_pred = np.concatenate([
-        np.full(int(conf_matrix[i, j]), labels[j]) 
-        for i in range(len(labels)) 
-        for j in range(len(labels)) if conf_matrix[i, j] > 0
-    ])
-
-    # Corrigir classes esperadas no relatório
-    unique_classes = sorted(set(y_true) | set(y_pred))  # Obtém todas as classes presentes
-    class_report_dict = classification_report(y_true, y_pred, labels=unique_classes, target_names=unique_classes, zero_division=0, output_dict=True)
-
-    # Convert the dictionary into a DataFrame
-    class_report_df = pd.DataFrame(class_report_dict).transpose()
-
-    # Round to 3 decimal places (except 'support', which should be an integer)
-    for col in ['precision', 'recall', 'f1-score']:
-        if col in class_report_df.columns:
-            class_report_df[col] = class_report_df[col].round(3)
-    
-    # Ensure 'support' is an integer
-    if 'support' in class_report_df.columns:
-        class_report_df['support'] = class_report_df['support'].astype(int)
-
-    # Return the classification report DataFrame
-    return class_report_df
-
-
 
 
 def performance_report_pd0(arr, classes, save_dir, id_test, nm_model):
@@ -528,7 +168,7 @@ def performance_report_from_df(conf_matrix_df, save_dir, folder_path):
         pd.DataFrame: DataFrame com as métricas de classificação.
     """
 
-    test_id, model_name, view = extract_test_info(folder_path)
+    test_id, model_name = extract_test_info(folder_path)
     # Extrai a matriz de confusão (ignorando a coluna de nomes das classes)
     
     # Convert the confusion matrix into a NumPy array
@@ -592,7 +232,6 @@ def saved(folder):
 def extract_test_info(folder_path):
     """
     Extracts the test id and model name from the folder path.
-    0_DenseNet201_EQUATORIAL_class_reports_k1.csv
 
     Parameters:
         folder_path (str): Path to the folder containing the test name.
@@ -601,14 +240,13 @@ def extract_test_info(folder_path):
         tuple: test id and model name as strings.
     """
     folder_name = os.path.basename(folder_path.rstrip('/'))  # Remove the final slash and get the folder name
-    parts = folder_name.split('_')  # Split the folder name at the first occurrence of "_"
+    parts = folder_name.split('_', 1)  # Split the folder name at the first occurrence of "_"
     
     # Ensure the folder name is correctly structured and split
-    if len(parts) >= 3:
+    if len(parts) >= 2:
         test_id = parts[0]  # The first part is the test_id
         model_name = parts[1].split('_')[0]  # The second part is the model name (before any subsequent '_')
-        view = parts[2].split('_')[0]  # The second part is the model name (before any subsequent '_')
-        return test_id, model_name, view
+        return test_id, model_name
     else:
         raise ValueError(f"The folder name '{folder_name}' does not match the expected format.")
 

@@ -92,6 +92,8 @@ def extract_test_info(folder_path):
     """
     Extracts the test id and model name from the folder path.
 
+    2_DenseNet201_EQUATORIAL_df_correct_k1.csv
+
     Parameters:
         folder_path (str): Path to the folder containing the test name.
 
@@ -99,20 +101,21 @@ def extract_test_info(folder_path):
         tuple: test id and model name as strings.
     """
     folder_name = os.path.basename(folder_path.rstrip('/'))  # Remove the final slash and get the folder name
-    parts = folder_name.split('_', 1)  # Split the folder name at the first occurrence of "_"
+    parts = folder_name.split('_')  # Split the folder name at the first occurrence of "_"
     
     # Ensure the folder name is correctly structured and split
-    if len(parts) >= 2:
+    if len(parts) >= 3:
         test_id = parts[0]  # The first part is the test_id
         model_name = parts[1].split('_')[0]  # The second part is the model name (before any subsequent '_')
-        return test_id, model_name
+        view = parts[2].split('_')[0]  # The second part is the model name (before any subsequent '_')
+        return test_id, model_name, view
     else:
         raise ValueError(f"The folder name '{folder_name}' does not match the expected format.")
     
 def run(folder, k=10):
-   test_id, model_name = extract_test_info(folder)
-   prefix_correct=f"Test_{test_id}_{test_id}_{model_name}_df_correct_k"
-   prefix_incorrect=f"Test_{test_id}_{test_id}_{model_name}_df_incorrect_k"
+   test_id, model_name, view = extract_test_info(folder)
+   prefix_correct=f"{test_id}_{model_name}_{view}_df_correct_k"
+   prefix_incorrect=f"{test_id}_{model_name}_{view}_df_incorrect_k"
    print(prefix_correct)
 
    df_correct=consolidator(folder, prefix_correct, k)
