@@ -1,0 +1,4 @@
+,file,y_true,y_pred,confidence,true_label,predicted_label,status
+72,eucalyptus_sp/eucalyptus_sp (6).jpg,23,72,0.650589,erythrina_mulungu,zea_mays,Incorrect
+76,genipa_auniricana/genipa_auniricana (11).jpg,25,30,0.6479379,faramea_sp,ligustrum_lucidum,Incorrect
+182,zea_mays/zea_17.jpg,72,49,0.82753736,symplocos_nitens,poaceae_sp,Incorrect

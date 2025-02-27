@@ -1,0 +1,640 @@
+Unnamed: 0,file,y_true,y_pred,confidence,true_label,predicted_label,status
+0,anadenanthera_colubrina/anadenanthera_colubrina (29).jpg,1,1,0.9997887,acrocomia_aculeta,anadenanthera_colubrina,Correct
+1,arrabidaea_florida/arrabidaea_florida (21).jpg,4,4,0.99995375,anadenanthera_colubrina,arrabidaea_florida,Correct
+2,aspilia_grazielae/aspilia_gracielae_ (21).jpg,5,5,0.99984217,arachis_sp,aspilia_grazielae,Correct
+3,aspilia_grazielae/aspilia_gracielae_ (3).jpg,5,5,0.9999893,arachis_sp,aspilia_grazielae,Correct
+4,bacopa_australis/bacopa_australis (21).jpg,6,6,0.9999567,archontophoenix_cunninghamiana,bacopa_australis,Correct
+5,caesalpinia_peltophoroides/caesalpinia_peltophoroides (1).jpg,8,8,0.99983275,arrabidaea_florida,caesalpinia_peltophoroides,Correct
+6,caesalpinia_peltophoroides/caesalpinia_peltophoroides (19).jpg,8,8,0.9999881,arrabidaea_florida,caesalpinia_peltophoroides,Correct
+7,caryocar_brasiliensis/caryocar_brasiliensis (30).jpg,9,9,0.99991703,aspilia_grazielae,caryocar_brasiliensis,Correct
+8,cissus_spinosa/cissus_spinosa (31).jpg,14,14,0.99989045,bacopa_australis,cissus_spinosa,Correct
+9,dianella_tasmanica/dianella_ (33).jpg,19,19,0.99983466,brugmansia_suaveolens,dianella_tasmanica,Correct
+10,doliocarpus_dentatus/dolicarpus (18).jpg,21,21,0.9998908,caesalpinia_peltophoroides,doliocarpus_dentatus,Correct
+11,doliocarpus_dentatus/dolicarpus (25).jpg,21,21,0.9999728,caesalpinia_peltophoroides,doliocarpus_dentatus,Correct
+12,genipa_auniricana/genipa_auniricana (7).jpg,25,25,0.9999012,caryocar_brasiliensis,genipa_auniricana,Correct
+13,hyptis_sp/hyptis_sp (18).jpg,29,29,0.9999095,cecropia_pachystachya,hyptis_sp,Correct
+14,mimosa_ditans/mimosa_ditans (4).jpg,38,38,0.9995347,ceiba_speciosa,mimosa_ditans,Correct
+15,mimosa_pigra/mimosa_pigra (17).jpg,39,39,0.99998367,chromolaena_laevigata,mimosa_pigra,Correct
+16,mitostemma_brevifilis/mitostemma (4).jpg,40,40,0.99996924,cissus_campestris,mitostemma_brevifilis,Correct
+17,myrcia_guianensis/myrcia_guianensis_14.jpg,42,42,0.99990773,cissus_spinosa,myrcia_guianensis,Correct
+18,myrcia_guianensis/myrcia_guianensis_16.jpg,42,42,0.9999914,cissus_spinosa,myrcia_guianensis,Correct
+19,myrcia_guianensis/myrcia_guianensis_23.jpg,42,42,0.9999943,cissus_spinosa,myrcia_guianensis,Correct
+21,ochroma pyramidale/ochroma (33).jpg,43,43,0.99998736,combretum_discolor,ochroma pyramidale,Correct
+22,ochroma pyramidale/ochroma (5).jpg,43,43,0.9999894,combretum_discolor,ochroma pyramidale,Correct
+23,ouratea_hexasperma/ouratea (6).jpg,44,44,0.99996626,cordia_trichotoma,ouratea_hexasperma,Correct
+24,ouratea_hexasperma/ouratea (9).jpg,44,44,0.99995303,cordia_trichotoma,ouratea_hexasperma,Correct
+25,pachira_aquatica/pachia_aquatica (18).jpg,45,45,0.999967,cosmos_caudatus,pachira_aquatica,Correct
+26,pachira_aquatica/pachia_aquatica (23).jpg,45,45,0.99991834,cosmos_caudatus,pachira_aquatica,Correct
+27,passiflora_gibertii/passiflora_giberti (22).jpg,46,46,0.9998888,croton_urucurana,passiflora_gibertii,Correct
+30,paullinia_spicata/paullinia (28).jpg,47,47,0.99962485,dianella_tasmanica,paullinia_spicata,Correct
+31,paullinia_spicata/paullinia (8).jpg,47,47,0.9999391,dianella_tasmanica,paullinia_spicata,Correct
+32,poaceae_sp/poaceae_sp (19).jpg,49,49,0.99992836,dipteryx_alata,poaceae_sp,Correct
+33,ricinus_communis/ricinus (34).jpg,52,52,0.9998331,doliocarpus_dentatus,ricinus_communis,Correct
+34,schizolobium_parahyba/guapuruvu_10.jpg,54,54,0.99996865,erythrina_mulungu,schizolobium_parahyba,Correct
+35,schizolobium_parahyba/guapuruvu_32.jpg,54,54,0.9999449,erythrina_mulungu,schizolobium_parahyba,Correct
+36,senegalia_plumosa/acacia_plumosa (27).jpg,55,55,0.9997161,eucalyptus_sp,senegalia_plumosa,Correct
+37,serjania_erecta/serjania (28).jpg,56,56,0.9999647,faramea_sp,serjania_erecta,Correct
+38,serjania_hebecarpa/serjania_hebecarpa (5).jpg,57,57,0.99987054,genipa_auniricana,serjania_hebecarpa,Correct
+40,serjania_laruotteana/serjania_laruotteana (29).jpg,58,58,0.97309995,gomphrena_sp,serjania_laruotteana,Correct
+42,sida_cerradoensis/sida_cerradoensis (24).jpg,60,60,0.9999784,guazuma_ulmifolia,sida_cerradoensis,Correct
+43,sida_cerradoensis/sida_cerradoensis (31).jpg,60,60,0.9999752,guazuma_ulmifolia,sida_cerradoensis,Correct
+44,solanum_sisymbriifolium/solanum_sisymbrifolium (1).jpg,61,61,0.9999647,hortia_oreadica,solanum_sisymbriifolium,Correct
+45,solanum_sisymbriifolium/solanum_sisymbrifolium (25).jpg,61,61,0.9999597,hortia_oreadica,solanum_sisymbriifolium,Correct
+46,solanum_sisymbriifolium/solanum_sisymbrifolium (35).jpg,61,61,0.99989915,hortia_oreadica,solanum_sisymbriifolium,Correct
+48,tabebuia_rosealba/tabebuia_rosealba (26).jpg,65,65,0.9999858,ligustrum_lucidum,tabebuia_rosealba,Correct
+49,tapirira_guianensis/tapirira_guianensis_21.jpg,66,66,0.99997735,luehea_divaricata,tapirira_guianensis,Correct
+50,tapirira_guianensis/tapirira_guianensis_3.jpg,66,66,0.9998956,luehea_divaricata,tapirira_guianensis,Correct
+51,tapirira_guianensis/tapirira_guianensis_30.jpg,66,66,0.9999459,luehea_divaricata,tapirira_guianensis,Correct
+52,tradescantia_Pallida/tradescantia_Pallida (16).jpg,67,67,0.99998975,mabea_fistulifera,tradescantia_Pallida,Correct
+53,tradescantia_Pallida/tradescantia_Pallida (17).jpg,67,67,0.95920837,mabea_fistulifera,tradescantia_Pallida,Correct
+54,trema_micrantha/trema_micrantha (34).jpg,68,68,0.9997818,machaerium_aculeatum,trema_micrantha,Correct
+55,trembleya_phlogiformis/trembleya_phlogiformis (24).jpg,69,69,0.999923,magnolia_champaca,trembleya_phlogiformis,Correct
+56,trembleya_phlogiformis/trembleya_phlogiformis (3).jpg,69,69,0.99993527,magnolia_champaca,trembleya_phlogiformis,Correct
+57,vochysia_divergens/vochysia_divergens (1).jpg,71,71,0.99997973,manihot_esculenta,vochysia_divergens,Correct
+0,anadenanthera_colubrina/anadenanthera_colubrina (5).jpg,1,1,0.99992204,acrocomia_aculeta,anadenanthera_colubrina,Correct
+1,aspilia_grazielae/aspilia_gracielae_ (34).jpg,5,5,0.9999467,anadenanthera_colubrina,aspilia_grazielae,Correct
+2,aspilia_grazielae/aspilia_gracielae_ (35).jpg,5,5,0.9999708,anadenanthera_colubrina,aspilia_grazielae,Correct
+3,bacopa_australis/bacopa_australis (25).jpg,6,6,0.9999224,arachis_sp,bacopa_australis,Correct
+4,bacopa_australis/bacopa_australis (29).jpg,6,6,0.9999006,arachis_sp,bacopa_australis,Correct
+5,caesalpinia_peltophoroides/caesalpinia_peltophoroides (2).jpg,8,8,0.999856,archontophoenix_cunninghamiana,caesalpinia_peltophoroides,Correct
+6,caesalpinia_peltophoroides/caesalpinia_peltophoroides (25).jpg,8,8,0.99992275,archontophoenix_cunninghamiana,caesalpinia_peltophoroides,Correct
+7,caesalpinia_peltophoroides/caesalpinia_peltophoroides (3).jpg,8,8,0.9998536,archontophoenix_cunninghamiana,caesalpinia_peltophoroides,Correct
+8,caryocar_brasiliensis/caryocar_brasiliensis (2).jpg,9,9,0.9993961,arrabidaea_florida,caryocar_brasiliensis,Correct
+9,cecropia_pachystachya/cecropia_pachystachya (12).jpg,10,10,0.9999541,aspilia_grazielae,cecropia_pachystachya,Correct
+10,doliocarpus_dentatus/dolicarpus (30).jpg,21,21,0.9999771,bacopa_australis,doliocarpus_dentatus,Correct
+11,hyptis_sp/hyptis_sp (19).jpg,29,29,0.9999654,brugmansia_suaveolens,hyptis_sp,Correct
+12,hyptis_sp/hyptis_sp (29).jpg,29,29,0.99992526,brugmansia_suaveolens,hyptis_sp,Correct
+13,machaerium_aculeatum/machaerium (24).jpg,33,33,0.9997547,caesalpinia_peltophoroides,machaerium_aculeatum,Correct
+14,machaerium_aculeatum/machaerium (25).jpg,33,33,0.99976367,caesalpinia_peltophoroides,machaerium_aculeatum,Correct
+15,machaerium_aculeatum/machaerium (28).jpg,33,33,0.9995357,caesalpinia_peltophoroides,machaerium_aculeatum,Correct
+16,mimosa_ditans/mimosa_ditans (14).jpg,38,38,0.99997926,caryocar_brasiliensis,mimosa_ditans,Correct
+17,mimosa_ditans/mimosa_ditans (21).jpg,38,38,0.9999864,caryocar_brasiliensis,mimosa_ditans,Correct
+18,mimosa_ditans/mimosa_ditans (29).jpg,38,38,0.99994457,caryocar_brasiliensis,mimosa_ditans,Correct
+19,mimosa_pigra/mimosa_pigra (23).jpg,39,39,0.99980456,cecropia_pachystachya,mimosa_pigra,Correct
+20,mitostemma_brevifilis/mitostemma (1).jpg,40,40,0.99989986,ceiba_speciosa,mitostemma_brevifilis,Correct
+21,mitostemma_brevifilis/mitostemma (7).jpg,40,40,0.9999145,ceiba_speciosa,mitostemma_brevifilis,Correct
+22,myracroduon_urundeuva/myracroduon (27).jpg,41,41,0.99985754,chromolaena_laevigata,myracroduon_urundeuva,Correct
+23,myrcia_guianensis/myrcia_guianensis_11.jpg,42,42,0.9999325,cissus_campestris,myrcia_guianensis,Correct
+24,myrcia_guianensis/myrcia_guianensis_29.jpg,42,42,0.9999747,cissus_campestris,myrcia_guianensis,Correct
+25,myrcia_guianensis/myrcia_guianensis_4.jpg,42,42,0.999995,cissus_campestris,myrcia_guianensis,Correct
+26,ochroma pyramidale/ochroma (1).jpg,43,43,0.99967456,cissus_spinosa,ochroma pyramidale,Correct
+27,ochroma pyramidale/ochroma (23).jpg,43,43,0.9999517,cissus_spinosa,ochroma pyramidale,Correct
+28,ochroma pyramidale/ochroma (29).jpg,43,43,0.99985707,cissus_spinosa,ochroma pyramidale,Correct
+29,ochroma pyramidale/ochroma (34).jpg,43,43,0.9999472,cissus_spinosa,ochroma pyramidale,Correct
+30,ouratea_hexasperma/ouratea (17).jpg,44,44,0.99997306,combretum_discolor,ouratea_hexasperma,Correct
+31,pachira_aquatica/pachia_aquatica (10).jpg,45,45,0.99995255,cordia_trichotoma,pachira_aquatica,Correct
+32,pachira_aquatica/pachia_aquatica (16).jpg,45,45,0.99982965,cordia_trichotoma,pachira_aquatica,Correct
+33,passiflora_gibertii/passiflora_giberti (18).jpg,46,46,0.99997056,cosmos_caudatus,passiflora_gibertii,Correct
+34,passiflora_gibertii/passiflora_giberti (8).jpg,46,46,0.9999894,cosmos_caudatus,passiflora_gibertii,Correct
+35,paullinia_spicata/paullinia (1).jpg,47,47,0.9999703,croton_urucurana,paullinia_spicata,Correct
+36,paullinia_spicata/paullinia (11).jpg,47,47,0.99996006,croton_urucurana,paullinia_spicata,Correct
+37,paullinia_spicata/paullinia (13).jpg,47,47,0.9970999,croton_urucurana,paullinia_spicata,Correct
+38,paullinia_spicata/paullinia (23).jpg,47,47,0.9999206,croton_urucurana,paullinia_spicata,Correct
+39,poaceae_sp/poaceae_sp (21).jpg,49,49,0.99990034,dianella_tasmanica,poaceae_sp,Correct
+40,ricinus_communis/ricinus (31).jpg,52,52,0.9997017,dipteryx_alata,ricinus_communis,Correct
+41,ricinus_communis/ricinus (6).jpg,52,52,0.99979156,dipteryx_alata,ricinus_communis,Correct
+42,schinus_sp/schinus_sp (8).jpg,53,53,0.999951,doliocarpus_dentatus,schinus_sp,Correct
+43,schizolobium_parahyba/guapuruvu_18.jpg,54,54,0.99926656,erythrina_mulungu,schizolobium_parahyba,Correct
+44,schizolobium_parahyba/guapuruvu_35.jpg,54,54,0.9999505,erythrina_mulungu,schizolobium_parahyba,Correct
+45,schizolobium_parahyba/guapuruvu_4.jpg,54,54,0.99955064,erythrina_mulungu,schizolobium_parahyba,Correct
+46,senegalia_plumosa/acacia_plumosa (33).jpg,55,55,0.9999559,eucalyptus_sp,senegalia_plumosa,Correct
+47,serjania_erecta/serjania (11).jpg,56,56,0.99998605,faramea_sp,serjania_erecta,Correct
+48,serjania_erecta/serjania (33).jpg,56,56,0.99996936,faramea_sp,serjania_erecta,Correct
+49,serjania_hebecarpa/serjania_hebecarpa (16).jpg,57,57,0.9842202,genipa_auniricana,serjania_hebecarpa,Correct
+50,serjania_hebecarpa/serjania_hebecarpa (35).jpg,57,57,0.99999,genipa_auniricana,serjania_hebecarpa,Correct
+51,serjania_hebecarpa/serjania_hebecarpa (4).jpg,57,57,0.9999343,genipa_auniricana,serjania_hebecarpa,Correct
+52,serjania_hebecarpa/serjania_hebecarpa (9).jpg,57,57,0.99998534,genipa_auniricana,serjania_hebecarpa,Correct
+53,serjania_laruotteana/serjania_laruotteana (11).jpg,58,58,0.7924295,gomphrena_sp,serjania_laruotteana,Correct
+54,serjania_laruotteana/serjania_laruotteana (17).jpg,58,58,0.997673,gomphrena_sp,serjania_laruotteana,Correct
+55,serjania_laruotteana/serjania_laruotteana (31).jpg,58,58,0.9998234,gomphrena_sp,serjania_laruotteana,Correct
+56,sida_cerradoensis/sida_cerradoensis (15).jpg,60,60,0.99993026,guazuma_ulmifolia,sida_cerradoensis,Correct
+57,solanum_sisymbriifolium/solanum_sisymbrifolium (20).jpg,61,61,0.9999604,hortia_oreadica,solanum_sisymbriifolium,Correct
+58,tabebuia_rosealba/tabebuia_rosealba (19).jpg,65,65,0.9999038,hyptis_sp,tabebuia_rosealba,Correct
+59,tapirira_guianensis/tapirira_guianensis_14.jpg,66,66,0.9996038,ligustrum_lucidum,tapirira_guianensis,Correct
+60,tapirira_guianensis/tapirira_guianensis_27.jpg,66,66,0.99999094,ligustrum_lucidum,tapirira_guianensis,Correct
+61,tapirira_guianensis/tapirira_guianensis_9.jpg,66,66,0.96968657,ligustrum_lucidum,tapirira_guianensis,Correct
+62,tradescantia_Pallida/tradescantia_Pallida (1).jpg,67,67,0.99996555,luehea_divaricata,tradescantia_Pallida,Correct
+63,trembleya_phlogiformis/trembleya_phlogiformis (10).jpg,69,69,0.9999896,mabea_fistulifera,trembleya_phlogiformis,Correct
+64,vochysia_divergens/vochysia_divergens (6).jpg,71,71,0.99993765,machaerium_aculeatum,vochysia_divergens,Correct
+0,anadenanthera_colubrina/anadenanthera_colubrina (6).jpg,1,1,0.99999857,acrocomia_aculeta,anadenanthera_colubrina,Correct
+1,arachis_sp/arachis_sp (27).jpg,2,2,0.99999607,anadenanthera_colubrina,arachis_sp,Correct
+2,arachis_sp/arachis_sp (34).jpg,2,2,0.99998844,anadenanthera_colubrina,arachis_sp,Correct
+3,aspilia_grazielae/aspilia_gracielae_ (19).jpg,5,5,0.9999994,arachis_sp,aspilia_grazielae,Correct
+4,aspilia_grazielae/aspilia_gracielae_ (2).jpg,5,5,0.99999976,arachis_sp,aspilia_grazielae,Correct
+5,aspilia_grazielae/aspilia_gracielae_ (28).jpg,5,5,0.9999993,arachis_sp,aspilia_grazielae,Correct
+6,bacopa_australis/bacopa_australis (17).jpg,6,6,0.9999995,archontophoenix_cunninghamiana,bacopa_australis,Correct
+7,caesalpinia_peltophoroides/caesalpinia_peltophoroides (15).jpg,8,8,0.9999926,arrabidaea_florida,caesalpinia_peltophoroides,Correct
+8,caesalpinia_peltophoroides/caesalpinia_peltophoroides (18).jpg,8,8,0.99999714,arrabidaea_florida,caesalpinia_peltophoroides,Correct
+9,caesalpinia_peltophoroides/caesalpinia_peltophoroides (7).jpg,8,8,0.99999976,arrabidaea_florida,caesalpinia_peltophoroides,Correct
+10,chromolaena_laevigata/chromolaena_laevigata (31).jpg,12,12,0.9999715,aspilia_grazielae,chromolaena_laevigata,Correct
+11,dianella_tasmanica/dianella_ (17).jpg,19,19,0.9999995,bacopa_australis,dianella_tasmanica,Correct
+12,dianella_tasmanica/dianella_ (8).jpg,19,19,0.99995565,bacopa_australis,dianella_tasmanica,Correct
+13,doliocarpus_dentatus/dolicarpus (8).jpg,21,21,0.9999964,brugmansia_suaveolens,doliocarpus_dentatus,Correct
+14,hyptis_sp/hyptis_sp (24).jpg,29,29,0.9999982,caesalpinia_peltophoroides,hyptis_sp,Correct
+15,hyptis_sp/hyptis_sp (8).jpg,29,29,0.9999993,caesalpinia_peltophoroides,hyptis_sp,Correct
+16,machaerium_aculeatum/machaerium (1).jpg,33,33,0.9999995,caryocar_brasiliensis,machaerium_aculeatum,Correct
+17,machaerium_aculeatum/machaerium (6).jpg,33,33,0.99999785,caryocar_brasiliensis,machaerium_aculeatum,Correct
+18,matayba_guianensis/matayba_guianensis (13).jpg,36,36,0.9999993,cecropia_pachystachya,matayba_guianensis,Correct
+19,mimosa_pigra/mimosa_pigra (9).jpg,39,39,0.99941826,ceiba_speciosa,mimosa_pigra,Correct
+20,mitostemma_brevifilis/mitostemma (2).jpg,40,40,0.9999914,chromolaena_laevigata,mitostemma_brevifilis,Correct
+21,myrcia_guianensis/myrcia_guianensis_18.jpg,42,42,0.9999994,cissus_campestris,myrcia_guianensis,Correct
+22,myrcia_guianensis/myrcia_guianensis_35.jpg,42,42,0.9999912,cissus_campestris,myrcia_guianensis,Correct
+23,myrcia_guianensis/myrcia_guianensis_9.jpg,42,42,0.9999993,cissus_campestris,myrcia_guianensis,Correct
+24,ochroma pyramidale/ochroma (13).jpg,43,43,0.9999975,cissus_spinosa,ochroma pyramidale,Correct
+25,ochroma pyramidale/ochroma (4).jpg,43,43,0.9999994,cissus_spinosa,ochroma pyramidale,Correct
+26,ochroma pyramidale/ochroma (6).jpg,43,43,0.99999654,cissus_spinosa,ochroma pyramidale,Correct
+27,ouratea_hexasperma/ouratea (10).jpg,44,44,0.99999344,combretum_discolor,ouratea_hexasperma,Correct
+28,pachira_aquatica/pachia_aquatica (1).jpg,45,45,0.9999988,cordia_trichotoma,pachira_aquatica,Correct
+29,pachira_aquatica/pachia_aquatica (32).jpg,45,45,0.99999905,cordia_trichotoma,pachira_aquatica,Correct
+30,pachira_aquatica/pachia_aquatica (5).jpg,45,45,0.9999975,cordia_trichotoma,pachira_aquatica,Correct
+31,passiflora_gibertii/passiflora_giberti (16).jpg,46,46,0.9999852,cosmos_caudatus,passiflora_gibertii,Correct
+32,passiflora_gibertii/passiflora_giberti (21).jpg,46,46,0.9999815,cosmos_caudatus,passiflora_gibertii,Correct
+33,paullinia_spicata/paullinia (18).jpg,47,47,0.9999993,croton_urucurana,paullinia_spicata,Correct
+34,paullinia_spicata/paullinia (21).jpg,47,47,0.99999154,croton_urucurana,paullinia_spicata,Correct
+35,paullinia_spicata/paullinia (22).jpg,47,47,0.99999976,croton_urucurana,paullinia_spicata,Correct
+36,paullinia_spicata/paullinia (27).jpg,47,47,0.9999994,croton_urucurana,paullinia_spicata,Correct
+37,poaceae_sp/poaceae_sp (11).jpg,49,49,0.9999931,dianella_tasmanica,poaceae_sp,Correct
+38,poaceae_sp/poaceae_sp (23).jpg,49,49,0.99998295,dianella_tasmanica,poaceae_sp,Correct
+39,ricinus_communis/ricinus (13).jpg,52,52,0.99999654,dipteryx_alata,ricinus_communis,Correct
+40,schizolobium_parahyba/guapuruvu_29.jpg,54,54,0.9999949,doliocarpus_dentatus,schizolobium_parahyba,Correct
+41,schizolobium_parahyba/guapuruvu_3.jpg,54,54,0.99999976,doliocarpus_dentatus,schizolobium_parahyba,Correct
+42,schizolobium_parahyba/guapuruvu_34.jpg,54,54,1.0,doliocarpus_dentatus,schizolobium_parahyba,Correct
+43,senegalia_plumosa/acacia_plumosa (5).jpg,55,55,0.9999826,erythrina_mulungu,senegalia_plumosa,Correct
+44,serjania_erecta/serjania (7).jpg,56,56,0.99998856,eucalyptus_sp,serjania_erecta,Correct
+45,serjania_hebecarpa/serjania_hebecarpa (17).jpg,57,57,0.99999976,faramea_sp,serjania_hebecarpa,Correct
+46,serjania_hebecarpa/serjania_hebecarpa (27).jpg,57,57,0.9999969,faramea_sp,serjania_hebecarpa,Correct
+47,serjania_laruotteana/serjania_laruotteana (23).jpg,58,58,0.9999995,genipa_auniricana,serjania_laruotteana,Correct
+48,serjania_laruotteana/serjania_laruotteana (27).jpg,58,58,1.0,genipa_auniricana,serjania_laruotteana,Correct
+49,serjania_sp/serjania_sp (31).jpg,59,59,0.9999994,gomphrena_sp,serjania_sp,Correct
+50,sida_cerradoensis/sida_cerradoensis (12).jpg,60,60,0.99999523,guazuma_ulmifolia,sida_cerradoensis,Correct
+51,sida_cerradoensis/sida_cerradoensis (26).jpg,60,60,0.999946,guazuma_ulmifolia,sida_cerradoensis,Correct
+52,sida_cerradoensis/sida_cerradoensis (28).jpg,60,60,0.9999597,guazuma_ulmifolia,sida_cerradoensis,Correct
+53,solanum_sisymbriifolium/solanum_sisymbrifolium (34).jpg,61,61,0.9999988,hortia_oreadica,solanum_sisymbriifolium,Correct
+54,solanum_sisymbriifolium/solanum_sisymbrifolium (7).jpg,61,61,0.99999917,hortia_oreadica,solanum_sisymbriifolium,Correct
+55,symplocos_nitens/symplocos_nitens (22).jpg,63,63,0.9766133,hyptis_sp,symplocos_nitens,Correct
+56,tabebuia_chysotricha/tabebuia_chysotricha (7).jpg,64,64,0.99992,ligustrum_lucidum,tabebuia_chysotricha,Correct
+57,tapirira_guianensis/tapirira_guianensis_17.jpg,66,66,0.9843844,luehea_divaricata,tapirira_guianensis,Correct
+58,tapirira_guianensis/tapirira_guianensis_32.jpg,66,66,0.9997925,luehea_divaricata,tapirira_guianensis,Correct
+59,tapirira_guianensis/tapirira_guianensis_34.jpg,66,66,0.9990477,luehea_divaricata,tapirira_guianensis,Correct
+60,trema_micrantha/trema_micrantha (19).jpg,68,68,0.9995018,mabea_fistulifera,trema_micrantha,Correct
+61,trema_micrantha/trema_micrantha (22).jpg,68,68,0.99999666,mabea_fistulifera,trema_micrantha,Correct
+62,trembleya_phlogiformis/trembleya_phlogiformis (25).jpg,69,69,0.9999727,machaerium_aculeatum,trembleya_phlogiformis,Correct
+63,vochysia_divergens/vochysia_divergens (4).jpg,71,71,0.99998295,magnolia_champaca,vochysia_divergens,Correct
+0,anadenanthera_colubrina/anadenanthera_colubrina (18).jpg,1,1,0.99984753,acrocomia_aculeta,anadenanthera_colubrina,Correct
+1,aspilia_grazielae/aspilia_gracielae_ (25).jpg,5,5,0.9999994,anadenanthera_colubrina,aspilia_grazielae,Correct
+2,bacopa_australis/bacopa_australis (15).jpg,6,6,0.9999887,arachis_sp,bacopa_australis,Correct
+3,bacopa_australis/bacopa_australis (28).jpg,6,6,0.9999753,arachis_sp,bacopa_australis,Correct
+4,caesalpinia_peltophoroides/caesalpinia_peltophoroides (13).jpg,8,8,0.99999905,archontophoenix_cunninghamiana,caesalpinia_peltophoroides,Correct
+5,caesalpinia_peltophoroides/caesalpinia_peltophoroides (30).jpg,8,8,0.9999982,archontophoenix_cunninghamiana,caesalpinia_peltophoroides,Correct
+6,caesalpinia_peltophoroides/caesalpinia_peltophoroides (35).jpg,8,8,0.999998,archontophoenix_cunninghamiana,caesalpinia_peltophoroides,Correct
+7,cissus_campestris/cissus_campestris (30).jpg,13,13,0.9999945,arrabidaea_florida,cissus_campestris,Correct
+8,doliocarpus_dentatus/dolicarpus (4).jpg,21,21,0.99999774,aspilia_grazielae,doliocarpus_dentatus,Correct
+9,hyptis_sp/hyptis_sp (11).jpg,29,29,0.99998474,bacopa_australis,hyptis_sp,Correct
+10,hyptis_sp/hyptis_sp (34).jpg,29,29,0.99998033,bacopa_australis,hyptis_sp,Correct
+11,machaerium_aculeatum/machaerium (11).jpg,33,33,0.99998975,brugmansia_suaveolens,machaerium_aculeatum,Correct
+12,machaerium_aculeatum/machaerium (15).jpg,33,33,0.9999932,brugmansia_suaveolens,machaerium_aculeatum,Correct
+13,machaerium_aculeatum/machaerium (16).jpg,33,33,0.99998474,brugmansia_suaveolens,machaerium_aculeatum,Correct
+14,machaerium_aculeatum/machaerium (30).jpg,33,33,0.99998677,brugmansia_suaveolens,machaerium_aculeatum,Correct
+15,manihot_esculenta/manihot (35).jpg,35,35,0.99997115,caesalpinia_peltophoroides,manihot_esculenta,Correct
+16,mauritia_flexuosa/mauritia (1).jpg,37,37,0.9999224,caryocar_brasiliensis,mauritia_flexuosa,Correct
+17,mimosa_ditans/mimosa_ditans (18).jpg,38,38,0.999987,cecropia_pachystachya,mimosa_ditans,Correct
+18,mimosa_pigra/mimosa_pigra (10).jpg,39,39,0.99998975,ceiba_speciosa,mimosa_pigra,Correct
+19,mimosa_pigra/mimosa_pigra (21).jpg,39,39,0.99996674,ceiba_speciosa,mimosa_pigra,Correct
+20,mitostemma_brevifilis/mitostemma (35).jpg,40,40,0.9999893,chromolaena_laevigata,mitostemma_brevifilis,Correct
+21,myracroduon_urundeuva/myracroduon (15).jpg,41,41,0.99986434,cissus_campestris,myracroduon_urundeuva,Correct
+22,myrcia_guianensis/myrcia_guianensis_19.jpg,42,42,0.99999475,cissus_spinosa,myrcia_guianensis,Correct
+23,myrcia_guianensis/myrcia_guianensis_27.jpg,42,42,1.0,cissus_spinosa,myrcia_guianensis,Correct
+24,myrcia_guianensis/myrcia_guianensis_31.jpg,42,42,0.99999964,cissus_spinosa,myrcia_guianensis,Correct
+25,ochroma pyramidale/ochroma (12).jpg,43,43,0.9999995,combretum_discolor,ochroma pyramidale,Correct
+26,ochroma pyramidale/ochroma (20).jpg,43,43,0.99999964,combretum_discolor,ochroma pyramidale,Correct
+27,ochroma pyramidale/ochroma (22).jpg,43,43,0.99999964,combretum_discolor,ochroma pyramidale,Correct
+28,ochroma pyramidale/ochroma (35).jpg,43,43,0.9999988,combretum_discolor,ochroma pyramidale,Correct
+29,pachira_aquatica/pachia_aquatica (15).jpg,45,45,0.9999993,cordia_trichotoma,pachira_aquatica,Correct
+30,pachira_aquatica/pachia_aquatica (25).jpg,45,45,0.9999571,cordia_trichotoma,pachira_aquatica,Correct
+31,pachira_aquatica/pachia_aquatica (27).jpg,45,45,0.9999987,cordia_trichotoma,pachira_aquatica,Correct
+32,passiflora_gibertii/passiflora_giberti (20).jpg,46,46,0.99999523,cosmos_caudatus,passiflora_gibertii,Correct
+33,passiflora_gibertii/passiflora_giberti (33).jpg,46,46,0.9999896,cosmos_caudatus,passiflora_gibertii,Correct
+34,passiflora_gibertii/passiflora_giberti (6).jpg,46,46,0.9999913,cosmos_caudatus,passiflora_gibertii,Correct
+35,paullinia_spicata/paullinia (10).jpg,47,47,0.9999975,croton_urucurana,paullinia_spicata,Correct
+36,paullinia_spicata/paullinia (17).jpg,47,47,0.9997831,croton_urucurana,paullinia_spicata,Correct
+37,paullinia_spicata/paullinia (3).jpg,47,47,0.9999958,croton_urucurana,paullinia_spicata,Correct
+38,paullinia_spicata/paullinia (30).jpg,47,47,0.99999523,croton_urucurana,paullinia_spicata,Correct
+39,poaceae_sp/poaceae_sp (15).jpg,49,49,0.9999912,dianella_tasmanica,poaceae_sp,Correct
+40,poaceae_sp/poaceae_sp (9).jpg,49,49,0.99999726,dianella_tasmanica,poaceae_sp,Correct
+41,ricinus_communis/ricinus (33).jpg,52,52,0.9999764,dipteryx_alata,ricinus_communis,Correct
+42,schinus_sp/schinus_sp (17).jpg,53,53,0.9991673,doliocarpus_dentatus,schinus_sp,Correct
+43,schinus_sp/schinus_sp (20).jpg,53,53,0.9999436,doliocarpus_dentatus,schinus_sp,Correct
+44,schizolobium_parahyba/guapuruvu_23.jpg,54,54,0.99999547,erythrina_mulungu,schizolobium_parahyba,Correct
+45,schizolobium_parahyba/guapuruvu_27.jpg,54,54,0.9999976,erythrina_mulungu,schizolobium_parahyba,Correct
+46,schizolobium_parahyba/guapuruvu_28.jpg,54,54,0.99999714,erythrina_mulungu,schizolobium_parahyba,Correct
+48,serjania_hebecarpa/serjania_hebecarpa (10).jpg,57,57,0.9999821,faramea_sp,serjania_hebecarpa,Correct
+49,serjania_hebecarpa/serjania_hebecarpa (18).jpg,57,57,0.99986494,faramea_sp,serjania_hebecarpa,Correct
+50,serjania_hebecarpa/serjania_hebecarpa (3).jpg,57,57,0.999997,faramea_sp,serjania_hebecarpa,Correct
+51,serjania_hebecarpa/serjania_hebecarpa (8).jpg,57,57,0.9999975,faramea_sp,serjania_hebecarpa,Correct
+52,serjania_laruotteana/serjania_laruotteana (24).jpg,58,58,0.9999906,genipa_auniricana,serjania_laruotteana,Correct
+53,serjania_laruotteana/serjania_laruotteana (33).jpg,58,58,0.9998185,genipa_auniricana,serjania_laruotteana,Correct
+54,serjania_sp/serjania_sp (14).jpg,59,59,0.99998534,gomphrena_sp,serjania_sp,Correct
+55,sida_cerradoensis/sida_cerradoensis (1).jpg,60,60,0.9999604,guazuma_ulmifolia,sida_cerradoensis,Correct
+56,sida_cerradoensis/sida_cerradoensis (17).jpg,60,60,0.999985,guazuma_ulmifolia,sida_cerradoensis,Correct
+57,solanum_sisymbriifolium/solanum_sisymbrifolium (11).jpg,61,61,0.99999166,hortia_oreadica,solanum_sisymbriifolium,Correct
+58,solanum_sisymbriifolium/solanum_sisymbrifolium (18).jpg,61,61,0.9999945,hortia_oreadica,solanum_sisymbriifolium,Correct
+59,solanum_sisymbriifolium/solanum_sisymbrifolium (22).jpg,61,61,0.9999951,hortia_oreadica,solanum_sisymbriifolium,Correct
+60,solanum_sisymbriifolium/solanum_sisymbrifolium (27).jpg,61,61,0.999998,hortia_oreadica,solanum_sisymbriifolium,Correct
+61,syagrus_romanzoffiana/syagrus_romanzoffiana (11).jpg,62,62,0.99964213,hyptis_sp,syagrus_romanzoffiana,Correct
+62,tabebuia_rosealba/tabebuia_rosealba (1).jpg,65,65,0.95434344,ligustrum_lucidum,tabebuia_rosealba,Correct
+63,tabebuia_rosealba/tabebuia_rosealba (2).jpg,65,65,0.9999788,ligustrum_lucidum,tabebuia_rosealba,Correct
+64,tapirira_guianensis/tapirira_guianensis_20.jpg,66,66,0.94318306,luehea_divaricata,tapirira_guianensis,Correct
+65,tapirira_guianensis/tapirira_guianensis_22.jpg,66,66,0.67460364,luehea_divaricata,tapirira_guianensis,Correct
+66,tapirira_guianensis/tapirira_guianensis_6.jpg,66,66,0.9995278,luehea_divaricata,tapirira_guianensis,Correct
+67,trema_micrantha/trema_micrantha (2).jpg,68,68,0.99999404,mabea_fistulifera,trema_micrantha,Correct
+68,trema_micrantha/trema_micrantha (3).jpg,68,68,0.99999905,mabea_fistulifera,trema_micrantha,Correct
+69,trembleya_phlogiformis/trembleya_phlogiformis (26).jpg,69,69,0.9999937,machaerium_aculeatum,trembleya_phlogiformis,Correct
+70,vochysia_divergens/vochysia_divergens (30).jpg,71,71,0.99998903,magnolia_champaca,vochysia_divergens,Correct
+0,anadenanthera_colubrina/anadenanthera_colubrina (17).jpg,1,1,0.9999833,acrocomia_aculeta,anadenanthera_colubrina,Correct
+1,arachis_sp/arachis_sp (7).jpg,2,2,0.99999475,anadenanthera_colubrina,arachis_sp,Correct
+2,aspilia_grazielae/aspilia_gracielae_ (27).jpg,5,5,0.9999993,arachis_sp,aspilia_grazielae,Correct
+3,bacopa_australis/bacopa_australis (19).jpg,6,6,0.99999475,archontophoenix_cunninghamiana,bacopa_australis,Correct
+4,brugmansia_suaveolens/beladona (11).jpg,7,7,0.999967,arrabidaea_florida,brugmansia_suaveolens,Correct
+5,caesalpinia_peltophoroides/caesalpinia_peltophoroides (11).jpg,8,8,0.9999591,aspilia_grazielae,caesalpinia_peltophoroides,Correct
+6,caesalpinia_peltophoroides/caesalpinia_peltophoroides (22).jpg,8,8,0.9999945,aspilia_grazielae,caesalpinia_peltophoroides,Correct
+7,caryocar_brasiliensis/caryocar_brasiliensis (35).jpg,9,9,0.9813401,bacopa_australis,caryocar_brasiliensis,Correct
+8,ceiba_speciosa/ceiba (11).jpg,11,11,0.9999988,brugmansia_suaveolens,ceiba_speciosa,Correct
+9,dianella_tasmanica/dianella_ (11).jpg,19,19,0.999995,caesalpinia_peltophoroides,dianella_tasmanica,Correct
+10,dianella_tasmanica/dianella_ (20).jpg,19,19,0.99999595,caesalpinia_peltophoroides,dianella_tasmanica,Correct
+11,dianella_tasmanica/dianella_ (5).jpg,19,19,0.99996936,caesalpinia_peltophoroides,dianella_tasmanica,Correct
+12,doliocarpus_dentatus/dolicarpus (12).jpg,21,21,0.9999974,caryocar_brasiliensis,doliocarpus_dentatus,Correct
+13,doliocarpus_dentatus/dolicarpus (23).jpg,21,21,0.9999957,caryocar_brasiliensis,doliocarpus_dentatus,Correct
+14,genipa_auniricana/genipa_auniricana (3).jpg,25,25,0.9971656,cecropia_pachystachya,genipa_auniricana,Correct
+15,guazuma_ulmifolia/guazuma_ulmifolia (17).jpg,27,27,0.9594159,ceiba_speciosa,guazuma_ulmifolia,Correct
+16,hyptis_sp/hyptis_sp (16).jpg,29,29,0.99999547,chromolaena_laevigata,hyptis_sp,Correct
+17,hyptis_sp/hyptis_sp (22).jpg,29,29,0.9999987,chromolaena_laevigata,hyptis_sp,Correct
+18,machaerium_aculeatum/machaerium (12).jpg,33,33,0.99998224,cissus_campestris,machaerium_aculeatum,Correct
+19,magnolia_champaca/magnolia (10).jpg,34,34,0.9999982,cissus_spinosa,magnolia_champaca,Correct
+20,mimosa_ditans/mimosa_ditans (11).jpg,38,38,0.99999166,combretum_discolor,mimosa_ditans,Correct
+21,mimosa_ditans/mimosa_ditans (26).jpg,38,38,0.99999857,combretum_discolor,mimosa_ditans,Correct
+22,mimosa_pigra/mimosa_pigra (18).jpg,39,39,0.9999864,cordia_trichotoma,mimosa_pigra,Correct
+23,mimosa_pigra/mimosa_pigra (20).jpg,39,39,0.99998915,cordia_trichotoma,mimosa_pigra,Correct
+24,mimosa_pigra/mimosa_pigra (3).jpg,39,39,0.99992645,cordia_trichotoma,mimosa_pigra,Correct
+25,mitostemma_brevifilis/mitostemma (15).jpg,40,40,0.99999654,cosmos_caudatus,mitostemma_brevifilis,Correct
+26,myrcia_guianensis/myrcia_guianensis_17.jpg,42,42,0.9999988,croton_urucurana,myrcia_guianensis,Correct
+27,myrcia_guianensis/myrcia_guianensis_21.jpg,42,42,0.99999785,croton_urucurana,myrcia_guianensis,Correct
+28,myrcia_guianensis/myrcia_guianensis_32.jpg,42,42,0.99999857,croton_urucurana,myrcia_guianensis,Correct
+29,ochroma pyramidale/ochroma (15).jpg,43,43,0.99999535,dianella_tasmanica,ochroma pyramidale,Correct
+30,ochroma pyramidale/ochroma (3).jpg,43,43,0.9999982,dianella_tasmanica,ochroma pyramidale,Correct
+31,ochroma pyramidale/ochroma (31).jpg,43,43,0.99999666,dianella_tasmanica,ochroma pyramidale,Correct
+32,ouratea_hexasperma/ouratea (29).jpg,44,44,0.9999939,dipteryx_alata,ouratea_hexasperma,Correct
+33,pachira_aquatica/pachia_aquatica (20).jpg,45,45,0.9999598,doliocarpus_dentatus,pachira_aquatica,Correct
+34,pachira_aquatica/pachia_aquatica (24).jpg,45,45,0.99999344,doliocarpus_dentatus,pachira_aquatica,Correct
+35,pachira_aquatica/pachia_aquatica (7).jpg,45,45,0.9999964,doliocarpus_dentatus,pachira_aquatica,Correct
+36,passiflora_gibertii/passiflora_giberti (19).jpg,46,46,0.9999989,erythrina_mulungu,passiflora_gibertii,Correct
+37,passiflora_gibertii/passiflora_giberti (26).jpg,46,46,0.99999034,erythrina_mulungu,passiflora_gibertii,Correct
+38,paullinia_spicata/paullinia (12).jpg,47,47,0.999912,eucalyptus_sp,paullinia_spicata,Correct
+39,paullinia_spicata/paullinia (15).jpg,47,47,0.8725616,eucalyptus_sp,paullinia_spicata,Correct
+40,paullinia_spicata/paullinia (24).jpg,47,47,0.9999882,eucalyptus_sp,paullinia_spicata,Correct
+41,paullinia_spicata/paullinia (26).jpg,47,47,0.9989706,eucalyptus_sp,paullinia_spicata,Correct
+42,ricinus_communis/ricinus (19).jpg,52,52,0.9999927,faramea_sp,ricinus_communis,Correct
+43,schizolobium_parahyba/guapuruvu_12.jpg,54,54,0.9999995,genipa_auniricana,schizolobium_parahyba,Correct
+44,schizolobium_parahyba/guapuruvu_14.jpg,54,54,0.99970263,genipa_auniricana,schizolobium_parahyba,Correct
+45,schizolobium_parahyba/guapuruvu_16.jpg,54,54,0.99999404,genipa_auniricana,schizolobium_parahyba,Correct
+46,serjania_erecta/serjania (23).jpg,56,56,0.99999,gomphrena_sp,serjania_erecta,Correct
+47,serjania_erecta/serjania (8).jpg,56,56,0.9999527,gomphrena_sp,serjania_erecta,Correct
+48,serjania_hebecarpa/serjania_hebecarpa (19).jpg,57,57,0.9993917,guazuma_ulmifolia,serjania_hebecarpa,Correct
+49,serjania_hebecarpa/serjania_hebecarpa (24).jpg,57,57,0.9999864,guazuma_ulmifolia,serjania_hebecarpa,Correct
+50,serjania_hebecarpa/serjania_hebecarpa (29).jpg,57,57,0.52591026,guazuma_ulmifolia,serjania_hebecarpa,Correct
+51,serjania_hebecarpa/serjania_hebecarpa (7).jpg,57,57,0.55402434,guazuma_ulmifolia,serjania_hebecarpa,Correct
+52,serjania_laruotteana/serjania_laruotteana (28).jpg,58,58,0.9998559,hortia_oreadica,serjania_laruotteana,Correct
+53,serjania_laruotteana/serjania_laruotteana (7).jpg,58,58,0.99999607,hortia_oreadica,serjania_laruotteana,Correct
+54,serjania_laruotteana/serjania_laruotteana (8).jpg,58,58,0.9999863,hortia_oreadica,serjania_laruotteana,Correct
+55,solanum_sisymbriifolium/solanum_sisymbrifolium (15).jpg,61,61,0.99993885,hyptis_sp,solanum_sisymbriifolium,Correct
+56,solanum_sisymbriifolium/solanum_sisymbrifolium (4).jpg,61,61,0.99998987,hyptis_sp,solanum_sisymbriifolium,Correct
+57,tapirira_guianensis/tapirira_guianensis_10.jpg,66,66,0.9999951,ligustrum_lucidum,tapirira_guianensis,Correct
+58,tapirira_guianensis/tapirira_guianensis_16.jpg,66,66,0.9999604,ligustrum_lucidum,tapirira_guianensis,Correct
+59,tapirira_guianensis/tapirira_guianensis_19.jpg,66,66,0.9999937,ligustrum_lucidum,tapirira_guianensis,Correct
+60,tradescantia_Pallida/tradescantia_Pallida (23).jpg,67,67,0.99999,luehea_divaricata,tradescantia_Pallida,Correct
+61,tradescantia_Pallida/tradescantia_Pallida (3).jpg,67,67,0.9999999,luehea_divaricata,tradescantia_Pallida,Correct
+62,trema_micrantha/trema_micrantha (13).jpg,68,68,0.9999969,mabea_fistulifera,trema_micrantha,Correct
+63,vochysia_divergens/vochysia_divergens (7).jpg,71,71,0.9999962,machaerium_aculeatum,vochysia_divergens,Correct
+0,arachis_sp/arachis_sp (2).jpg,2,2,0.9998579,acrocomia_aculeta,arachis_sp,Correct
+1,archontophoenix_cunninghamiana/archontophoenix_cunninghamiana (19).jpg,3,3,0.9999608,anadenanthera_colubrina,archontophoenix_cunninghamiana,Correct
+2,arrabidaea_florida/arrabidaea_florida (4).jpg,4,4,0.99999106,arachis_sp,arrabidaea_florida,Correct
+3,aspilia_grazielae/aspilia_gracielae_ (17).jpg,5,5,0.99997485,archontophoenix_cunninghamiana,aspilia_grazielae,Correct
+4,bacopa_australis/bacopa_australis (11).jpg,6,6,0.9999639,arrabidaea_florida,bacopa_australis,Correct
+5,bacopa_australis/bacopa_australis (8).jpg,6,6,0.9999652,arrabidaea_florida,bacopa_australis,Correct
+6,caryocar_brasiliensis/caryocar_brasiliensis (8).jpg,9,9,0.99994385,aspilia_grazielae,caryocar_brasiliensis,Correct
+7,dianella_tasmanica/dianella_ (22).jpg,19,19,0.9998995,bacopa_australis,dianella_tasmanica,Correct
+8,dianella_tasmanica/dianella_ (32).jpg,19,19,0.9999616,bacopa_australis,dianella_tasmanica,Correct
+9,doliocarpus_dentatus/dolicarpus (24).jpg,21,21,0.7616322,brugmansia_suaveolens,doliocarpus_dentatus,Correct
+10,doliocarpus_dentatus/dolicarpus (3).jpg,21,21,0.9999695,brugmansia_suaveolens,doliocarpus_dentatus,Correct
+11,doliocarpus_dentatus/dolicarpus (6).jpg,21,21,0.9999683,brugmansia_suaveolens,doliocarpus_dentatus,Correct
+13,guazuma_ulmifolia/guazuma_ulmifolia (21).jpg,27,27,0.99550015,caryocar_brasiliensis,guazuma_ulmifolia,Correct
+14,machaerium_aculeatum/machaerium (31).jpg,33,33,0.9999856,cecropia_pachystachya,machaerium_aculeatum,Correct
+15,machaerium_aculeatum/machaerium (9).jpg,33,33,0.9999908,cecropia_pachystachya,machaerium_aculeatum,Correct
+16,mimosa_ditans/mimosa_ditans (19).jpg,38,38,0.99997437,ceiba_speciosa,mimosa_ditans,Correct
+17,mimosa_ditans/mimosa_ditans (20).jpg,38,38,0.9999871,ceiba_speciosa,mimosa_ditans,Correct
+18,mimosa_ditans/mimosa_ditans (8).jpg,38,38,0.9999888,ceiba_speciosa,mimosa_ditans,Correct
+19,mitostemma_brevifilis/mitostemma (11).jpg,40,40,0.9996855,chromolaena_laevigata,mitostemma_brevifilis,Correct
+20,mitostemma_brevifilis/mitostemma (26).jpg,40,40,0.99976164,chromolaena_laevigata,mitostemma_brevifilis,Correct
+21,myrcia_guianensis/myrcia_guianensis_15.jpg,42,42,0.9999851,cissus_campestris,myrcia_guianensis,Correct
+22,myrcia_guianensis/myrcia_guianensis_26.jpg,42,42,0.9999889,cissus_campestris,myrcia_guianensis,Correct
+23,myrcia_guianensis/myrcia_guianensis_6.jpg,42,42,0.9999888,cissus_campestris,myrcia_guianensis,Correct
+24,myrcia_guianensis/myrcia_guianensis_7.jpg,42,42,0.9999925,cissus_campestris,myrcia_guianensis,Correct
+25,ochroma pyramidale/ochroma (10).jpg,43,43,0.99999726,cissus_spinosa,ochroma pyramidale,Correct
+26,ochroma pyramidale/ochroma (21).jpg,43,43,0.9999994,cissus_spinosa,ochroma pyramidale,Correct
+27,ochroma pyramidale/ochroma (7).jpg,43,43,0.9999969,cissus_spinosa,ochroma pyramidale,Correct
+28,ouratea_hexasperma/ouratea (25).jpg,44,44,0.9999317,combretum_discolor,ouratea_hexasperma,Correct
+29,pachira_aquatica/pachia_aquatica (29).jpg,45,45,0.99996936,cordia_trichotoma,pachira_aquatica,Correct
+30,passiflora_gibertii/passiflora_giberti (11).jpg,46,46,0.9999261,cosmos_caudatus,passiflora_gibertii,Correct
+31,passiflora_gibertii/passiflora_giberti (13).jpg,46,46,0.9999422,cosmos_caudatus,passiflora_gibertii,Correct
+32,passiflora_gibertii/passiflora_giberti (35).jpg,46,46,0.9999827,cosmos_caudatus,passiflora_gibertii,Correct
+33,passiflora_gibertii/passiflora_giberti (4).jpg,46,46,0.9998084,cosmos_caudatus,passiflora_gibertii,Correct
+34,paullinia_spicata/paullinia (31).jpg,47,47,0.9999471,croton_urucurana,paullinia_spicata,Correct
+35,paullinia_spicata/paullinia (35).jpg,47,47,0.99995697,croton_urucurana,paullinia_spicata,Correct
+36,paullinia_spicata/paullinia (5).jpg,47,47,0.9999553,croton_urucurana,paullinia_spicata,Correct
+37,schizolobium_parahyba/guapuruvu_15.jpg,54,54,0.9969422,dianella_tasmanica,schizolobium_parahyba,Correct
+38,schizolobium_parahyba/guapuruvu_2.jpg,54,54,0.9999794,dianella_tasmanica,schizolobium_parahyba,Correct
+39,schizolobium_parahyba/guapuruvu_21.jpg,54,54,0.9999635,dianella_tasmanica,schizolobium_parahyba,Correct
+41,senegalia_plumosa/acacia_plumosa (21).jpg,55,55,0.9999149,dipteryx_alata,senegalia_plumosa,Correct
+42,serjania_hebecarpa/serjania_hebecarpa (2).jpg,57,57,0.99998426,doliocarpus_dentatus,serjania_hebecarpa,Correct
+43,serjania_laruotteana/serjania_laruotteana (18).jpg,58,58,0.975664,erythrina_mulungu,serjania_laruotteana,Correct
+44,serjania_laruotteana/serjania_laruotteana (19).jpg,58,58,0.99836975,erythrina_mulungu,serjania_laruotteana,Correct
+45,serjania_sp/serjania_sp (17).jpg,59,59,0.9998938,eucalyptus_sp,serjania_sp,Correct
+46,sida_cerradoensis/sida_cerradoensis (27).jpg,60,60,0.9999864,faramea_sp,sida_cerradoensis,Correct
+47,sida_cerradoensis/sida_cerradoensis (7).jpg,60,60,0.9998883,faramea_sp,sida_cerradoensis,Correct
+48,sida_cerradoensis/sida_cerradoensis (8).jpg,60,60,0.9998969,faramea_sp,sida_cerradoensis,Correct
+49,solanum_sisymbriifolium/solanum_sisymbrifolium (19).jpg,61,61,0.9999876,genipa_auniricana,solanum_sisymbriifolium,Correct
+50,solanum_sisymbriifolium/solanum_sisymbrifolium (33).jpg,61,61,0.99997294,genipa_auniricana,solanum_sisymbriifolium,Correct
+51,tapirira_guianensis/tapirira_guianensis_11.jpg,66,66,0.99992514,gomphrena_sp,tapirira_guianensis,Correct
+52,tapirira_guianensis/tapirira_guianensis_23.jpg,66,66,0.9999695,gomphrena_sp,tapirira_guianensis,Correct
+53,tapirira_guianensis/tapirira_guianensis_26.jpg,66,66,0.99995506,gomphrena_sp,tapirira_guianensis,Correct
+54,tapirira_guianensis/tapirira_guianensis_8.jpg,66,66,0.9984175,gomphrena_sp,tapirira_guianensis,Correct
+55,trema_micrantha/trema_micrantha (25).jpg,68,68,0.99995434,guazuma_ulmifolia,trema_micrantha,Correct
+56,trema_micrantha/trema_micrantha (8).jpg,68,68,0.9999559,guazuma_ulmifolia,trema_micrantha,Correct
+57,trembleya_phlogiformis/trembleya_phlogiformis (17).jpg,69,69,0.9999409,hortia_oreadica,trembleya_phlogiformis,Correct
+58,trembleya_phlogiformis/trembleya_phlogiformis (23).jpg,69,69,0.9999684,hortia_oreadica,trembleya_phlogiformis,Correct
+59,vochysia_divergens/vochysia_divergens (23).jpg,71,71,0.9999647,hyptis_sp,vochysia_divergens,Correct
+0,anadenanthera_colubrina/anadenanthera_colubrina (13).jpg,1,1,0.9998685,acrocomia_aculeta,anadenanthera_colubrina,Correct
+1,anadenanthera_colubrina/anadenanthera_colubrina (20).jpg,1,1,0.9993754,acrocomia_aculeta,anadenanthera_colubrina,Correct
+2,anadenanthera_colubrina/anadenanthera_colubrina (30).jpg,1,1,0.9999529,acrocomia_aculeta,anadenanthera_colubrina,Correct
+3,arrabidaea_florida/arrabidaea_florida (18).jpg,4,4,0.99986446,anadenanthera_colubrina,arrabidaea_florida,Correct
+4,aspilia_grazielae/aspilia_gracielae_ (12).jpg,5,5,0.9998925,arachis_sp,aspilia_grazielae,Correct
+5,bacopa_australis/bacopa_australis (16).jpg,6,6,0.99999344,archontophoenix_cunninghamiana,bacopa_australis,Correct
+6,caesalpinia_peltophoroides/caesalpinia_peltophoroides (17).jpg,8,8,0.9999807,arrabidaea_florida,caesalpinia_peltophoroides,Correct
+7,caesalpinia_peltophoroides/caesalpinia_peltophoroides (33).jpg,8,8,0.99995923,arrabidaea_florida,caesalpinia_peltophoroides,Correct
+8,caryocar_brasiliensis/caryocar_brasiliensis (16).jpg,9,9,0.9999857,aspilia_grazielae,caryocar_brasiliensis,Correct
+9,ceiba_speciosa/ceiba (7).jpg,11,11,0.9999144,bacopa_australis,ceiba_speciosa,Correct
+10,chromolaena_laevigata/chromolaena_laevigata (17).jpg,12,12,0.99996936,brugmansia_suaveolens,chromolaena_laevigata,Correct
+11,dianella_tasmanica/dianella_ (14).jpg,19,19,0.9999987,caesalpinia_peltophoroides,dianella_tasmanica,Correct
+12,doliocarpus_dentatus/dolicarpus (35).jpg,21,21,0.99999285,caryocar_brasiliensis,doliocarpus_dentatus,Correct
+13,hyptis_sp/hyptis_sp (12).jpg,29,29,0.999985,cecropia_pachystachya,hyptis_sp,Correct
+14,machaerium_aculeatum/machaerium (21).jpg,33,33,0.99994624,ceiba_speciosa,machaerium_aculeatum,Correct
+15,machaerium_aculeatum/machaerium (33).jpg,33,33,0.9999701,ceiba_speciosa,machaerium_aculeatum,Correct
+16,machaerium_aculeatum/machaerium (35).jpg,33,33,0.9999585,ceiba_speciosa,machaerium_aculeatum,Correct
+17,mimosa_ditans/mimosa_ditans (10).jpg,38,38,0.9992505,chromolaena_laevigata,mimosa_ditans,Correct
+18,mimosa_ditans/mimosa_ditans (13).jpg,38,38,0.99992275,chromolaena_laevigata,mimosa_ditans,Correct
+19,mimosa_ditans/mimosa_ditans (30).jpg,38,38,0.99960417,chromolaena_laevigata,mimosa_ditans,Correct
+20,mimosa_pigra/mimosa_pigra (11).jpg,39,39,0.99996614,cissus_campestris,mimosa_pigra,Correct
+21,mimosa_pigra/mimosa_pigra (7).jpg,39,39,0.9999573,cissus_campestris,mimosa_pigra,Correct
+22,mitostemma_brevifilis/mitostemma (14).jpg,40,40,0.9999976,cissus_spinosa,mitostemma_brevifilis,Correct
+23,mitostemma_brevifilis/mitostemma (24).jpg,40,40,0.9999895,cissus_spinosa,mitostemma_brevifilis,Correct
+24,mitostemma_brevifilis/mitostemma (9).jpg,40,40,0.9999863,cissus_spinosa,mitostemma_brevifilis,Correct
+25,myrcia_guianensis/myrcia_guianensis_1.jpg,42,42,0.99951494,combretum_discolor,myrcia_guianensis,Correct
+26,myrcia_guianensis/myrcia_guianensis_10.jpg,42,42,0.9999049,combretum_discolor,myrcia_guianensis,Correct
+27,myrcia_guianensis/myrcia_guianensis_20.jpg,42,42,0.99962187,combretum_discolor,myrcia_guianensis,Correct
+28,myrcia_guianensis/myrcia_guianensis_25.jpg,42,42,0.9999361,combretum_discolor,myrcia_guianensis,Correct
+29,ochroma pyramidale/ochroma (24).jpg,43,43,0.99995136,cordia_trichotoma,ochroma pyramidale,Correct
+30,ochroma pyramidale/ochroma (32).jpg,43,43,0.9999374,cordia_trichotoma,ochroma pyramidale,Correct
+31,ochroma pyramidale/ochroma (8).jpg,43,43,0.99998367,cordia_trichotoma,ochroma pyramidale,Correct
+32,pachira_aquatica/pachia_aquatica (11).jpg,45,45,0.9999579,cosmos_caudatus,pachira_aquatica,Correct
+33,pachira_aquatica/pachia_aquatica (4).jpg,45,45,0.9999826,cosmos_caudatus,pachira_aquatica,Correct
+34,pachira_aquatica/pachia_aquatica (9).jpg,45,45,0.999992,cosmos_caudatus,pachira_aquatica,Correct
+35,passiflora_gibertii/passiflora_giberti (10).jpg,46,46,0.999967,croton_urucurana,passiflora_gibertii,Correct
+36,passiflora_gibertii/passiflora_giberti (12).jpg,46,46,0.9999639,croton_urucurana,passiflora_gibertii,Correct
+37,passiflora_gibertii/passiflora_giberti (14).jpg,46,46,0.9999697,croton_urucurana,passiflora_gibertii,Correct
+38,paullinia_spicata/paullinia (19).jpg,47,47,0.99995077,dianella_tasmanica,paullinia_spicata,Correct
+39,paullinia_spicata/paullinia (6).jpg,47,47,0.9999075,dianella_tasmanica,paullinia_spicata,Correct
+40,paullinia_spicata/paullinia (7).jpg,47,47,0.99984753,dianella_tasmanica,paullinia_spicata,Correct
+41,poaceae_sp/poaceae_sp (20).jpg,49,49,0.9999244,dipteryx_alata,poaceae_sp,Correct
+42,ricinus_communis/ricinus (14).jpg,52,52,0.9999944,doliocarpus_dentatus,ricinus_communis,Correct
+43,schizolobium_parahyba/guapuruvu_11.jpg,54,54,0.99977547,erythrina_mulungu,schizolobium_parahyba,Correct
+44,schizolobium_parahyba/guapuruvu_13.jpg,54,54,0.9999927,erythrina_mulungu,schizolobium_parahyba,Correct
+45,schizolobium_parahyba/guapuruvu_22.jpg,54,54,0.99999905,erythrina_mulungu,schizolobium_parahyba,Correct
+46,serjania_erecta/serjania (21).jpg,56,56,0.9998709,eucalyptus_sp,serjania_erecta,Correct
+47,serjania_erecta/serjania (3).jpg,56,56,0.99990714,eucalyptus_sp,serjania_erecta,Correct
+48,serjania_hebecarpa/serjania_hebecarpa (15).jpg,57,57,0.99999356,faramea_sp,serjania_hebecarpa,Correct
+49,serjania_hebecarpa/serjania_hebecarpa (26).jpg,57,57,0.99989974,faramea_sp,serjania_hebecarpa,Correct
+50,serjania_laruotteana/serjania_laruotteana (1).jpg,58,58,0.9999614,genipa_auniricana,serjania_laruotteana,Correct
+51,serjania_laruotteana/serjania_laruotteana (30).jpg,58,58,0.99996626,genipa_auniricana,serjania_laruotteana,Correct
+52,serjania_laruotteana/serjania_laruotteana (5).jpg,58,58,0.9999893,genipa_auniricana,serjania_laruotteana,Correct
+53,serjania_sp/serjania_sp (2).jpg,59,59,0.9999933,gomphrena_sp,serjania_sp,Correct
+54,serjania_sp/serjania_sp (30).jpg,59,59,0.999967,gomphrena_sp,serjania_sp,Correct
+55,sida_cerradoensis/sida_cerradoensis (18).jpg,60,60,0.99933404,guazuma_ulmifolia,sida_cerradoensis,Correct
+56,sida_cerradoensis/sida_cerradoensis (4).jpg,60,60,0.9999863,guazuma_ulmifolia,sida_cerradoensis,Correct
+57,solanum_sisymbriifolium/solanum_sisymbrifolium (24).jpg,61,61,0.99997985,hortia_oreadica,solanum_sisymbriifolium,Correct
+58,solanum_sisymbriifolium/solanum_sisymbrifolium (9).jpg,61,61,0.9999852,hortia_oreadica,solanum_sisymbriifolium,Correct
+59,tabebuia_chysotricha/tabebuia_chysotricha (24).jpg,64,64,0.9943561,hyptis_sp,tabebuia_chysotricha,Correct
+60,tabebuia_rosealba/tabebuia_rosealba (21).jpg,65,65,0.9837038,ligustrum_lucidum,tabebuia_rosealba,Correct
+61,tapirira_guianensis/tapirira_guianensis_1.jpg,66,66,0.999974,luehea_divaricata,tapirira_guianensis,Correct
+62,tapirira_guianensis/tapirira_guianensis_12.jpg,66,66,0.9931751,luehea_divaricata,tapirira_guianensis,Correct
+63,tapirira_guianensis/tapirira_guianensis_31.jpg,66,66,0.9999418,luehea_divaricata,tapirira_guianensis,Correct
+64,tapirira_guianensis/tapirira_guianensis_7.jpg,66,66,0.9999758,luehea_divaricata,tapirira_guianensis,Correct
+65,trema_micrantha/trema_micrantha (1).jpg,68,68,0.9997346,mabea_fistulifera,trema_micrantha,Correct
+66,trema_micrantha/trema_micrantha (4).jpg,68,68,0.99996555,mabea_fistulifera,trema_micrantha,Correct
+67,trembleya_phlogiformis/trembleya_phlogiformis (32).jpg,69,69,0.99999404,machaerium_aculeatum,trembleya_phlogiformis,Correct
+68,tridax_procumbens/tridax_procumbens (16).jpg,70,70,0.9999863,magnolia_champaca,tridax_procumbens,Correct
+69,tridax_procumbens/tridax_procumbens (18).jpg,70,70,0.9993211,magnolia_champaca,tridax_procumbens,Correct
+0,aspilia_grazielae/aspilia_gracielae_ (26).jpg,5,5,0.99768865,acrocomia_aculeta,aspilia_grazielae,Correct
+1,aspilia_grazielae/aspilia_gracielae_ (29).jpg,5,5,0.9979152,acrocomia_aculeta,aspilia_grazielae,Correct
+2,aspilia_grazielae/aspilia_gracielae_ (30).jpg,5,5,0.9982394,acrocomia_aculeta,aspilia_grazielae,Correct
+3,bacopa_australis/bacopa_australis (10).jpg,6,6,0.99885917,anadenanthera_colubrina,bacopa_australis,Correct
+4,bacopa_australis/bacopa_australis (26).jpg,6,6,0.9979545,anadenanthera_colubrina,bacopa_australis,Correct
+5,bacopa_australis/bacopa_australis (34).jpg,6,6,0.99807894,anadenanthera_colubrina,bacopa_australis,Correct
+6,caesalpinia_peltophoroides/caesalpinia_peltophoroides (16).jpg,8,8,0.99942625,arachis_sp,caesalpinia_peltophoroides,Correct
+7,caesalpinia_peltophoroides/caesalpinia_peltophoroides (9).jpg,8,8,0.99953854,arachis_sp,caesalpinia_peltophoroides,Correct
+8,caryocar_brasiliensis/caryocar_brasiliensis (1).jpg,9,9,0.999571,archontophoenix_cunninghamiana,caryocar_brasiliensis,Correct
+9,doliocarpus_dentatus/dolicarpus (34).jpg,21,21,0.9992804,arrabidaea_florida,doliocarpus_dentatus,Correct
+10,erythrina_mulungu/erythrina (20).jpg,22,22,0.999566,aspilia_grazielae,erythrina_mulungu,Correct
+11,hyptis_sp/hyptis_sp (17).jpg,29,29,0.999579,bacopa_australis,hyptis_sp,Correct
+12,hyptis_sp/hyptis_sp (23).jpg,29,29,0.9990928,bacopa_australis,hyptis_sp,Correct
+13,hyptis_sp/hyptis_sp (35).jpg,29,29,0.99985194,bacopa_australis,hyptis_sp,Correct
+14,machaerium_aculeatum/machaerium (10).jpg,33,33,0.99930716,brugmansia_suaveolens,machaerium_aculeatum,Correct
+15,machaerium_aculeatum/machaerium (4).jpg,33,33,0.9994997,brugmansia_suaveolens,machaerium_aculeatum,Correct
+16,manihot_esculenta/manihot (25).jpg,35,35,0.9986634,caesalpinia_peltophoroides,manihot_esculenta,Correct
+17,mimosa_ditans/mimosa_ditans (9).jpg,38,38,0.99975747,caryocar_brasiliensis,mimosa_ditans,Correct
+18,mimosa_pigra/mimosa_pigra (16).jpg,39,39,0.9967926,cecropia_pachystachya,mimosa_pigra,Correct
+19,mimosa_pigra/mimosa_pigra (22).jpg,39,39,0.9996772,cecropia_pachystachya,mimosa_pigra,Correct
+20,mitostemma_brevifilis/mitostemma (16).jpg,40,40,0.99925166,ceiba_speciosa,mitostemma_brevifilis,Correct
+21,mitostemma_brevifilis/mitostemma (22).jpg,40,40,0.99860424,ceiba_speciosa,mitostemma_brevifilis,Correct
+22,mitostemma_brevifilis/mitostemma (5).jpg,40,40,0.9985813,ceiba_speciosa,mitostemma_brevifilis,Correct
+23,myrcia_guianensis/myrcia_guianensis_12.jpg,42,42,0.9993856,chromolaena_laevigata,myrcia_guianensis,Correct
+24,myrcia_guianensis/myrcia_guianensis_3.jpg,42,42,0.9996848,chromolaena_laevigata,myrcia_guianensis,Correct
+25,myrcia_guianensis/myrcia_guianensis_30.jpg,42,42,0.99962974,chromolaena_laevigata,myrcia_guianensis,Correct
+26,myrcia_guianensis/myrcia_guianensis_8.jpg,42,42,0.9997117,chromolaena_laevigata,myrcia_guianensis,Correct
+27,ochroma pyramidale/ochroma (17).jpg,43,43,0.99902356,cissus_campestris,ochroma pyramidale,Correct
+28,ochroma pyramidale/ochroma (30).jpg,43,43,0.9973916,cissus_campestris,ochroma pyramidale,Correct
+29,ochroma pyramidale/ochroma (9).jpg,43,43,0.9978258,cissus_campestris,ochroma pyramidale,Correct
+30,ouratea_hexasperma/ouratea (31).jpg,44,44,0.99949586,cissus_spinosa,ouratea_hexasperma,Correct
+31,ouratea_hexasperma/ouratea (35).jpg,44,44,0.9996804,cissus_spinosa,ouratea_hexasperma,Correct
+32,pachira_aquatica/pachia_aquatica (33).jpg,45,45,0.9998348,combretum_discolor,pachira_aquatica,Correct
+33,pachira_aquatica/pachia_aquatica (8).jpg,45,45,0.99976283,combretum_discolor,pachira_aquatica,Correct
+34,passiflora_gibertii/passiflora_giberti (15).jpg,46,46,0.99977237,cordia_trichotoma,passiflora_gibertii,Correct
+35,passiflora_gibertii/passiflora_giberti (25).jpg,46,46,0.9988544,cordia_trichotoma,passiflora_gibertii,Correct
+36,passiflora_gibertii/passiflora_giberti (28).jpg,46,46,0.9996524,cordia_trichotoma,passiflora_gibertii,Correct
+37,passiflora_gibertii/passiflora_giberti (29).jpg,46,46,0.9996716,cordia_trichotoma,passiflora_gibertii,Correct
+38,paullinia_spicata/paullinia (33).jpg,47,47,0.99916124,cosmos_caudatus,paullinia_spicata,Correct
+39,paullinia_spicata/paullinia (34).jpg,47,47,0.99918693,cosmos_caudatus,paullinia_spicata,Correct
+40,piper_aduncum/piper_aduncum (7).jpg,48,48,0.9987984,croton_urucurana,piper_aduncum,Correct
+41,poaceae_sp/poaceae_sp (18).jpg,49,49,0.99970716,dianella_tasmanica,poaceae_sp,Correct
+42,poaceae_sp/poaceae_sp (27).jpg,49,49,0.9995394,dianella_tasmanica,poaceae_sp,Correct
+43,ricinus_communis/ricinus (2).jpg,52,52,0.99706775,dipteryx_alata,ricinus_communis,Correct
+44,schizolobium_parahyba/guapuruvu_17.jpg,54,54,0.9994917,doliocarpus_dentatus,schizolobium_parahyba,Correct
+45,schizolobium_parahyba/guapuruvu_20.jpg,54,54,0.99989796,doliocarpus_dentatus,schizolobium_parahyba,Correct
+46,schizolobium_parahyba/guapuruvu_25.jpg,54,54,0.9997079,doliocarpus_dentatus,schizolobium_parahyba,Correct
+47,schizolobium_parahyba/guapuruvu_31.jpg,54,54,0.9998876,doliocarpus_dentatus,schizolobium_parahyba,Correct
+48,serjania_erecta/serjania (1).jpg,56,56,0.9966826,erythrina_mulungu,serjania_erecta,Correct
+49,serjania_erecta/serjania (19).jpg,56,56,0.99869186,erythrina_mulungu,serjania_erecta,Correct
+50,serjania_hebecarpa/serjania_hebecarpa (12).jpg,57,57,0.99887437,eucalyptus_sp,serjania_hebecarpa,Correct
+51,serjania_hebecarpa/serjania_hebecarpa (21).jpg,57,57,0.9991936,eucalyptus_sp,serjania_hebecarpa,Correct
+52,serjania_laruotteana/serjania_laruotteana (12).jpg,58,58,0.9997327,faramea_sp,serjania_laruotteana,Correct
+53,serjania_laruotteana/serjania_laruotteana (16).jpg,58,58,0.9973779,faramea_sp,serjania_laruotteana,Correct
+54,serjania_laruotteana/serjania_laruotteana (25).jpg,58,58,0.98951614,faramea_sp,serjania_laruotteana,Correct
+55,serjania_laruotteana/serjania_laruotteana (4).jpg,58,58,0.99979275,faramea_sp,serjania_laruotteana,Correct
+56,sida_cerradoensis/sida_cerradoensis (14).jpg,60,60,0.99958843,genipa_auniricana,sida_cerradoensis,Correct
+57,sida_cerradoensis/sida_cerradoensis (29).jpg,60,60,0.9991948,genipa_auniricana,sida_cerradoensis,Correct
+58,sida_cerradoensis/sida_cerradoensis (3).jpg,60,60,0.9994273,genipa_auniricana,sida_cerradoensis,Correct
+59,sida_cerradoensis/sida_cerradoensis (30).jpg,60,60,0.9979899,genipa_auniricana,sida_cerradoensis,Correct
+60,solanum_sisymbriifolium/solanum_sisymbrifolium (21).jpg,61,61,0.9994048,gomphrena_sp,solanum_sisymbriifolium,Correct
+61,tapirira_guianensis/tapirira_guianensis_13.jpg,66,66,0.99959105,guazuma_ulmifolia,tapirira_guianensis,Correct
+62,tapirira_guianensis/tapirira_guianensis_18.jpg,66,66,0.9996555,guazuma_ulmifolia,tapirira_guianensis,Correct
+63,tapirira_guianensis/tapirira_guianensis_28.jpg,66,66,0.9994511,guazuma_ulmifolia,tapirira_guianensis,Correct
+64,tapirira_guianensis/tapirira_guianensis_4.jpg,66,66,0.99830794,guazuma_ulmifolia,tapirira_guianensis,Correct
+65,trema_micrantha/trema_micrantha (30).jpg,68,68,0.9998202,hortia_oreadica,trema_micrantha,Correct
+66,vochysia_divergens/vochysia_divergens (16).jpg,71,71,0.99960846,hyptis_sp,vochysia_divergens,Correct
+0,anadenanthera_colubrina/anadenanthera_colubrina (11).jpg,1,1,0.99994254,acrocomia_aculeta,anadenanthera_colubrina,Correct
+1,arachis_sp/arachis_sp (20).jpg,2,2,0.99996674,anadenanthera_colubrina,arachis_sp,Correct
+2,aspilia_grazielae/aspilia_gracielae_ (22).jpg,5,5,0.9999628,arachis_sp,aspilia_grazielae,Correct
+3,aspilia_grazielae/aspilia_gracielae_ (5).jpg,5,5,0.9967056,arachis_sp,aspilia_grazielae,Correct
+4,caesalpinia_peltophoroides/caesalpinia_peltophoroides (28).jpg,8,8,0.9999169,archontophoenix_cunninghamiana,caesalpinia_peltophoroides,Correct
+5,caesalpinia_peltophoroides/caesalpinia_peltophoroides (5).jpg,8,8,0.9999883,archontophoenix_cunninghamiana,caesalpinia_peltophoroides,Correct
+6,caryocar_brasiliensis/caryocar_brasiliensis (5).jpg,9,9,0.9999838,arrabidaea_florida,caryocar_brasiliensis,Correct
+7,dianella_tasmanica/dianella_ (15).jpg,19,19,0.61843204,aspilia_grazielae,dianella_tasmanica,Correct
+8,dianella_tasmanica/dianella_ (16).jpg,19,19,0.9996948,aspilia_grazielae,dianella_tasmanica,Correct
+9,dianella_tasmanica/dianella_ (19).jpg,19,19,0.99994886,aspilia_grazielae,dianella_tasmanica,Correct
+10,hyptis_sp/hyptis_sp (30).jpg,29,29,0.99997854,bacopa_australis,hyptis_sp,Correct
+11,ligustrum_lucidum/ligustrum_lucidum (20).jpg,30,30,0.8667173,brugmansia_suaveolens,ligustrum_lucidum,Correct
+12,machaerium_aculeatum/machaerium (5).jpg,33,33,0.9995951,caesalpinia_peltophoroides,machaerium_aculeatum,Correct
+13,machaerium_aculeatum/machaerium (7).jpg,33,33,0.99995697,caesalpinia_peltophoroides,machaerium_aculeatum,Correct
+14,matayba_guianensis/matayba_guianensis (26).jpg,36,36,0.9998461,caryocar_brasiliensis,matayba_guianensis,Correct
+15,mimosa_ditans/mimosa_ditans (24).jpg,38,38,0.99991477,cecropia_pachystachya,mimosa_ditans,Correct
+16,mimosa_pigra/mimosa_pigra (15).jpg,39,39,0.9998437,ceiba_speciosa,mimosa_pigra,Correct
+17,mimosa_pigra/mimosa_pigra (6).jpg,39,39,0.9999633,ceiba_speciosa,mimosa_pigra,Correct
+18,mitostemma_brevifilis/mitostemma (10).jpg,40,40,0.99815184,chromolaena_laevigata,mitostemma_brevifilis,Correct
+19,mitostemma_brevifilis/mitostemma (20).jpg,40,40,0.99991894,chromolaena_laevigata,mitostemma_brevifilis,Correct
+20,myrcia_guianensis/myrcia_guianensis_13.jpg,42,42,0.9999908,cissus_campestris,myrcia_guianensis,Correct
+21,myrcia_guianensis/myrcia_guianensis_22.jpg,42,42,0.9999875,cissus_campestris,myrcia_guianensis,Correct
+22,myrcia_guianensis/myrcia_guianensis_24.jpg,42,42,0.99979657,cissus_campestris,myrcia_guianensis,Correct
+23,myrcia_guianensis/myrcia_guianensis_5.jpg,42,42,0.9999949,cissus_campestris,myrcia_guianensis,Correct
+24,ochroma pyramidale/ochroma (18).jpg,43,43,0.99997175,cissus_spinosa,ochroma pyramidale,Correct
+25,ochroma pyramidale/ochroma (2).jpg,43,43,0.9999299,cissus_spinosa,ochroma pyramidale,Correct
+26,ochroma pyramidale/ochroma (28).jpg,43,43,0.99992824,cissus_spinosa,ochroma pyramidale,Correct
+27,ouratea_hexasperma/ouratea (11).jpg,44,44,0.9999397,combretum_discolor,ouratea_hexasperma,Correct
+28,ouratea_hexasperma/ouratea (15).jpg,44,44,0.99996495,combretum_discolor,ouratea_hexasperma,Correct
+29,ouratea_hexasperma/ouratea (5).jpg,44,44,0.9999677,combretum_discolor,ouratea_hexasperma,Correct
+30,pachira_aquatica/pachia_aquatica (12).jpg,45,45,0.9999435,cordia_trichotoma,pachira_aquatica,Correct
+31,pachira_aquatica/pachia_aquatica (22).jpg,45,45,0.9998863,cordia_trichotoma,pachira_aquatica,Correct
+32,passiflora_gibertii/passiflora_giberti (31).jpg,46,46,0.9999008,cosmos_caudatus,passiflora_gibertii,Correct
+33,paullinia_spicata/paullinia (16).jpg,47,47,0.9999187,croton_urucurana,paullinia_spicata,Correct
+34,paullinia_spicata/paullinia (32).jpg,47,47,0.99961877,croton_urucurana,paullinia_spicata,Correct
+35,schizolobium_parahyba/guapuruvu_19.jpg,54,54,0.99998987,dianella_tasmanica,schizolobium_parahyba,Correct
+36,schizolobium_parahyba/guapuruvu_30.jpg,54,54,0.9998323,dianella_tasmanica,schizolobium_parahyba,Correct
+37,schizolobium_parahyba/guapuruvu_6.jpg,54,54,0.9277912,dianella_tasmanica,schizolobium_parahyba,Correct
+38,schizolobium_parahyba/guapuruvu_9.jpg,54,54,0.99997735,dianella_tasmanica,schizolobium_parahyba,Correct
+39,serjania_erecta/serjania (12).jpg,56,56,0.99996567,dipteryx_alata,serjania_erecta,Correct
+40,serjania_hebecarpa/serjania_hebecarpa (20).jpg,57,57,0.99997175,doliocarpus_dentatus,serjania_hebecarpa,Correct
+41,serjania_hebecarpa/serjania_hebecarpa (22).jpg,57,57,0.99971694,doliocarpus_dentatus,serjania_hebecarpa,Correct
+42,serjania_hebecarpa/serjania_hebecarpa (25).jpg,57,57,0.99994314,doliocarpus_dentatus,serjania_hebecarpa,Correct
+43,serjania_laruotteana/serjania_laruotteana (13).jpg,58,58,0.9998503,erythrina_mulungu,serjania_laruotteana,Correct
+44,serjania_laruotteana/serjania_laruotteana (22).jpg,58,58,0.9986971,erythrina_mulungu,serjania_laruotteana,Correct
+45,serjania_laruotteana/serjania_laruotteana (3).jpg,58,58,0.99996674,erythrina_mulungu,serjania_laruotteana,Correct
+46,serjania_laruotteana/serjania_laruotteana (32).jpg,58,58,0.9999502,erythrina_mulungu,serjania_laruotteana,Correct
+47,serjania_sp/serjania_sp (34).jpg,59,59,0.9999237,eucalyptus_sp,serjania_sp,Correct
+48,sida_cerradoensis/sida_cerradoensis (10).jpg,60,60,0.9999809,faramea_sp,sida_cerradoensis,Correct
+49,sida_cerradoensis/sida_cerradoensis (2).jpg,60,60,0.99998224,faramea_sp,sida_cerradoensis,Correct
+50,sida_cerradoensis/sida_cerradoensis (34).jpg,60,60,0.9999738,faramea_sp,sida_cerradoensis,Correct
+51,sida_cerradoensis/sida_cerradoensis (9).jpg,60,60,0.99993956,faramea_sp,sida_cerradoensis,Correct
+52,solanum_sisymbriifolium/solanum_sisymbrifolium (28).jpg,61,61,0.9998097,genipa_auniricana,solanum_sisymbriifolium,Correct
+53,syagrus_romanzoffiana/syagrus_romanzoffiana (5).jpg,62,62,0.99994946,gomphrena_sp,syagrus_romanzoffiana,Correct
+55,tapirira_guianensis/tapirira_guianensis_2.jpg,66,66,0.9995359,hortia_oreadica,tapirira_guianensis,Correct
+56,tapirira_guianensis/tapirira_guianensis_24.jpg,66,66,0.99990463,hortia_oreadica,tapirira_guianensis,Correct
+57,tapirira_guianensis/tapirira_guianensis_25.jpg,66,66,0.99996424,hortia_oreadica,tapirira_guianensis,Correct
+58,tapirira_guianensis/tapirira_guianensis_5.jpg,66,66,0.9999553,hortia_oreadica,tapirira_guianensis,Correct
+59,tradescantia_Pallida/tradescantia_Pallida (2).jpg,67,67,0.99998033,hyptis_sp,tradescantia_Pallida,Correct
+60,trema_micrantha/trema_micrantha (6).jpg,68,68,0.99997354,ligustrum_lucidum,trema_micrantha,Correct
+61,trembleya_phlogiformis/trembleya_phlogiformis (2).jpg,69,69,0.99997056,luehea_divaricata,trembleya_phlogiformis,Correct
+62,tridax_procumbens/tridax_procumbens (3).jpg,70,70,0.99994874,mabea_fistulifera,tridax_procumbens,Correct
+63,vochysia_divergens/vochysia_divergens (34).jpg,71,71,0.9997806,machaerium_aculeatum,vochysia_divergens,Correct
+0,aspilia_grazielae/aspilia_gracielae_ (13).jpg,5,5,0.99955267,acrocomia_aculeta,aspilia_grazielae,Correct
+1,aspilia_grazielae/aspilia_gracielae_ (31).jpg,5,5,0.99967206,acrocomia_aculeta,aspilia_grazielae,Correct
+2,bacopa_australis/bacopa_australis (27).jpg,6,6,0.99981135,anadenanthera_colubrina,bacopa_australis,Correct
+3,bacopa_australis/bacopa_australis (9).jpg,6,6,0.99871135,anadenanthera_colubrina,bacopa_australis,Correct
+4,caryocar_brasiliensis/caryocar_brasiliensis (15).jpg,9,9,0.99586415,arachis_sp,caryocar_brasiliensis,Correct
+5,caryocar_brasiliensis/caryocar_brasiliensis (3).jpg,9,9,0.9968491,arachis_sp,caryocar_brasiliensis,Correct
+6,chromolaena_laevigata/chromolaena_laevigata (30).jpg,12,12,0.9993812,archontophoenix_cunninghamiana,chromolaena_laevigata,Correct
+7,dianella_tasmanica/dianella_ (9).jpg,19,19,0.9970156,arrabidaea_florida,dianella_tasmanica,Correct
+9,doliocarpus_dentatus/dolicarpus (14).jpg,21,21,0.9990107,aspilia_grazielae,doliocarpus_dentatus,Correct
+10,doliocarpus_dentatus/dolicarpus (15).jpg,21,21,0.9982399,aspilia_grazielae,doliocarpus_dentatus,Correct
+11,faramea_sp/faramea_sp (23).jpg,24,24,0.9992725,bacopa_australis,faramea_sp,Correct
+12,guazuma_ulmifolia/guazuma_ulmifolia (19).jpg,27,27,0.9950748,brugmansia_suaveolens,guazuma_ulmifolia,Correct
+13,hyptis_sp/hyptis_sp (2).jpg,29,29,0.9998288,caesalpinia_peltophoroides,hyptis_sp,Correct
+14,hyptis_sp/hyptis_sp (5).jpg,29,29,0.9998567,caesalpinia_peltophoroides,hyptis_sp,Correct
+15,ligustrum_lucidum/ligustrum_lucidum (14).jpg,30,30,0.99762744,caryocar_brasiliensis,ligustrum_lucidum,Correct
+16,ligustrum_lucidum/ligustrum_lucidum (25).jpg,30,30,0.99927455,caryocar_brasiliensis,ligustrum_lucidum,Correct
+17,machaerium_aculeatum/machaerium (27).jpg,33,33,0.99862075,cecropia_pachystachya,machaerium_aculeatum,Correct
+18,machaerium_aculeatum/machaerium (32).jpg,33,33,0.9986909,cecropia_pachystachya,machaerium_aculeatum,Correct
+19,magnolia_champaca/magnolia (22).jpg,34,34,0.99536395,ceiba_speciosa,magnolia_champaca,Correct
+21,mauritia_flexuosa/mauritia (8).jpg,37,37,0.99976057,cissus_campestris,mauritia_flexuosa,Correct
+22,mimosa_ditans/mimosa_ditans (7).jpg,38,38,0.9989153,cissus_spinosa,mimosa_ditans,Correct
+23,mitostemma_brevifilis/mitostemma (3).jpg,40,40,0.9990741,combretum_discolor,mitostemma_brevifilis,Correct
+24,myrcia_guianensis/myrcia_guianensis_2.jpg,42,42,0.9992842,cordia_trichotoma,myrcia_guianensis,Correct
+25,myrcia_guianensis/myrcia_guianensis_28.jpg,42,42,0.99943084,cordia_trichotoma,myrcia_guianensis,Correct
+26,myrcia_guianensis/myrcia_guianensis_33.jpg,42,42,0.9978034,cordia_trichotoma,myrcia_guianensis,Correct
+27,myrcia_guianensis/myrcia_guianensis_34.jpg,42,42,0.9994161,cordia_trichotoma,myrcia_guianensis,Correct
+28,ochroma pyramidale/ochroma (11).jpg,43,43,0.9995022,cosmos_caudatus,ochroma pyramidale,Correct
+29,ochroma pyramidale/ochroma (19).jpg,43,43,0.9993895,cosmos_caudatus,ochroma pyramidale,Correct
+30,ochroma pyramidale/ochroma (25).jpg,43,43,0.99931777,cosmos_caudatus,ochroma pyramidale,Correct
+31,ouratea_hexasperma/ouratea (23).jpg,44,44,0.9994295,croton_urucurana,ouratea_hexasperma,Correct
+32,pachira_aquatica/pachia_aquatica (13).jpg,45,45,0.9989598,dianella_tasmanica,pachira_aquatica,Correct
+33,pachira_aquatica/pachia_aquatica (17).jpg,45,45,0.9992605,dianella_tasmanica,pachira_aquatica,Correct
+34,pachira_aquatica/pachia_aquatica (6).jpg,45,45,0.9993223,dianella_tasmanica,pachira_aquatica,Correct
+35,passiflora_gibertii/passiflora_giberti (24).jpg,46,46,0.99929535,dipteryx_alata,passiflora_gibertii,Correct
+36,passiflora_gibertii/passiflora_giberti (27).jpg,46,46,0.9994721,dipteryx_alata,passiflora_gibertii,Correct
+37,passiflora_gibertii/passiflora_giberti (32).jpg,46,46,0.9989838,dipteryx_alata,passiflora_gibertii,Correct
+38,paullinia_spicata/paullinia (14).jpg,47,47,0.99909997,doliocarpus_dentatus,paullinia_spicata,Correct
+39,paullinia_spicata/paullinia (25).jpg,47,47,0.9979644,doliocarpus_dentatus,paullinia_spicata,Correct
+40,paullinia_spicata/paullinia (9).jpg,47,47,0.9988519,doliocarpus_dentatus,paullinia_spicata,Correct
+41,schizolobium_parahyba/guapuruvu_1.jpg,54,54,0.99973077,erythrina_mulungu,schizolobium_parahyba,Correct
+42,schizolobium_parahyba/guapuruvu_24.jpg,54,54,0.9996687,erythrina_mulungu,schizolobium_parahyba,Correct
+43,schizolobium_parahyba/guapuruvu_5.jpg,54,54,0.99976903,erythrina_mulungu,schizolobium_parahyba,Correct
+44,schizolobium_parahyba/guapuruvu_8.jpg,54,54,0.99972373,erythrina_mulungu,schizolobium_parahyba,Correct
+45,senegalia_plumosa/acacia_plumosa (16).jpg,55,55,0.9994549,eucalyptus_sp,senegalia_plumosa,Correct
+46,serjania_erecta/serjania (15).jpg,56,56,0.99906856,faramea_sp,serjania_erecta,Correct
+47,serjania_erecta/serjania (18).jpg,56,56,0.9993292,faramea_sp,serjania_erecta,Correct
+48,serjania_hebecarpa/serjania_hebecarpa (34).jpg,57,57,0.99202126,genipa_auniricana,serjania_hebecarpa,Correct
+49,serjania_laruotteana/serjania_laruotteana (14).jpg,58,58,0.9953431,gomphrena_sp,serjania_laruotteana,Correct
+50,serjania_laruotteana/serjania_laruotteana (26).jpg,58,58,0.71983016,gomphrena_sp,serjania_laruotteana,Correct
+51,serjania_laruotteana/serjania_laruotteana (35).jpg,58,58,0.9967264,gomphrena_sp,serjania_laruotteana,Correct
+52,serjania_sp/serjania_sp (12).jpg,59,59,0.99926084,guazuma_ulmifolia,serjania_sp,Correct
+53,sida_cerradoensis/sida_cerradoensis (16).jpg,60,60,0.99961996,hortia_oreadica,sida_cerradoensis,Correct
+54,sida_cerradoensis/sida_cerradoensis (33).jpg,60,60,0.99934083,hortia_oreadica,sida_cerradoensis,Correct
+55,sida_cerradoensis/sida_cerradoensis (35).jpg,60,60,0.9995962,hortia_oreadica,sida_cerradoensis,Correct
+56,sida_cerradoensis/sida_cerradoensis (6).jpg,60,60,0.99963284,hortia_oreadica,sida_cerradoensis,Correct
+57,solanum_sisymbriifolium/solanum_sisymbrifolium (2).jpg,61,61,0.99946505,hyptis_sp,solanum_sisymbriifolium,Correct
+58,solanum_sisymbriifolium/solanum_sisymbrifolium (32).jpg,61,61,0.9993575,hyptis_sp,solanum_sisymbriifolium,Correct
+59,solanum_sisymbriifolium/solanum_sisymbrifolium (5).jpg,61,61,0.9996082,hyptis_sp,solanum_sisymbriifolium,Correct
+60,tapirira_guianensis/tapirira_guianensis_15.jpg,66,66,0.99966335,ligustrum_lucidum,tapirira_guianensis,Correct
+61,tapirira_guianensis/tapirira_guianensis_29.jpg,66,66,0.9904468,ligustrum_lucidum,tapirira_guianensis,Correct
+62,tapirira_guianensis/tapirira_guianensis_33.jpg,66,66,0.9834864,ligustrum_lucidum,tapirira_guianensis,Correct
+63,tapirira_guianensis/tapirira_guianensis_35.jpg,66,66,0.9990746,ligustrum_lucidum,tapirira_guianensis,Correct
+64,tradescantia_Pallida/tradescantia_Pallida (11).jpg,67,67,0.88775367,luehea_divaricata,tradescantia_Pallida,Correct
+65,trema_micrantha/trema_micrantha (17).jpg,68,68,0.9996074,mabea_fistulifera,trema_micrantha,Correct
+66,trembleya_phlogiformis/trembleya_phlogiformis (22).jpg,69,69,0.99977773,machaerium_aculeatum,trembleya_phlogiformis,Correct
+67,tridax_procumbens/tridax_procumbens (17).jpg,70,70,0.9996872,magnolia_champaca,tridax_procumbens,Correct

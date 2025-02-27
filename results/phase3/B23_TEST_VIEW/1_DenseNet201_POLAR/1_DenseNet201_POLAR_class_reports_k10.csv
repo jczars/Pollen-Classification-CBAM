@@ -1,0 +1,13 @@
+,precision,recall,f1-score,support
+arecaceae,1.0,1.0,1.0,1.0
+arrabidaea,1.0,1.0,1.0,2.0
+chromolaena,1.0,1.0,1.0,1.0
+faramea,1.0,1.0,1.0,1.0
+hyptis,1.0,1.0,1.0,2.0
+mimosa,1.0,1.0,1.0,2.0
+senegalia,1.0,1.0,1.0,1.0
+serjania,1.0,1.0,1.0,2.0
+urochloa,1.0,1.0,1.0,1.0
+accuracy,1.0,1.0,1.0,1.0
+macro avg,1.0,1.0,1.0,13.0
+weighted avg,1.0,1.0,1.0,13.0

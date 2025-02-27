@@ -1,0 +1,9 @@
+,file,y_true,y_pred,confidence,true_label,predicted_label,status
+0,matayba/matayba_25.jpg,12,12,0.97693324,anadenanthera,matayba,Correct
+1,mimosa/mimosa_10.jpg,13,13,0.9997018,arecaceae,mimosa,Correct
+2,mimosa/mimosa_14.jpg,13,13,0.99978834,arecaceae,mimosa,Correct
+3,myrcia/myrcia_10.jpg,14,14,0.98732835,arrabidaea,myrcia,Correct
+4,schinus/schinus_20.jpg,17,17,0.9995327,cecropia,schinus,Correct
+5,serjania/serjania_14.jpg,19,19,0.99981195,chromolaena,serjania,Correct
+6,serjania/serjania_31.jpg,19,19,0.99964404,chromolaena,serjania,Correct
+7,tridax/tridax_17.jpg,21,21,0.9994647,combretum,tridax,Correct

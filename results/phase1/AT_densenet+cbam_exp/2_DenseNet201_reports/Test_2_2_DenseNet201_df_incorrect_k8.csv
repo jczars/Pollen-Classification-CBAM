@@ -1,0 +1,4 @@
+,file,y_true,y_pred,confidence,true_label,predicted_label,status
+83,eucalyptus_sp/eucalyptus_sp (6).jpg,23,72,0.650589,eucalyptus_sp,zea_mays,Incorrect
+87,genipa_auniricana/genipa_auniricana (11).jpg,25,30,0.6479379,genipa_auniricana,ligustrum_lucidum,Incorrect
+249,zea_mays/zea_17.jpg,72,49,0.8275371,zea_mays,poaceae_sp,Incorrect

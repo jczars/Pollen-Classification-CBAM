@@ -1,0 +1,5 @@
+,file,y_true,y_pred,confidence,true_label,predicted_label,status
+39,matayba/matayba_19.jpg,12,8,0.8597349,matayba,eucalipto,Incorrect
+50,protium/protium_35.jpg,15,9,0.9835064,protium,faramea,Incorrect
+53,qualea/qualea_30.jpg,16,9,0.9934683,qualea,faramea,Incorrect
+63,serjania/serjania_33.jpg,19,15,0.59085995,serjania,protium,Incorrect

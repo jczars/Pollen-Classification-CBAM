@@ -1,0 +1,4 @@
+,file,y_true,y_pred,confidence,true_label,predicted_label,status
+68,dianella_tasmanica/dianella_ (34).jpg,19,0,0.97746974,dianella_tasmanica,acrocomia_aculeta,Incorrect
+171,poaceae_sp/poaceae_sp (17).jpg,49,59,0.86598617,poaceae_sp,serjania_sp,Incorrect
+228,tabebuia_rosealba/tabebuia_rosealba (8).jpg,65,64,0.93166494,tabebuia_rosealba,tabebuia_chysotricha,Incorrect

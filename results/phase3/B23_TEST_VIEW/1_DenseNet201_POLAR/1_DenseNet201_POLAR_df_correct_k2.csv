@@ -1,0 +1,8 @@
+,file,y_true,y_pred,confidence,true_label,predicted_label,status
+0,anadenanthera/anadenanthera_18.jpg,0,0,0.9998522,anadenanthera,anadenanthera,Correct
+1,chromolaena/chromolaena_21.jpg,4,4,0.9999857,arecaceae,chromolaena,Correct
+2,mimosa/mimosa_07.jpg,13,13,0.9998685,arrabidaea,mimosa,Correct
+3,myrcia/myrcia_25.jpg,14,14,0.99996424,cecropia,myrcia,Correct
+4,serjania/serjania_34.jpg,19,19,0.99989843,chromolaena,serjania,Correct
+5,urochloa/urochloa (15).jpg,22,22,0.9999181,combretum,urochloa,Correct
+6,urochloa/urochloa (21).jpg,22,22,0.99991167,combretum,urochloa,Correct

@@ -1,0 +1,6 @@
+,file,y_true,y_pred,confidence,true_label,predicted_label,status
+0,chromolaena/chromolaena_05.jpg,4,4,0.99990916,anadenanthera,chromolaena,Correct
+1,chromolaena/chromolaena_30.jpg,4,4,0.99984777,anadenanthera,chromolaena,Correct
+2,hyptis/hyptis_29.jpg,10,10,0.9993001,arecaceae,hyptis,Correct
+3,mimosa/mimosa_11.jpg,13,13,0.9999387,arrabidaea,mimosa,Correct
+4,serjania/serjania_22.jpg,19,19,0.9998118,cecropia,serjania,Correct

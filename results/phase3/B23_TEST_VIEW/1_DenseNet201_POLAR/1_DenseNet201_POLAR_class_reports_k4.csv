@@ -1,0 +1,10 @@
+,precision,recall,f1-score,support
+matayba,1.0,1.0,1.0,1.0
+mimosa,1.0,1.0,1.0,2.0
+myrcia,1.0,1.0,1.0,1.0
+schinus,1.0,1.0,1.0,1.0
+serjania,1.0,1.0,1.0,2.0
+tridax,1.0,1.0,1.0,1.0
+accuracy,1.0,1.0,1.0,1.0
+macro avg,1.0,1.0,1.0,8.0
+weighted avg,1.0,1.0,1.0,8.0

@@ -1,0 +1,14 @@
+,file,y_true,y_pred,confidence,true_label,predicted_label,status
+0,arecaceae/arecaceae_29.jpg,1,1,0.9932341,anadenanthera,arecaceae,Correct
+1,hyptis/hyptis_12.jpg,10,10,0.99828714,arecaceae,hyptis,Correct
+2,hyptis/hyptis_18.jpg,10,10,0.9965918,arecaceae,hyptis,Correct
+3,hyptis/hyptis_19.jpg,10,10,0.99680185,arecaceae,hyptis,Correct
+4,mimosa/mimosa_08.jpg,13,13,0.99822146,arrabidaea,mimosa,Correct
+5,mimosa/mimosa_26.jpg,13,13,0.9985116,arrabidaea,mimosa,Correct
+6,myrcia/myrcia_20.jpg,14,14,0.9978769,cecropia,myrcia,Correct
+7,myrcia/myrcia_34.jpg,14,14,0.99697757,cecropia,myrcia,Correct
+8,schinus/schinus_17.jpg,17,17,0.99643517,chromolaena,schinus,Correct
+9,senegalia/senegalia (21).jpg,18,18,0.9973206,combretum,senegalia,Correct
+10,senegalia/senegalia (5).jpg,18,18,0.99595296,combretum,senegalia,Correct
+11,serjania/serjania_12.jpg,19,19,0.9983346,croton,serjania,Correct
+12,urochloa/urochloa (20).jpg,22,22,0.9985587,dipteryx,urochloa,Correct

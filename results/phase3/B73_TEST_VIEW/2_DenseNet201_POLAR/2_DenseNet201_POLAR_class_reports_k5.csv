@@ -1,0 +1,38 @@
+,precision,recall,f1-score,support
+anadenanthera_colubrina,1.0,1.0,1.0,1.0
+arachis_sp,1.0,1.0,1.0,1.0
+aspilia_grazielae,1.0,1.0,1.0,1.0
+bacopa_australis,1.0,1.0,1.0,1.0
+brugmansia_suaveolens,1.0,1.0,1.0,1.0
+caesalpinia_peltophoroides,1.0,1.0,1.0,2.0
+caryocar_brasiliensis,1.0,1.0,1.0,1.0
+ceiba_speciosa,1.0,1.0,1.0,1.0
+dianella_tasmanica,1.0,1.0,1.0,3.0
+doliocarpus_dentatus,1.0,1.0,1.0,2.0
+genipa_auniricana,1.0,1.0,1.0,1.0
+guazuma_ulmifolia,1.0,1.0,1.0,1.0
+hyptis_sp,1.0,1.0,1.0,2.0
+machaerium_aculeatum,1.0,1.0,1.0,1.0
+magnolia_champaca,1.0,1.0,1.0,1.0
+mimosa_ditans,1.0,1.0,1.0,2.0
+mimosa_pigra,1.0,1.0,1.0,3.0
+mitostemma_brevifilis,1.0,1.0,1.0,1.0
+myrcia_guianensis,1.0,1.0,1.0,3.0
+ochroma pyramidale,1.0,1.0,1.0,3.0
+ouratea_hexasperma,1.0,1.0,1.0,1.0
+pachira_aquatica,1.0,1.0,1.0,3.0
+passiflora_gibertii,1.0,1.0,1.0,2.0
+paullinia_spicata,1.0,1.0,1.0,4.0
+ricinus_communis,1.0,1.0,1.0,1.0
+schizolobium_parahyba,1.0,1.0,1.0,3.0
+serjania_erecta,1.0,1.0,1.0,2.0
+serjania_hebecarpa,1.0,1.0,1.0,4.0
+serjania_laruotteana,1.0,1.0,1.0,3.0
+solanum_sisymbriifolium,1.0,1.0,1.0,2.0
+tapirira_guianensis,1.0,1.0,1.0,3.0
+tradescantia_Pallida,1.0,1.0,1.0,2.0
+trema_micrantha,1.0,1.0,1.0,1.0
+vochysia_divergens,1.0,1.0,1.0,1.0
+accuracy,1.0,1.0,1.0,1.0
+macro avg,1.0,1.0,1.0,64.0
+weighted avg,1.0,1.0,1.0,64.0

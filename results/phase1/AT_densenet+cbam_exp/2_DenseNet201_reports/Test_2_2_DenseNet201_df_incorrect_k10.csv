@@ -1,0 +1,9 @@
+,file,y_true,y_pred,confidence,true_label,predicted_label,status
+73,doliocarpus_dentatus/dolicarpus (11).jpg,21,62,0.9992624,doliocarpus_dentatus,syagrus_romanzoffiana,Incorrect
+89,genipa_auniricana/genipa_auniricana (17).jpg,25,41,0.6208234,genipa_auniricana,myracroduon_urundeuva,Incorrect
+125,matayba_guianensis/matayba_guianensis (25).jpg,36,23,0.6215524,matayba_guianensis,eucalyptus_sp,Incorrect
+170,poaceae_sp/poaceae_sp (33).jpg,49,72,0.9992675,poaceae_sp,zea_mays,Incorrect
+175,protium_heptaphyllum/protium_heptaphyllum (35).jpg,50,24,0.9959552,protium_heptaphyllum,faramea_sp,Incorrect
+197,serjania_hebecarpa/serjania_hebecarpa (30).jpg,57,19,0.74383587,serjania_hebecarpa,dianella_tasmanica,Incorrect
+225,tabebuia_rosealba/tabebuia_rosealba (24).jpg,65,64,0.7008724,tabebuia_rosealba,tabebuia_chysotricha,Incorrect
+249,zea_mays/zea_12.jpg,72,49,0.9688497,zea_mays,poaceae_sp,Incorrect

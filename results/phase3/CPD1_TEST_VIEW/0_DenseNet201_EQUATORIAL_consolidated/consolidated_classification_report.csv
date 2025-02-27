@@ -1,0 +1,23 @@
+;precision;recall;f1-score;support
+asphodelus;1,0;1,0;1,0;5
+calicotome;0,769;0,909;0,833;11
+castanea;1,0;1,0;1,0;218
+ceratonia;0,938;0,948;0,943;96
+ebenus;1,0;1,0;1,0;22
+erica;0,667;1,0;0,8;2
+eucalyptus;0,75;1,0;0,857;6
+ferula;1,0;1,0;1,0;67
+myrtus;1,0;1,0;1,0;2
+olea;0,993;0,996;0,995;767
+origanum;0,99;0,963;0,977;108
+oxalis;1,0;1,0;1,0;14
+pistacia;1,0;1,0;1,0;33
+salvia;1,0;0,981;0,99;104
+satureja;1,0;0,95;0,974;40
+sinapis;0,99;0,99;0,99;196
+thymbra;1,0;1,0;1,0;62
+urginea;1,0;1,0;1,0;109
+vitis;0,992;0,988;0,99;248
+accuracy;0,99;0,99;0,99;0
+macro avg;0,952;0,986;0,966;2110
+weighted avg;0,99;0,99;0,99;2110

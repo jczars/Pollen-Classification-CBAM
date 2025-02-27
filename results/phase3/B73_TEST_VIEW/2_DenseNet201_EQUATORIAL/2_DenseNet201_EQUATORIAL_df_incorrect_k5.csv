@@ -1,0 +1,5 @@
+,file,y_true,y_pred,confidence,true_label,predicted_label,status
+28,cecropia_pachystachya/cecropia_pachystachya (31).jpg,10,38,0.96913874,cecropia_pachystachya,mimosa_ditans,Incorrect
+29,cecropia_pachystachya/cecropia_pachystachya (33).jpg,10,38,0.99999523,cecropia_pachystachya,mimosa_ditans,Incorrect
+104,matayba_guianensis/matayba_guianensis (19).jpg,36,23,0.9972783,manihot_esculenta,eucalyptus_sp,Incorrect
+168,tabebuia_rosealba/tabebuia_rosealba (17).jpg,65,64,0.76503557,serjania_sp,tabebuia_chysotricha,Incorrect

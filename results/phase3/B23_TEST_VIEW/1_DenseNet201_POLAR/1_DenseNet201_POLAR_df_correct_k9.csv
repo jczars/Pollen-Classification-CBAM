@@ -1,0 +1,7 @@
+,file,y_true,y_pred,confidence,true_label,predicted_label,status
+0,anadenanthera/anadenanthera_17.jpg,0,0,0.9933281,anadenanthera,anadenanthera,Correct
+1,anadenanthera/anadenanthera_29.jpg,0,0,0.9959544,anadenanthera,anadenanthera,Correct
+2,combretum/combretum_17.jpg,5,5,0.99670476,arecaceae,combretum,Correct
+3,hyptis/hyptis_17.jpg,10,10,0.9968272,arrabidaea,hyptis,Correct
+4,myrcia/myrcia_02.jpg,14,14,0.99385935,cecropia,myrcia,Correct
+5,myrcia/myrcia_13.jpg,14,14,0.99646974,cecropia,myrcia,Correct

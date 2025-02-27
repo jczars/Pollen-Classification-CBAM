@@ -1,0 +1,8 @@
+,file,y_true,y_pred,confidence,true_label,predicted_label,status
+71,dipteryx_alata/dipteryx_alata (17).jpg,20,4,0.99974364,dipteryx_alata,arrabidaea_florida,Incorrect
+123,matayba_guianensis/matayba_guianensis (1).jpg,36,24,0.5084581,matayba_guianensis,faramea_sp,Incorrect
+171,poaceae_sp/poaceae_sp (32).jpg,49,72,0.9975979,poaceae_sp,zea_mays,Incorrect
+177,qualea_multiflora/qualea_multiflora (30).jpg,51,24,0.7737309,qualea_multiflora,faramea_sp,Incorrect
+178,qualea_multiflora/qualea_multiflora (4).jpg,51,20,0.99907315,qualea_multiflora,dipteryx_alata,Incorrect
+222,tabebuia_chysotricha/tabebuia_chysotricha (16).jpg,64,65,0.9423382,tabebuia_chysotricha,tabebuia_rosealba,Incorrect
+223,tabebuia_chysotricha/tabebuia_chysotricha (21).jpg,64,21,0.7916257,tabebuia_chysotricha,doliocarpus_dentatus,Incorrect

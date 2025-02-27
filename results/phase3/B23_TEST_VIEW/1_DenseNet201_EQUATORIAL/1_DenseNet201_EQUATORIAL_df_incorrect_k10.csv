@@ -1,0 +1,5 @@
+,file,y_true,y_pred,confidence,true_label,predicted_label,status
+2,arecaceae/arecaceae_01.jpg,1,14,0.9979304,arecaceae,myrcia,Incorrect
+42,protium/protium_15.jpg,15,17,0.99614704,protium,schinus,Incorrect
+43,protium/protium_21.jpg,15,19,0.83412176,protium,serjania,Incorrect
+44,protium/protium_31.jpg,15,9,0.94816977,protium,faramea,Incorrect

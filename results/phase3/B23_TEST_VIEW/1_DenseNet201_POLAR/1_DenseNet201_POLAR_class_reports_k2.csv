@@ -1,0 +1,10 @@
+,precision,recall,f1-score,support
+anadenanthera,1.0,1.0,1.0,1.0
+chromolaena,1.0,1.0,1.0,1.0
+mimosa,1.0,1.0,1.0,1.0
+myrcia,1.0,1.0,1.0,1.0
+serjania,1.0,1.0,1.0,1.0
+urochloa,1.0,1.0,1.0,2.0
+accuracy,1.0,1.0,1.0,1.0
+macro avg,1.0,1.0,1.0,7.0
+weighted avg,1.0,1.0,1.0,7.0

@@ -1,0 +1,10 @@
+,file,y_true,y_pred,confidence,true_label,predicted_label,status
+0,arrabidaea/arrabidaea_04.jpg,2,2,0.99788433,anadenanthera,arrabidaea,Correct
+1,cecropia/cecropia_12.jpg,3,3,0.99641234,arecaceae,cecropia,Correct
+2,hyptis/hyptis_05.jpg,10,10,0.9980088,arrabidaea,hyptis,Correct
+3,hyptis/hyptis_23.jpg,10,10,0.9977774,arrabidaea,hyptis,Correct
+4,mimosa/mimosa_19.jpg,13,13,0.9989415,cecropia,mimosa,Correct
+5,mimosa/mimosa_24.jpg,13,13,0.99892277,cecropia,mimosa,Correct
+6,senegalia/senegalia (16).jpg,18,18,0.998072,chromolaena,senegalia,Correct
+7,tridax/tridax_03.jpg,21,21,0.99880767,combretum,tridax,Correct
+8,urochloa/urochloa (23).jpg,22,22,0.9973248,croton,urochloa,Correct

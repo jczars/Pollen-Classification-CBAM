@@ -1,0 +1,4 @@
+,file,y_true,y_pred,confidence,true_label,predicted_label,status
+5,arecaceae/arecaceae_25.jpg,1,20,0.9209901,arecaceae,syagrus,Incorrect
+23,dipteryx/dipteryx_19.jpg,7,1,0.8902937,dipteryx,arecaceae,Incorrect
+47,protium/protium_18.jpg,15,22,0.89470536,protium,urochloa,Incorrect

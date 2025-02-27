@@ -1,0 +1,7 @@
+,file,y_true,y_pred,confidence,true_label,predicted_label,status
+0,anadenanthera/anadenanthera_20.jpg,0,0,0.9995956,anadenanthera,anadenanthera,Correct
+1,arecaceae/arecaceae_12.jpg,1,1,0.99947697,arecaceae,arecaceae,Correct
+2,matayba/matayba_26.jpg,12,12,0.9998041,arrabidaea,matayba,Correct
+3,senegalia/senegalia (27).jpg,18,18,0.9996437,cecropia,senegalia,Correct
+4,serjania/serjania_18.jpg,19,19,0.99977154,chromolaena,serjania,Correct
+5,urochloa/urochloa (27).jpg,22,22,0.99959177,combretum,urochloa,Correct

@@ -1,0 +1,40 @@
+,precision,recall,f1-score,support
+anadenanthera_colubrina,1.0,1.0,1.0,1.0
+arrabidaea_florida,1.0,1.0,1.0,1.0
+aspilia_grazielae,1.0,1.0,1.0,2.0
+bacopa_australis,1.0,1.0,1.0,1.0
+caesalpinia_peltophoroides,1.0,1.0,1.0,2.0
+caryocar_brasiliensis,1.0,1.0,1.0,1.0
+cissus_spinosa,1.0,1.0,1.0,1.0
+dianella_tasmanica,1.0,1.0,1.0,1.0
+doliocarpus_dentatus,1.0,1.0,1.0,2.0
+genipa_auniricana,1.0,1.0,1.0,1.0
+hyptis_sp,1.0,1.0,1.0,1.0
+mimosa_ditans,0.5,1.0,0.6666666666666666,1.0
+mimosa_pigra,1.0,1.0,1.0,1.0
+mitostemma_brevifilis,1.0,1.0,1.0,1.0
+myrcia_guianensis,1.0,1.0,1.0,3.0
+ochroma pyramidale,1.0,0.6666666666666666,0.8,3.0
+ouratea_hexasperma,1.0,1.0,1.0,2.0
+pachira_aquatica,1.0,1.0,1.0,2.0
+passiflora_gibertii,1.0,1.0,1.0,1.0
+paullinia_spicata,1.0,0.5,0.6666666666666666,4.0
+poaceae_sp,1.0,1.0,1.0,1.0
+ricinus_communis,1.0,1.0,1.0,1.0
+schizolobium_parahyba,1.0,1.0,1.0,2.0
+senegalia_plumosa,1.0,1.0,1.0,1.0
+serjania_erecta,0.3333333333333333,1.0,0.5,1.0
+serjania_hebecarpa,0.3333333333333333,1.0,0.5,1.0
+serjania_laruotteana,1.0,0.3333333333333333,0.5,3.0
+sida_cerradoensis,1.0,1.0,1.0,2.0
+solanum_sisymbriifolium,1.0,1.0,1.0,3.0
+tabebuia_chysotricha,0.0,0.0,0.0,1.0
+tabebuia_rosealba,0.5,1.0,0.6666666666666666,1.0
+tapirira_guianensis,1.0,1.0,1.0,3.0
+tradescantia_Pallida,1.0,1.0,1.0,2.0
+trema_micrantha,1.0,1.0,1.0,1.0
+trembleya_phlogiformis,1.0,1.0,1.0,2.0
+vochysia_divergens,1.0,1.0,1.0,1.0
+accuracy,0.896551724137931,0.896551724137931,0.896551724137931,0.896551724137931
+macro avg,0.9074074074074076,0.9305555555555556,0.8972222222222221,58.0
+weighted avg,0.9425287356321839,0.896551724137931,0.8948275862068965,58.0

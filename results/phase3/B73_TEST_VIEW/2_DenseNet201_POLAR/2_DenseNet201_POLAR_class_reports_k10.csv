@@ -1,0 +1,39 @@
+,precision,recall,f1-score,support
+aspilia_grazielae,1.0,1.0,1.0,2.0
+bacopa_australis,1.0,1.0,1.0,2.0
+caryocar_brasiliensis,1.0,1.0,1.0,2.0
+chromolaena_laevigata,1.0,1.0,1.0,1.0
+dianella_tasmanica,1.0,1.0,1.0,1.0
+doliocarpus_dentatus,1.0,0.6666666666666666,0.8,3.0
+faramea_sp,1.0,1.0,1.0,1.0
+guazuma_ulmifolia,1.0,1.0,1.0,1.0
+hyptis_sp,1.0,1.0,1.0,2.0
+ligustrum_lucidum,1.0,1.0,1.0,2.0
+machaerium_aculeatum,1.0,1.0,1.0,2.0
+magnolia_champaca,1.0,1.0,1.0,1.0
+matayba_guianensis,0.0,0.0,0.0,1.0
+mauritia_flexuosa,1.0,1.0,1.0,1.0
+mimosa_ditans,1.0,1.0,1.0,1.0
+mitostemma_brevifilis,1.0,1.0,1.0,1.0
+myrcia_guianensis,1.0,1.0,1.0,4.0
+ochroma pyramidale,1.0,1.0,1.0,3.0
+ouratea_hexasperma,1.0,1.0,1.0,1.0
+pachira_aquatica,1.0,1.0,1.0,3.0
+passiflora_gibertii,1.0,1.0,1.0,3.0
+paullinia_spicata,1.0,1.0,1.0,3.0
+schizolobium_parahyba,1.0,1.0,1.0,4.0
+senegalia_plumosa,1.0,1.0,1.0,1.0
+serjania_erecta,1.0,1.0,1.0,2.0
+serjania_hebecarpa,1.0,1.0,1.0,1.0
+serjania_laruotteana,1.0,1.0,1.0,3.0
+serjania_sp,1.0,1.0,1.0,1.0
+sida_cerradoensis,1.0,1.0,1.0,4.0
+solanum_sisymbriifolium,1.0,1.0,1.0,3.0
+tapirira_guianensis,1.0,1.0,1.0,4.0
+tradescantia_Pallida,1.0,1.0,1.0,1.0
+trema_micrantha,1.0,1.0,1.0,1.0
+trembleya_phlogiformis,1.0,1.0,1.0,1.0
+tridax_procumbens,1.0,1.0,1.0,1.0
+micro avg,1.0,0.9705882352941176,0.9850746268656716,68.0
+macro avg,0.9714285714285714,0.9619047619047618,0.9657142857142856,68.0
+weighted avg,0.9852941176470589,0.9705882352941176,0.9764705882352942,68.0

@@ -1,0 +1,40 @@
+Unnamed: 0,file,y_true,y_pred,confidence,true_label,predicted_label,status
+139,poaceae_sp/poaceae_sp (34).jpg,49,72,0.9766258,paullinia_spicata,zea_mays,Incorrect
+151,schinus_sp/schinus_sp (32).jpg,53,24,0.9353184,qualea_multiflora,faramea_sp,Incorrect
+58,dianella_tasmanica/dianella_ (34).jpg,19,0,0.97746974,dianella_tasmanica,acrocomia_aculeta,Incorrect
+132,poaceae_sp/poaceae_sp (17).jpg,49,59,0.86598617,pachira_aquatica,serjania_sp,Incorrect
+169,tabebuia_rosealba/tabebuia_rosealba (8).jpg,65,64,0.93167895,serjania_laruotteana,tabebuia_chysotricha,Incorrect
+132,poaceae_sp/poaceae_sp (16).jpg,49,50,0.94744897,passiflora_gibertii,protium_heptaphyllum,Incorrect
+169,tabebuia_rosealba/tabebuia_rosealba (3).jpg,65,64,0.99995744,sida_cerradoensis,tabebuia_chysotricha,Incorrect
+171,tabebuia_rosealba/tabebuia_rosealba (7).jpg,65,64,0.98465085,sida_cerradoensis,tabebuia_chysotricha,Incorrect
+20,bacopa_australis/bacopa_australis (35).jpg,6,8,0.5533276,bacopa_australis,caesalpinia_peltophoroides,Incorrect
+172,trembleya_phlogiformis/trembleya_phlogiformis (8).jpg,69,71,0.53777295,sida_cerradoensis,vochysia_divergens,Incorrect
+28,cecropia_pachystachya/cecropia_pachystachya (31).jpg,10,38,0.96913874,cecropia_pachystachya,mimosa_ditans,Incorrect
+29,cecropia_pachystachya/cecropia_pachystachya (33).jpg,10,38,0.99999523,cecropia_pachystachya,mimosa_ditans,Incorrect
+104,matayba_guianensis/matayba_guianensis (19).jpg,36,23,0.9972783,manihot_esculenta,eucalyptus_sp,Incorrect
+168,tabebuia_rosealba/tabebuia_rosealba (17).jpg,65,64,0.76503557,serjania_sp,tabebuia_chysotricha,Incorrect
+13,arrabidaea_florida/arrabidaea_florida (29).jpg,4,20,0.9556316,arrabidaea_florida,dipteryx_alata,Incorrect
+50,cordia_trichotoma/cordia_trichotoma (30).jpg,16,13,0.9997032,cordia_trichotoma,cissus_campestris,Incorrect
+109,matayba_guianensis/matayba_guianensis (4).jpg,36,23,0.99852103,matayba_guianensis,eucalyptus_sp,Incorrect
+146,schinus_sp/schinus_sp (12).jpg,53,10,0.6749619,poaceae_sp,cecropia_pachystachya,Incorrect
+170,tabebuia_chysotricha/tabebuia_chysotricha (10).jpg,64,30,0.51542383,serjania_sp,ligustrum_lucidum,Incorrect
+174,tabebuia_rosealba/tabebuia_rosealba (18).jpg,65,64,0.99760085,sida_cerradoensis,tabebuia_chysotricha,Incorrect
+188,vochysia_divergens/vochysia_divergens (31).jpg,71,52,0.53531295,tabebuia_rosealba,ricinus_communis,Incorrect
+191,zea_mays/zea_30.jpg,72,20,0.9995264,tapirira_guianensis,dipteryx_alata,Incorrect
+59,dipteryx_alata/dipteryx_alata (17).jpg,20,4,0.99974364,dipteryx_alata,arrabidaea_florida,Incorrect
+106,matayba_guianensis/matayba_guianensis (1).jpg,36,24,0.5084581,manihot_esculenta,faramea_sp,Incorrect
+129,poaceae_sp/poaceae_sp (32).jpg,49,72,0.9975979,ouratea_hexasperma,zea_mays,Incorrect
+135,qualea_multiflora/qualea_multiflora (30).jpg,51,24,0.7737309,passiflora_gibertii,faramea_sp,Incorrect
+136,qualea_multiflora/qualea_multiflora (4).jpg,51,20,0.99907315,passiflora_gibertii,dipteryx_alata,Incorrect
+163,tabebuia_chysotricha/tabebuia_chysotricha (16).jpg,64,65,0.94233894,serjania_sp,tabebuia_rosealba,Incorrect
+164,tabebuia_chysotricha/tabebuia_chysotricha (21).jpg,64,21,0.79160315,serjania_sp,doliocarpus_dentatus,Incorrect
+72,eucalyptus_sp/eucalyptus_sp (6).jpg,23,72,0.650589,erythrina_mulungu,zea_mays,Incorrect
+76,genipa_auniricana/genipa_auniricana (11).jpg,25,30,0.6479379,faramea_sp,ligustrum_lucidum,Incorrect
+182,zea_mays/zea_17.jpg,72,49,0.82753736,symplocos_nitens,poaceae_sp,Incorrect
+170,tabebuia_rosealba/tabebuia_rosealba (12).jpg,65,64,0.84166396,serjania_sp,tabebuia_chysotricha,Incorrect
+77,genipa_auniricana/genipa_auniricana (17).jpg,25,41,0.6208234,genipa_auniricana,myracroduon_urundeuva,Incorrect
+129,poaceae_sp/poaceae_sp (33).jpg,49,72,0.9992675,pachira_aquatica,zea_mays,Incorrect
+134,protium_heptaphyllum/protium_heptaphyllum (35).jpg,50,24,0.9959552,passiflora_gibertii,faramea_sp,Incorrect
+149,serjania_hebecarpa/serjania_hebecarpa (30).jpg,57,19,0.74383587,ricinus_communis,dianella_tasmanica,Incorrect
+165,tabebuia_rosealba/tabebuia_rosealba (24).jpg,65,64,0.7008724,serjania_laruotteana,tabebuia_chysotricha,Incorrect
+181,zea_mays/zea_12.jpg,72,49,0.9688497,tabebuia_chysotricha,poaceae_sp,Incorrect

@@ -1,0 +1,34 @@
+,precision,recall,f1-score,support
+aspilia_grazielae,1.0,1.0,1.0,3.0
+bacopa_australis,1.0,1.0,1.0,3.0
+caesalpinia_peltophoroides,1.0,1.0,1.0,2.0
+caryocar_brasiliensis,1.0,1.0,1.0,1.0
+doliocarpus_dentatus,1.0,1.0,1.0,1.0
+erythrina_mulungu,1.0,1.0,1.0,1.0
+hyptis_sp,1.0,1.0,1.0,3.0
+machaerium_aculeatum,1.0,1.0,1.0,2.0
+manihot_esculenta,1.0,1.0,1.0,1.0
+mimosa_ditans,1.0,1.0,1.0,1.0
+mimosa_pigra,1.0,1.0,1.0,2.0
+mitostemma_brevifilis,1.0,1.0,1.0,3.0
+myrcia_guianensis,1.0,1.0,1.0,4.0
+ochroma pyramidale,1.0,1.0,1.0,3.0
+ouratea_hexasperma,1.0,1.0,1.0,2.0
+pachira_aquatica,1.0,1.0,1.0,2.0
+passiflora_gibertii,1.0,1.0,1.0,4.0
+paullinia_spicata,1.0,1.0,1.0,2.0
+piper_aduncum,1.0,1.0,1.0,1.0
+poaceae_sp,1.0,1.0,1.0,2.0
+ricinus_communis,1.0,1.0,1.0,1.0
+schizolobium_parahyba,1.0,1.0,1.0,4.0
+serjania_erecta,1.0,1.0,1.0,2.0
+serjania_hebecarpa,1.0,1.0,1.0,2.0
+serjania_laruotteana,1.0,1.0,1.0,4.0
+sida_cerradoensis,1.0,1.0,1.0,4.0
+solanum_sisymbriifolium,1.0,1.0,1.0,1.0
+tapirira_guianensis,1.0,1.0,1.0,4.0
+trema_micrantha,1.0,1.0,1.0,1.0
+vochysia_divergens,1.0,1.0,1.0,1.0
+accuracy,1.0,1.0,1.0,1.0
+macro avg,1.0,1.0,1.0,67.0
+weighted avg,1.0,1.0,1.0,67.0
