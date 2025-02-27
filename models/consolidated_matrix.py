@@ -77,6 +77,16 @@ def sum_and_plot_confusion_matrices(folder_path, output_csv_path, output_image_p
     ax.set_xticklabels(ax.get_xticklabels(), rotation=45, ha='right', fontsize=10)
     ax.set_yticklabels(ax.get_yticklabels(), rotation=0, ha='right', fontsize=10)
 
+    # Annotate non-diagonal cells with custom background and text color
+    for i in range(len(mat)):
+        for j in range(len(mat)):
+            value = mat[i, j]
+            if i != j:  # Only for off-diagonal elements
+                if value > 0:
+                    ax.add_patch(plt.Rectangle((j, i), 1, 1, fill=True, color='lightcoral', alpha=0.5))
+                ax.text(j + 0.5, i + 0.5, f'{value:.2f}' if normalize else f'{int(value)}', 
+                        ha='center', va='center', color='black', fontsize=10)
+
     plt.tight_layout()
     fig.savefig(output_image_path)
     plt.close(fig)
