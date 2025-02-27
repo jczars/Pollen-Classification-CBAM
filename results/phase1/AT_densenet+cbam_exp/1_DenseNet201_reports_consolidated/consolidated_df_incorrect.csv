@@ -1,0 +1,31 @@
+Unnamed: 0,file,y_true,y_pred,confidence,true_label,predicted_label,status
+26,dipteryx/dipteryx_17.jpg,7,2,0.99947625,dipteryx,arrabidaea,Incorrect
+41,matayba/matayba_04.jpg,12,8,0.9708082,matayba,eucalipto,Incorrect
+71,syagrus/syagrus_32.jpg,20,9,0.6467477,syagrus,faramea,Incorrect
+41,matayba/matayba_19.jpg,12,8,0.8597349,matayba,eucalipto,Incorrect
+54,protium/protium_35.jpg,15,9,0.9835064,protium,faramea,Incorrect
+57,qualea/qualea_30.jpg,16,9,0.9934683,qualea,faramea,Incorrect
+67,serjania/serjania_33.jpg,19,15,0.5911417,serjania,protium,Incorrect
+5,arecaceae/arecaceae_25.jpg,1,20,0.9209901,arecaceae,syagrus,Incorrect
+25,dipteryx/dipteryx_19.jpg,7,1,0.8902937,dipteryx,arecaceae,Incorrect
+53,protium/protium_18.jpg,15,22,0.89470536,protium,urochloa,Incorrect
+5,arecaceae/arecaceae_24.jpg,1,20,0.95578,arecaceae,syagrus,Incorrect
+49,myrcia/myrcia_22.jpg,14,19,0.9987105,myrcia,serjania,Incorrect
+2,arecaceae/arecaceae_10.jpg,1,20,0.9994332,arecaceae,syagrus,Incorrect
+4,arecaceae/arecaceae_31.jpg,1,20,0.9205874,arecaceae,syagrus,Incorrect
+69,syagrus/syagrus_08.jpg,20,1,0.99785125,syagrus,arecaceae,Incorrect
+76,urochloa/urochloa (31).jpg,22,1,0.9168576,urochloa,arecaceae,Incorrect
+77,urochloa/urochloa (33).jpg,22,7,0.51972216,urochloa,dipteryx,Incorrect
+11,cecropia/cecropia_33.jpg,3,13,0.9956962,cecropia,mimosa,Incorrect
+45,mimosa/mimosa_05.jpg,13,3,0.5314661,mimosa,cecropia,Incorrect
+59,schinus/schinus_25.jpg,17,14,0.9995958,schinus,myrcia,Incorrect
+48,myrcia/myrcia_23.jpg,14,3,0.72799486,myrcia,cecropia,Incorrect
+68,syagrus/syagrus_04.jpg,20,1,0.91754127,syagrus,arecaceae,Incorrect
+26,eucalipto/eucalipto_06.jpg,8,12,0.6393965,eucalipto,matayba,Incorrect
+55,qualea/qualea_04.jpg,16,7,0.9615373,qualea,dipteryx,Incorrect
+60,schinus/schinus_32.jpg,17,0,0.5801637,schinus,anadenanthera,Incorrect
+75,urochloa/urochloa (17).jpg,22,14,0.9757614,urochloa,myrcia,Incorrect
+2,arecaceae/arecaceae_01.jpg,1,14,0.9979304,arecaceae,myrcia,Incorrect
+51,protium/protium_15.jpg,15,17,0.99614704,protium,schinus,Incorrect
+52,protium/protium_21.jpg,15,19,0.83412176,protium,serjania,Incorrect
+53,protium/protium_31.jpg,15,9,0.94816977,protium,faramea,Incorrect
