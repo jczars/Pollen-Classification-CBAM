@@ -30,6 +30,7 @@ def run(config):
 
     # Process each view specified in the YAML
     for folder in folders:
+        print(folder)
         consolidated_matrix.run(folder, normalize)
         consolidated_boxplot.run(folder, k_folds)
 
@@ -42,7 +43,7 @@ if __name__ == "__main__":
     run(folder, k, normalize)
     """
     parser = argparse.ArgumentParser(description="Run data augmentation with specified configuration.")
-    parser.add_argument("--config", type=str, default="discussion/config_consolidaded.yaml", 
+    parser.add_argument("--config", type=str, default="./discussion/config_consolidaded.yaml", 
                         help="Path to the configuration YAML file.")
     args = parser.parse_args()
 

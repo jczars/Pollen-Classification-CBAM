@@ -1,0 +1,13 @@
+# Número de pastas de dobras (k-folds) no dataset
+k_folds: 10
+
+normalize: False
+
+# Diretório onde estão os relatóriios de avaliação
+folder:
+- 'results/phase3/CPD1_TEST_VIEW/0_DenseNet201_EQUATORIAL/'  
+- 'results/phase3/CPD1_TEST_VIEW/0_DenseNet201_POLAR/' 
+- 'results/phase3/B23_TEST_VIEW/1_DenseNet201_EQUATORIAL/'  
+- 'results/phase3/B23_TEST_VIEW/1_DenseNet201_POLAR/' 
+- 'results/phase3/B73_TEST_VIEW/2_DenseNet201_EQUATORIAL/'  
+- 'results/phase3/B73_TEST_VIEW/2_DenseNet201_POLAR/' 
