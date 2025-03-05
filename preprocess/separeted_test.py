@@ -52,7 +52,7 @@ def create_dataSet(bd_src, bd_dst):
                 data.loc[c] = [file_path, j]
                 c += 1
 
-    _csv_data=f"{bd_dst}data.csv"
+    _csv_data=f"{bd_dst}/data.csv"
     data.to_csv(_csv_data, index=False, header=True)
     print(f'\nCSV saved successfully at: {_csv_data}')
 
@@ -62,6 +62,7 @@ def read_data_csv(_csv_data):
     data_csv = pd.read_csv(_csv_data)        
     # Create and save the summary CSV with counts of images per label
     _summary_csv = _csv_data.replace('.csv', '_summary.csv')
+    print(_summary_csv)
     label_counts = data_csv.groupby('labels').size().reset_index(name='count')
     label_counts.to_csv(_summary_csv, index=False, header=True)
     print(data_csv.groupby('labels').count())

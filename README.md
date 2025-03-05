@@ -401,7 +401,7 @@ To generate classification reports based on the test dataset, the script `report
 ### Running the Script  
 To execute the report generation process, run:  
 ```bash
-python3 phase3/reports_test_views.py --config phase3/config_test_views_B23.yaml
+python3 phase3/reports_test_views.py --config phase3/config_test_views.yaml
 ```  
 
 ### Generated Results  
@@ -422,82 +422,34 @@ The following outputs were produced:
 ## Results of dataset separation by views
 This is an illustrative example and may not correspond to the current one. To check the most recent examples, please refer to the files:
 
-BD/CPD1_Dn_VTcr_281124/df_qde_vistas.csv
-BD/CPD1_Dn_VTcr_281124/df_summary_filtered.csv
+BD/.../df_qde_vistas.csv
+BD/.../data_summary.csv
 
-1. **Overall Class Distribution (data_summary.csv)**
+| Class       | Count | Equatorial | Polar |
+|-------------|-------|------------|-------|
+| asphodelus  | 4     | 2          | 2     |
+| calicotome  | 30    | -          | 30    |
+| castanea    | 21    | 21         | -     |
+| ceratonia   | 10    | 10         | -     |
+| ebenus      | 3     | 3          | -     |
+| erica       | 18    | 1          | 17    |
+| eucalyptus  | 17    | 1          | 16    |
+| ferula      | 8     | 5          | 3     |
+| myrtus      | 79    | -          | 79    |
+| olea        | 79    | 79         | -     |
+| origanum    | 17    | 12         | 5     |
+| oxalis      | 14    | -          | 14    |
+| pinus       | 3     | -          | 3     |
+| pistacia    | 3     | 3          | -     |
+| salvia      | 18    | 10         | 8     |
+| satureja    | 7     | 3          | 4     |
+| sinapis     | 20    | 20         | -     |
+| thymbra     | 14    | 5          | 9     |
+| urginea     | 11    | 11         | -     |
+| vitis       | 27    | 24         | 3     |
 
-| Class         | Count      |
-|---------------|------------|
-| asphodelus    | 34         |
-| calicotome    | 298        |
-| castanea      | 218        |
-| ceratonia     | 100        |
-| ebenus        | 22         |
-| erica         | 181        |
-| eucalyptus    | 170        |
-| ferula        | 83         |
-| myrtus        | 786        |
-| olea          | 790        |
-| origanum      | 171        |
-| oxalis        | 139        |
-| pinus         | 29         |
-| pistacia      | 34         |
-| salvia        | 178        |
-| satureja      | 71         |
-| sinapis       | 197        |
-| thymbra       | 146        |
-| urginea       | 109        |
-| vitis         | 269        |
 
-2. **Distribution by Views (df_qde_vistas.csv)**
 
-| Class         | Equatorial | Polar   |
-|---------------|------------|---------|
-| asphodelus    | 5          | 29      |
-| calicotome    | 7          | 291     |
-| castanea      | 195        | 23      |
-| ceratonia     | 62         | 38      |
-| ebenus        | 6          | 16      |
-| erica         | -          | 181     |
-| eucalyptus    | 2          | 168     |
-| ferula        | 21         | 62      |
-| myrtus        | -          | 786     |
-| olea          | 699        | 91      |
-| origanum      | 98         | 73      |
-| oxalis        | 8          | 131     |
-| pinus         | 25         | 4       |
-| pistacia      | 23         | 11      |
-| salvia        | 71         | 107     |
-| satureja      | 36         | 35      |
-| sinapis       | 182        | 15      |
-| thymbra       | 52         | 94      |
-| urginea       | 107        | 2       |
-| vitis         | 216        | 53      |
-
-3. **Distribution After Threshold Filtering (df_summary_filtered.csv)**
-
-| Class         | Equatorial | Polar   |
-|---------------|------------|---------|
-| castanea      | 195        | 23      |
-| ceratonia     | 62         | 38      |
-| ferula        | 21         | 62      |
-| olea          | 699        | 91      |
-| origanum      | 98         | 73      |
-| pinus         | 25         | -       |
-| pistacia      | 23         | -       |
-| salvia        | 71         | 107     |
-| satureja      | 36         | 35      |
-| sinapis       | 182        | -       |
-| thymbra       | 52         | 94      |
-| urginea       | 107        | -       |
-| vitis         | 216        | 53      |
-| asphodelus    | -          | 29      |
-| calicotome    | -          | 291     |
-| erica         | -          | 181     |
-| eucalyptus    | -          | 168     |
-| myrtus        | -          | 786     |
-| oxalis        | -          | 131     |
 
 The remaining results of this phase can be found in the Results section, sub-section 4.1 Results of dataset separation by views.
 
