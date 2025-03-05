@@ -191,9 +191,12 @@ def graph_img_cat(data_dir):
         category_path = os.path.join(data_dir, category)
         img_pr_cat.append(len([f for f in os.listdir(category_path) if f.lower().endswith(('jpg', 'png', 'jpeg'))]))
 
+    # Define a color palette
+    palette = sns.color_palette("viridis", len(category_names))  # Use "viridis" or any other palette
+
     # Create the horizontal bar chart
     fig, ax = plt.subplots(figsize=(15, 10))
-    bars = sns.barplot(y=category_names, x=img_pr_cat, ax=ax)
+    bars = sns.barplot(y=category_names, x=img_pr_cat, ax=ax, palette=palette)
 
     # Add values on top of each bar
     for i, bar in enumerate(bars.patches):
@@ -214,6 +217,8 @@ def graph_img_cat(data_dir):
     plt.tight_layout()
 
     return fig
+
+
 
 
    

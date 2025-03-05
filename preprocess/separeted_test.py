@@ -175,8 +175,8 @@ def run(params):
         df_vistas, df_quantidade =predict_data_generator(test_data_generator, model, 
                                                          categories_vistas, params['batch_size'], verbose=2)
 
-        #df_vistas.to_csv(f"{bd_dst}df_vistas.csv", index=False)
-        #df_quantidade.to_csv(f"{bd_dst}df_qde_vistas.csv", index=False)
+        df_vistas.to_csv(f"{bd_dst}/df_vistas.csv", index=False)
+        df_quantidade.to_csv(f"{bd_dst}/df_qde_vistas.csv", index=False)
 
         copy_images_by_vista(bd_dst, df_vistas)
 
