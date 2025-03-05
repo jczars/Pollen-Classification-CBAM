@@ -42,5 +42,5 @@ def compare_metrics(input_file):
     print(f'✅ Comparação salva e destacada em {input_file}')
 
 # Exemplo de uso
-input_file = "discussion/Comparar_literatura_CPD1.xlsx"  # Nome do arquivo de entrada
+input_file = "discussion/Comparar_literatura_B23.xlsx"  # Nome do arquivo de entrada
 compare_metrics(input_file)

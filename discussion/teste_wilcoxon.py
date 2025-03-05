@@ -71,7 +71,7 @@ def process_spreadsheet(file_path):
 # Main function to handle command-line arguments
 if __name__ == "__main__":
     # Default file path configuration
-    default_path = 'discussion/Comparar_literatura_CPD1.xlsx'
+    default_path = 'discussion/Comparar_literatura_B23.xlsx'
     
     # Set up argparse to handle command-line arguments
     parser = argparse.ArgumentParser(description="Run the pollen classification process.")
