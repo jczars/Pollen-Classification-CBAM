@@ -405,7 +405,7 @@ python3 phase3/reports_test_views.py --config phase3/config_test_views.yaml
 ```  
 
 ### Generated Results  
-The following outputs were produced:  
+The following results are produced and saved in the “results/phase3/” folder: 
 
 - **Classification Report**  
 - **Confusion Matrix**  
@@ -417,7 +417,7 @@ The following outputs were produced:
 
 
 
-# Results
+# Test dataset separated into views
 
 ## Results of dataset separation by views
 This is an illustrative example and may not correspond to the current one. To check the most recent examples, please refer to the files:
@@ -449,59 +449,48 @@ BD/.../data_summary.csv
 | vitis       | 27    | 24         | 3     |
 
 
-
-
-The remaining results of this phase can be found in the Results section, sub-section 4.1 Results of dataset separation by views.
-
 [Table of contentes](#table-of-contents)
-
-## Classification results of datasets separated by Views
-
-The results of Phase 2 are presented in sub-section 4.2 Classification results of datasets separated by Views, and the experimental results are stored in the results/phase2 folder.
-To evaluate the results, pay close attention to the structure of the results folders. An illustration of this structure is provided in [Description of Key Folders](#description-of-Key-Folders)
 
 
 ## Classification report for DenseNet201 (k=1, Equatorial View)
 
 This section presents **illustrative results** obtained using the DenseNet201 classifier on the k=1-fold with **equatorial views**. The evaluation includes training performance metrics, a box plot of prediction probabilities, a confusion matrix, and a detailed classification report.
 
-### Training Metrics
-The following graph illustrates the **loss and accuracy** progression during training:
-
-![Training Loss and Accuracy](images/Test_0_0_DenseNet201_TrainLoss_k1.jpg)
 
 ### Prediction Confidence Analysis
 The boxplot below displays the **distribution of prediction probabilities** for correctly classified samples:
 
-![Boxplot of Prediction Probabilities](/images/Test_0_0_DenseNet201_boxplot_k1.jpg)
+![Boxplot of Prediction Probabilities](images/0_DenseNet201_EQUATORIAL_boxplot_k1.jpg)
 
 ### Confusion Matrix
 The confusion matrix generated from the test dataset classification is shown below:
 
-![Confusion Matrix](images/Test_0_0_DenseNet201_mat_conf_k1.jpg)
+![Confusion Matrix](images/0_DenseNet201_EQUATORIAL_confusion_matrix_k1.jpg)
 
 ### Classification Report
 The table below presents detailed metrics for each class:
 
-|    Class     | Precision | Recall | F1-Score | Support |
-|--------------|-----------|--------|----------|---------|
-| castanea     | 0.952     | 1.000  | 0.976    | 20      |
-| ceratonia    | 1.000     | 1.000  | 1.000    | 6       |
-| ferula       | 1.000     | 1.000  | 1.000    | 2       |
-| olea         | 0.986     | 1.000  | 0.993    | 70      |
-| origanum     | 1.000     | 0.900  | 0.947    | 10      |
-| pinus        | 1.000     | 1.000  | 1.000    | 2       |
-| pistacia     | 1.000     | 1.000  | 1.000    | 3       |
-| salvia       | 1.000     | 1.000  | 1.000    | 7       |
-| satureja     | 1.000     | 1.000  | 1.000    | 3       |
-| sinapis      | 1.000     | 0.947  | 0.973    | 19      |
-| thymbra      | 1.000     | 1.000  | 1.000    | 5       |
-| urginea      | 1.000     | 1.000  | 1.000    | 11      |
-| vitis        | 1.000     | 1.000  | 1.000    | 21      |
-| **accuracy** |           |        | 0.989    | 179     |
-| **macro avg**| 0.995     | 0.988  | 0.992    | 179     |
-| **weighted avg** | 0.989 | 0.989  | 0.989    | 179     |
-
+| Class        | Precision  | Recall    | F1-Score  | Support |
+|--------------|-----------|-----------|-----------|---------|
+| asphodelus   | 1.00      | 1.00      | 1.00      | 2.0     |
+| castanea     | 1.00      | 1.00      | 1.00      | 21.0    |
+| ceratonia    | 0.75      | 0.90      | 0.82      | 10.0    |
+| ebenus       | 1.00      | 1.00      | 1.00      | 3.0     |
+| erica        | 1.00      | 1.00      | 1.00      | 1.0     |
+| eucalyptus   | 0.33      | 1.00      | 0.50      | 1.0     |
+| ferula       | 1.00      | 1.00      | 1.00      | 5.0     |
+| olea         | 1.00      | 1.00      | 1.00      | 79.0    |
+| origanum     | 1.00      | 0.92      | 0.96      | 12.0    |
+| pistacia     | 1.00      | 1.00      | 1.00      | 3.0     |
+| salvia       | 1.00      | 1.00      | 1.00      | 10.0    |
+| satureja     | 1.00      | 0.67      | 0.80      | 3.0     |
+| sinapis      | 1.00      | 1.00      | 1.00      | 20.0    |
+| thymbra      | 1.00      | 1.00      | 1.00      | 5.0     |
+| urginea      | 1.00      | 1.00      | 1.00      | 11.0    |
+| vitis        | 1.00      | 0.92      | 0.96      | 24.0    |
+| **Accuracy** | **0.98**  | **0.98**  | **0.98**  | **0.98** |
+| **Macro Avg**| **0.94**  | **0.96**  | **0.94**  | **210.0** |
+| **Weighted Avg** | **0.98** | **0.98** | **0.98** | **210.0** |
 
 
 4.5 **Summary**
