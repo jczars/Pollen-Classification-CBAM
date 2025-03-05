@@ -22,9 +22,7 @@ To quickly run all tests, follow this menu:
   - [Phase 2](#phase-2)
   - [Phase 3](#phase-3)
 - [Results](#Results)
-  - [Results of Phase 1](#Results-of-dataset-separation-by-views)
-  - [Results of Phase 2](#Classification-results-of-datasets-separated-by-Views)
-  - [Results of Phase 3](#Classification-results-of-the-dataset-in-its-original-format)
+  - [Results of Phase 3](#Results-of-dataset-separation-by-views)
 - [Discussion](#Discussion)
   - [Consolidated results](#Consolidated-results)
   - [Test the Wilcoxon](#Test-wilcoxon)
@@ -417,7 +415,7 @@ The following results are produced and saved in the “results/phase3/” folder
 
 
 
-# Test dataset separated into views
+# Results
 
 ## Results of dataset separation by views
 This is an illustrative example and may not correspond to the current one. To check the most recent examples, please refer to the files:
