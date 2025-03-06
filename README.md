@@ -549,6 +549,22 @@ To run the script, ensure that the configuration file (config_consolidated.yaml)
 ```bash
 python discussion/test_wilcoxon.py --path discussion/Comparar_literatura.xlsx
 ```
+## Compare Metrics
+
+The **discussion** folder contains the script that compares the metrics between the Test dataset in its original format and after being split into views. The comparison works as follows: if the metrics in the views are equal to or higher than the metrics in the original format, they will be highlighted in **bold**.
+
+The results are saved in new sheets of the spreadsheet, such as `Comparison_Orig_EQ` and `Comparison_Orig_PL`.
+
+
+This script uses the same spreadsheet as the Wilcoxon Test.
+
+### Example of Execution
+To run the script, ensure that the configuration file (`config_consolidated.yaml`) is correctly configured, then execute the following command:
+
+```bash
+python discussion/compared_metrics.py --path discussion/Comparar_literatura.xlsx
+```
+
 
 
 ## Interpretability
