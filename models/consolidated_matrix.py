@@ -261,21 +261,33 @@ def extract_test_info(folder_path):
         raise ValueError(f"The folder name '{folder_name}' does not match the expected format.")
 
 def run(folder, normalize=False):
+    """
+    Runs the consolidated matrix generation and classification report generation.
+
+    Parameters:
+        folder (str): Folder containing the test results.
+        normalize (bool): Whether to normalize the confusion matrix values.
+
+    Returns:
+        None
+    """
     save_dir = saved(folder)
     mat_csv = os.path.join(save_dir, 'consolidated_confusion_matrix.csv')
     mat_image = os.path.join(save_dir, 'consolidated_confusion_matrix.png')
-    output_reports_csv = os.path.join(save_dir, 'consolidated_classification_report.csv')
+    #output_reports_csv = os.path.join(save_dir, 'consolidated_classification_report.csv')
 
 
     # Process confusion matrices and generate the report
     conf_matrix_df = sum_and_plot_confusion_matrices(folder, mat_csv, mat_image, normalize=normalize)
+    
+    """
     if conf_matrix_df is not None:
         report_df = classification_report_from_conf_matrix(conf_matrix_df)
         save_classification_report(report_df, output_reports_csv)
         print(f"Classification report saved to: {output_reports_csv}")
 
         performance_report_from_df(conf_matrix_df, save_dir, folder)
-
+    """
 
 if __name__ == "__main__":
     # Example usage:

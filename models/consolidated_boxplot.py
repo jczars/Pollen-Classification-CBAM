@@ -79,6 +79,19 @@ def plot_confidence_boxplot(df_correct, type='correct'):
 
 def saved(folder):
     # Automate the output path
+    """
+    Automates the output path for saving results.
+
+    Parameters:
+        folder (str): Path to the folder containing the test name.
+
+    Returns:
+        save_dir (str): Path to the automated save directory.
+
+    Notes:
+        The automated save directory will have the same parent directory as the input folder,
+        but with '_consolidated' appended to the folder name.
+    """
     save_dir = os.path.join(
         os.path.dirname(folder.rstrip('/')),  # Remove the last slash and get the parent directory
         os.path.basename(folder.rstrip('/')) + '_consolidated/'  # Add '_aggregated' to the folder name
@@ -110,26 +123,37 @@ def extract_test_info(folder_path):
         raise ValueError(f"The folder name '{folder_name}' does not match the expected format.")
     
 def run(folder, k=10):
-   test_id, model_name = extract_test_info(folder)
-   prefix_correct=f"Test_{test_id}_{test_id}_{model_name}_df_correct_k"
-   prefix_incorrect=f"Test_{test_id}_{test_id}_{model_name}_df_incorrect_k"
-   print(prefix_correct)
-
-   df_correct=consolidator(folder, prefix_correct, k)
-   df_incorrect=consolidator(folder, prefix_incorrect, k)
    
-   fig_correct=plot_confidence_boxplot(df_correct, type='correct')
-   fig_incorrect=plot_confidence_boxplot(df_incorrect, type='incorrect')
+    """
+    Runs the consolidated boxplot generation.
 
-   save_dir = saved(folder)
-   boxplot_correct_image = os.path.join(save_dir, 'consolidated_boxplot_correct.png')
-   boxplot_incorrect_image = os.path.join(save_dir, 'consolidated_boxplot_incorrect.png')
+    Parameters:
+        folder (str): Folder containing the test results.
+        k (int): Total number of CSV files to consolidate.
 
-   fig_correct.savefig(boxplot_correct_image)
-   fig_incorrect.savefig(boxplot_incorrect_image)
+    Returns:
+        None
+    """
+    test_id, model_name = extract_test_info(folder)
+    prefix_correct=f"Test_{test_id}_{test_id}_{model_name}_df_correct_k"
+    #prefix_incorrect=f"Test_{test_id}_{test_id}_{model_name}_df_incorrect_k"
+    print(prefix_correct)
 
-   df_correct.to_csv(os.path.join(save_dir, 'consolidated_df_correct.csv'), index=False)
-   df_incorrect.to_csv(os.path.join(save_dir, 'consolidated_df_incorrect.csv'), index=False)    
+    df_correct=consolidator(folder, prefix_correct, k)
+    #df_incorrect=consolidator(folder, prefix_incorrect, k)
+
+    fig_correct=plot_confidence_boxplot(df_correct, type='correct')
+    #fig_incorrect=plot_confidence_boxplot(df_incorrect, type='incorrect')
+
+    save_dir = saved(folder)
+    boxplot_correct_image = os.path.join(save_dir, 'consolidated_boxplot_correct.png')
+    #boxplot_incorrect_image = os.path.join(save_dir, 'consolidated_boxplot_incorrect.png')
+
+    fig_correct.savefig(boxplot_correct_image)
+    #fig_incorrect.savefig(boxplot_incorrect_image)
+
+    df_correct.to_csv(os.path.join(save_dir, 'consolidated_df_correct.csv'), index=False)
+    #df_incorrect.to_csv(os.path.join(save_dir, 'consolidated_df_incorrect.csv'), index=False)    
 
 
 if __name__ == "__main__":
