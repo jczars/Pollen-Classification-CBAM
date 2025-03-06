@@ -1,8 +1,6 @@
-import os
 import pandas as pd
 from openpyxl import load_workbook
 from openpyxl.styles import Font
-import argparse
 
 def compare_metrics(input_file):
     # Carregar a planilha
@@ -44,34 +42,5 @@ def compare_metrics(input_file):
     print(f'✅ Comparação salva e destacada em {input_file}')
 
 # Exemplo de uso
-#input_file = "discussion/Comparar_literatura_B23.xlsx"  # Nome do arquivo de entrada
-#compare_metrics(input_file)
-
-# Main function to handle command-line arguments
-if __name__ == "__main__":
-    # Default file path configuration
-    default_path = 'discussion/Comparar_literatura_CPD1.xlsx'
-    
-    # Set up argparse to handle command-line arguments
-    parser = argparse.ArgumentParser(description="Run the pollen classification process.")
-    parser.add_argument(
-        '--path', 
-        type=str, 
-        default=default_path, 
-        help="Path to the workbook. If not provided, the default path will be used."
-    )
-
-    args = parser.parse_args()
-    
-    # Check if the given path exists
-    if not os.path.exists(args.path):
-        print(f"Warning: The provided workbook path '{args.path}' does not exist.")
-        print("Using default workbook path.")
-        args.path = default_path
-
-    # Perform comparative analysis and Wilcoxon test
-    compare_metrics(args.path)
-
-
-    # Display completion message
-    print(f"The results and their interpretations have been saved in the new 'results' sheet of the spreadsheet: {args.path}")
+input_file = "discussion/Comparar_literatura_B23.xlsx"  # Nome do arquivo de entrada
+compare_metrics(input_file)
