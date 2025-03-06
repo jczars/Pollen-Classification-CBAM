@@ -507,7 +507,7 @@ The **discussion** folder contains scripts for generating consolidated reports. 
 ## Scripts
 
 1. **`consolidated_reports.py`** → Used **before** splitting the Test dataset into views.
-2. **`consolidated_reports.py`** → Used **after** splitting the Test dataset into views.
+2. **`consolidated_reports_view.py`** → Used **after** splitting the Test dataset into views.
 
 ## Usage
 
