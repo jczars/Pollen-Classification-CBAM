@@ -78,7 +78,7 @@ def predict_data_generator(model, categories, test_generator, verbose=2):
     df['y_true'] = y_true_mapped
     df['y_pred'] = y_pred
     df['confidence'] = confidences
-    df['true_label'] = [categories[i] for i in y_true]
+    df['true_label'] = [categories[i] for i in y_true_mapped]
     df['predicted_label'] = [categories[i] for i in y_pred]
     df['status'] = df.apply(lambda row: 'Correct' if row['y_true'] == row['y_pred'] else 'Incorrect', axis=1)
 

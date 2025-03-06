@@ -4,7 +4,7 @@ conv_layer_name: "activation_1"
 img_size: 224
 saved_dir: "./interpretation/grad_cam/"
 
-path_data: "/media/jczars/4C22F02A22F01B22/$WinREAgent/Pollen_classification_view/BD/CPD1_Cr_Rs_400/Test/k1/"
+path_data: "BD/CPD1_TEST_VIEW/k1/EQUATORIAL/"
 images_labels:
 - "ceratonia/Fab.C.silX400wF(476)(0)B-15.png"
 - "eucalyptus/Myr.E.camaX400wF(1867)(0)B-10.png" 
