@@ -537,13 +537,16 @@ The discussion folder contains the script that performs the Wilcoxon hypothesis 
 **Inputs**:
 A **spreadsheet** containing the classification reports of the datasets being compared (e.g., Comparar_literatura.xlsx), which defines the parameters for the script execution. The results are saved in a new sheet called results.
 
+The spreadsheet's input data is manually assembled using the "class_report_test_0_DenseNet201.csv" classification report files, which are stored in folders ending with "_consolidated".
+
+The script compares the results of the consolidated classification reports, including the report before separation and the reports for different views.
+
 **Example of Execution**:
 To run the script, ensure that the configuration file (config_consolidated.yaml) is correctly configured, then execute the following command:
 
 ```bash
 python discussion/test_wilcoxon.py --path discussion/Comparar_literatura.xlsx
 ```
-
 
 
 ## Interpretability
