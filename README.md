@@ -559,7 +559,8 @@ The results are saved in new sheets of the spreadsheet, such as `Comparison_Orig
 
 This script uses the same spreadsheet as the Wilcoxon Test.
 
-### Example of Execution
+**Example of Execution:**
+
 To run the script, ensure that the configuration file (`config_consolidated.yaml`) is correctly configured, then execute the following command:
 
 ```bash
@@ -572,20 +573,23 @@ python discussion/compared_metrics.py --path discussion/Comparar_literatura.xlsx
 This study investigates the use of visualization techniques—Grad-CAM, Grad-CAM++, and Score-CAM—to understand the decision-making process of neural networks in the task of pollen grain classification. These methods allow for the identification of image regions that significantly influence the model’s predictions, aiding in the distinction between correct and incorrect classifications. In addition, probability graphs are utilized to represent the model’s confidence in its classifications, offering a quantitative perspective on the decisions made.
 
 **Inputs:**
+
 A YAML configuration file (e.g., config_class_well.yaml) that defines the parameters for executing the script.
 
 **Expected Outputs:**
+
 Upon execution, the script generates a balanced dataset by adding additional images to classes that initially have fewer samples. This balanced dataset is saved in the specified output folder.
 
 **Example of Execution:**
+
 To run the script, ensure that the configuration file (config_class_well_k1.yaml) is properly set up and execute the following command:
 
-For correct classification:
+**For correct classification:**
 
 ```bash
 python interpretation/Grad_CAM_compared.py --config interpretation/config_class_well.yaml
 ```
-For incorrect classification:
+**For incorrect classification:**
 
 ```bash
 python interpretation/Grad_CAM_compared.py --config interpretation/config_class_wrong_orig_k1.yaml
