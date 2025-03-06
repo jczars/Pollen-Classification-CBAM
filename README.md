@@ -515,7 +515,11 @@ The **discussion** folder contains scripts for generating consolidated reports. 
 A YAML configuration file (example: config_consolidaded.yaml) that defines the parameters for the script execution.
 
 **Expected Outputs**:
-At the end of the execution, the script generates a balanced dataset with additional images for classes that initially have fewer samples. The balanced dataset is saved in the specified output folder.
+* class_report_test_0_DenseNet201.csv
+* consolidated_boxplot_correct.png
+* consolidated_confusion_matrix.csv
+* consolidated_confusion_matrix.png
+* consolidated_df_correct.csv
 
 **Example of Execution**:
 To run the script, make sure the configuration file (config_consolidaded.yaml) is set up correctly and execute the following command:
@@ -536,6 +540,8 @@ To run the script, ensure that the configuration file (config_consolidated.yaml)
 ```bash
 python discussion/test_wilcoxon.py --path discussion/Comparar_literatura.xlsx
 ```
+
+
 
 ## Interpretability
 This study investigates the use of visualization techniques—Grad-CAM, Grad-CAM++, and Score-CAM—to understand the decision-making process of neural networks in the task of pollen grain classification. These methods allow for the identification of image regions that significantly influence the model’s predictions, aiding in the distinction between correct and incorrect classifications. In addition, probability graphs are utilized to represent the model’s confidence in its classifications, offering a quantitative perspective on the decisions made.
