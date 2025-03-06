@@ -512,9 +512,11 @@ The **discussion** folder contains scripts for generating consolidated reports. 
 ## Usage
 
 **Inputs**:
+
 A YAML configuration file (example: config_consolidaded.yaml) that defines the parameters for the script execution.
 
 **Expected Outputs**:
+
 * class_report_test_0_DenseNet201.csv
 * consolidated_boxplot_correct.png
 * consolidated_confusion_matrix.csv
@@ -522,6 +524,7 @@ A YAML configuration file (example: config_consolidaded.yaml) that defines the p
 * consolidated_df_correct.csv
 
 **Example of Execution**:
+
 To run the script, make sure the configuration file (config_consolidaded.yaml) is set up correctly and execute the following command:
 
 ```bash
