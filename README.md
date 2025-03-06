@@ -1,5 +1,5 @@
 
-# Pollen_classification_view
+# Pollen_classification_CBAM
 
 This project focuses on the classification of pollen grains, taking into account their characteristic views (Equatorial and Polar). The system is structured in three distinct phases:
 
@@ -501,7 +501,15 @@ These are the tools used to interpret the test results.
 The same tools from the previous phase are used in this phase. Additionally, consolidated reports are utilized, as explained in the results section of the article. These consolidated reports include the consolidated confusion matrix, the consolidated classification report, and the consolidated box plot. The term consolidated refers to the process of combining the reports from all 10 folds of the cross-validation into a single report.
 
 ## Consolidated results
-The **discussion** folder contains the script that generates the consolidated reports.
+
+The **discussion** folder contains scripts for generating consolidated reports. These scripts are used with the Test dataset at different stages of processing:
+
+## Scripts
+
+1. **`consolidated_reports.py`** → Used **before** splitting the Test dataset into views.
+2. **`consolidated_reports.py`** → Used **after** splitting the Test dataset into views.
+
+## Usage
 
 **Inputs**:
 A YAML configuration file (example: config_consolidaded.yaml) that defines the parameters for the script execution.
