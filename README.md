@@ -578,7 +578,7 @@ A YAML configuration file (e.g., config_class_well.yaml) that defines the parame
 
 **Expected Outputs:**
 
-Upon execution, the script generates a balanced dataset by adding additional images to classes that initially have fewer samples. This balanced dataset is saved in the specified output folder.
+![display with Grad CAM results](interpretation/grad_cam/GradCAM_class_well_phase1_k1.png)
 
 **Example of Execution:**
 
