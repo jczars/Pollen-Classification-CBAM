@@ -1,0 +1,23 @@
+Unnamed: 0,file,y_true,y_pred,confidence,true_label,predicted_label,status
+31,ceratonia/Fab.C.silX400wF(481)(0)G-12.png,3,6,0.8563739,ceratonia,eucalyptus,Incorrect
+123,origanum/Lam.O.micX400wF(884)(0)A-2.png,10,3,0.64021885,origanum,ceratonia,Incorrect
+149,satureja/Lam.S.thyX400wF(947)(0)H-4.png,15,3,0.6202759,satureja,ceratonia,Incorrect
+187,vitis/Vit.V.viniX400wF(4978)(0)A-24.png,19,6,0.49878654,vitis,eucalyptus,Incorrect
+202,vitis/Vit.V.viniX400wF(4984)(0)G-18.png,19,3,0.7996295,vitis,ceratonia,Incorrect
+102,olea/Ole.O.euroX400wF(4266)(0)F-121.png,9,16,0.5954878,olea,sinapis,Incorrect
+121,origanum/Lam.O.micX400wF(884)(0)A-9.png,10,3,0.99861884,origanum,ceratonia,Incorrect
+140,salvia/Lam.S.triX400wF(2190)(0)C-8.png,14,5,0.660842,salvia,erica,Incorrect
+29,ceratonia/Fab.C.silX400wF(480)(0)F-7.png,3,9,0.9441881,ceratonia,olea,Incorrect
+30,ceratonia/Fab.C.silX400wF(481)(0)G-11.png,3,1,0.9470163,ceratonia,calicotome,Incorrect
+31,ceratonia/Fab.C.silX400wF(481)(0)G-13.png,3,9,0.58045775,ceratonia,olea,Incorrect
+143,sinapis/Bra.S.albX400wF(2152)(0)C-12.png,16,9,0.8424945,sinapis,olea,Incorrect
+145,sinapis/Bra.S.albX400wF(2152)(0)C-2.png,16,9,0.9693164,sinapis,olea,Incorrect
+184,vitis/Vit.V.viniX400wF(4981)(0)D-38.png,19,1,0.5935543,vitis,calicotome,Incorrect
+33,ceratonia/Fab.C.silX400wF(481)(0)G-4.png,3,19,0.84481984,ceratonia,vitis,Incorrect
+125,origanum/Lam.O.micX400wF(884)(0)A-1.png,10,3,0.89916915,origanum,ceratonia,Incorrect
+134,origanum/Lam.O.micX400wF(889)(0)F-47.png,10,9,0.68522483,origanum,olea,Incorrect
+1,calicotome/Fab.C.vilX400wF(2016)(0)A-21.png,1,19,0.9811597,calicotome,vitis,Incorrect
+69,olea/Ole.O.euroX400wF(4263)(0)C-76.png,9,16,0.64716166,olea,sinapis,Incorrect
+104,olea/Ole.O.euroX400wF(4266)(0)F-136.png,9,1,0.996372,olea,calicotome,Incorrect
+136,salvia/Lam.S.triX400wF(2189)(0)B-28.png,14,3,0.6843789,salvia,ceratonia,Incorrect
+145,satureja/Lam.S.thyX400wF(942)(935)B-2.png,15,10,0.9745443,satureja,origanum,Incorrect
