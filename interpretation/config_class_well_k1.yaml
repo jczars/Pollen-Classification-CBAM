@@ -1,5 +1,5 @@
 path_model: "results/phase1/AT_densenet+cbam_exp/0_DenseNet201/0_DenseNet201_bestLoss_1.keras"
-nome: "GradCAM_class_well1_k1.png"
+nome: "GradCAM_class_well_phase1_k1.png"
 conv_layer_name: "activation_1"
 img_size: 224
 saved_dir: "./interpretation/grad_cam/"
