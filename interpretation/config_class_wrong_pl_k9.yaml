@@ -1,0 +1,13 @@
+path_model: "results/phase1/AT_densenet+cbam_exp/0_DenseNet201/0_DenseNet201_bestLoss_9.keras"
+path_full_labels: "/media/jczars/4C22F02A22F01B22/$WinREAgent/Pollen_classification_view/BD/CPD1_Cr_Rs_400/Test/k1"  
+nome: "GradCAM_class_wrong_phase3_pl_k9.png"
+conv_layer_name: "activation_1"
+img_size: 224
+saved_dir: "./interpretation/grad_cam/"
+
+path_data: "BD/CPD1_TEST_VIEW/k9/POLAR/"
+images_labels:
+- "eucalyptus/Myr.E.camaX400wF(1866)(0)A-1.png"
+- "origanum/Lam.O.micX400wF(889)(0)F-21.png"
+- "satureja/Lam.S.thyX400wF(941)(937)A-4.png"
+- "satureja/Lam.S.thyX400wF(944)(940)E-19.png"

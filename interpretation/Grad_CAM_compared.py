@@ -66,7 +66,7 @@ def run(config):
     #     classes_list.append(classes[index])
 
     model=cam.load_model(path_model)
-    CATEGORIES = sorted(os.listdir(path_data))
+    CATEGORIES = sorted(os.listdir(config['path_full_labels']))
     images=load_imgs(path_data, images_list, target_size)
 
     fig=cam.display_cam_grid(images, classes_list, model, conv_layer_name, CATEGORIES)
@@ -86,6 +86,13 @@ if __name__ == "__main__":
 
     # Load parameters from config file and process augmentation
     #python3 preprocess/aug_balanc_bd_k.py --config preprocess/config_balanced.yaml
-    config = load_config(args.config)
-    run(config)
-    sound_test_finalizado.beep(2)
+    try:
+        config = load_config(args.config)
+        run(config)
+        message = f'[INFO] finished successfully!!!'
+        sound_test_finalizado.beep(2)
+    except Exception as e:
+        # Send error notification if the process fails            
+        message = f'[INFO] with ERROR!!! {str(e)}'
+        print(message)
+        sound_test_finalizado.beep(2, message)

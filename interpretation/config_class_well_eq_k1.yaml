@@ -1,4 +1,5 @@
 path_model: "results/phase1/AT_densenet+cbam_exp/0_DenseNet201/0_DenseNet201_bestLoss_1.keras"
+path_full_labels: "/media/jczars/4C22F02A22F01B22/$WinREAgent/Pollen_classification_view/BD/CPD1_Cr_Rs_400/Test/k1"  
 nome: "GradCAM_class_well_phase3_eq_k1.png"
 conv_layer_name: "activation_1"
 img_size: 224
@@ -7,6 +8,6 @@ saved_dir: "./interpretation/grad_cam/"
 path_data: "BD/CPD1_TEST_VIEW/k1/EQUATORIAL/"
 images_labels:
 - "ceratonia/Fab.C.silX400wF(476)(0)B-15.png"
-- "eucalyptus/Myr.E.camaX400wF(1867)(0)B-10.png" 
+- "eucalyptus/Myr.E.camaX400wF(2964)(0)J-27.png" 
 - "sinapis/Bra.S.albX400wF(2155)(0)F-10.png"
 - "thymbra/x40 f (3)-3.png"
