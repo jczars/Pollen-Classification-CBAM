@@ -312,7 +312,7 @@ def sum_and_plot_confusion_matrices(folder_path, output_csv_path, output_image_p
         pd.DataFrame or None: DataFrame of the summed confusion matrix, or None if no valid matrices were found.
     """
     folder = Path(folder_path)
-    csv_files = list(folder.glob("*_mat_conf_k*.csv"))
+    csv_files = list(folder.glob("*_confusion_matrix_k*.csv"))
 
     if not csv_files:
         print("⚠️ No valid confusion matrix found in the folder.")

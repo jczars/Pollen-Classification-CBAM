@@ -6,7 +6,7 @@ import yaml
 sys.path.insert(0, os.getcwd())
 print(sys.path)
 
-from models import  consolidated_boxplot, consolidated_matrix, sound_test_finalizado
+from models import  consolidated_boxplot_view, consolidated_matrix_view, sound_test_finalizado
 
 def load_config(config_path="config.yaml"):
     """
@@ -31,8 +31,8 @@ def run(config):
     # Process each view specified in the YAML
     for folder in folders:
         print(folder)
-        consolidated_matrix.run(folder, normalize)
-        consolidated_boxplot.run(folder, k_folds)
+        consolidated_matrix_view.run(folder, normalize)
+        consolidated_boxplot_view.run(folder, k_folds)
 
 
 if __name__ == "__main__":
@@ -43,7 +43,7 @@ if __name__ == "__main__":
     run(folder, k, normalize)
     """
     parser = argparse.ArgumentParser(description="Run data augmentation with specified configuration.")
-    parser.add_argument("--config", type=str, default="./discussion/config_consolidaded.yaml", 
+    parser.add_argument("--config", type=str, default="./discussion/config_consolidaded_view.yaml", 
                         help="Path to the configuration YAML file.")
     args = parser.parse_args()
 
