@@ -116,47 +116,51 @@ def generate_confusion_matrix(y_true_mapped, categories, y_pred, present_labels,
     """
     Generates and displays a confusion matrix, ensuring alignment between true categories 
     and predicted labels. Highlights missing classes and misclassified cases.
-
     Parameters:
         y_true_mapped (array-like): True labels mapped to indices.
         categories (list): List of all class names.
         y_pred (array-like): Predicted labels.
         present_labels (list): Sorted list of labels present in the test set.
         normalize (bool, optional): Whether to normalize the confusion matrix values. Defaults to False.
-
     Returns:
         fig (matplotlib.figure.Figure): The generated confusion matrix figure.
         df_cm (pandas.DataFrame): Confusion matrix as a DataFrame.
     """
-
     num_classes = len(categories)  # Total number of possible classes
     absent_labels = sorted(set(range(num_classes)) - set(present_labels))
-
+    
+    # Ensure predictions are within valid range
+    y_pred_clipped = np.clip(y_pred, 0, num_classes - 1)
+    
     # Reduced confusion matrix (only for present classes)
-    cm_reduced = confusion_matrix(y_true_mapped, y_pred, labels=present_labels)
-
+    cm_reduced = confusion_matrix(y_true_mapped, y_pred_clipped, labels=present_labels)
+    
     # Normalize if required
     if normalize:
         cm_reduced = np.divide(cm_reduced.astype('float'), cm_reduced.sum(axis=1, keepdims=True), 
                                where=cm_reduced.sum(axis=1, keepdims=True) != 0)
-
+    
     # Create full-size confusion matrix (num_classes x num_classes)
     full_cm = np.zeros((num_classes, num_classes))
     for i, real in enumerate(present_labels):
         for j, pred in enumerate(present_labels):
             full_cm[real, pred] = cm_reduced[i, j]
-
+    
+    # Handle predictions for absent classes
+    for i, pred in enumerate(y_pred_clipped):
+        if pred not in present_labels:
+            full_cm[y_true_mapped[i], pred] += 1
+    
     # Create a DataFrame correctly aligned
     df_cm = pd.DataFrame(full_cm, index=categories, columns=categories)
-
+    
     # Generate heatmap
     fig, ax = plt.subplots(figsize=(12, 10))
     cmap = sns.color_palette("Blues", as_cmap=True)  
-
     mat = full_cm  # Alias for readability
     sns.heatmap(mat, annot=True, fmt=".2f" if normalize else "g", cmap=cmap, 
                 xticklabels=categories, yticklabels=categories, cbar=True, linewidths=0.5, ax=ax)
-
+    
     # Highlight missing labels and adjust rotation
     for i in absent_labels:
         ax.get_yticklabels()[i].set_backgroundcolor("yellow")  
@@ -164,7 +168,7 @@ def generate_confusion_matrix(y_true_mapped, categories, y_pred, present_labels,
     
     ax.set_xticklabels(ax.get_xticklabels(), fontsize=10, rotation=90)  # Fixed rotation
     ax.set_yticklabels(ax.get_yticklabels(), fontsize=10, rotation=0)
-
+    
     # Annotate non-diagonal cells with custom background and text color
     for i in range(len(mat)):
         for j in range(len(mat)):
@@ -174,11 +178,10 @@ def generate_confusion_matrix(y_true_mapped, categories, y_pred, present_labels,
                     ax.add_patch(plt.Rectangle((j, i), 1, 1, fill=True, color='lightcoral', alpha=0.5))
                 ax.text(j + 0.5, i + 0.5, f'{value:.2f}' if normalize else f'{int(value)}', 
                         ha='center', va='center', color='black', fontsize=10)
-
+    
     plt.xlabel("Predicted")
     plt.ylabel("Actual")
     plt.title("Confusion Matrix" + (" (Normalized)" if normalize else "") + "\n(Yellow = Missing Classes)")
-
     plt.tight_layout()
     return fig, df_cm
 
