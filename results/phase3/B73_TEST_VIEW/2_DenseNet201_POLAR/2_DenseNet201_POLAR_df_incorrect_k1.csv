@@ -1,7 +1,7 @@
 ,file,y_true,y_pred,confidence,true_label,predicted_label,status
-20,ochroma pyramidale/ochroma (14).jpg,43,38,0.22319469,combretum_discolor,mimosa_ditans,Incorrect
-28,paullinia_spicata/paullinia (2).jpg,47,57,0.43335205,dianella_tasmanica,serjania_hebecarpa,Incorrect
-29,paullinia_spicata/paullinia (20).jpg,47,57,0.48562473,dianella_tasmanica,serjania_hebecarpa,Incorrect
-39,serjania_laruotteana/serjania_laruotteana (10).jpg,58,56,0.8379712,gomphrena_sp,serjania_erecta,Incorrect
-41,serjania_laruotteana/serjania_laruotteana (6).jpg,58,56,0.6781435,gomphrena_sp,serjania_erecta,Incorrect
-47,tabebuia_chysotricha/tabebuia_chysotricha (30).jpg,64,65,0.98864216,hyptis_sp,tabebuia_rosealba,Incorrect
+20,ochroma pyramidale/ochroma (14).jpg,43,38,0.22319469,ochroma pyramidale,mimosa_ditans,Incorrect
+28,paullinia_spicata/paullinia (2).jpg,47,57,0.43335205,paullinia_spicata,serjania_hebecarpa,Incorrect
+29,paullinia_spicata/paullinia (20).jpg,47,57,0.48562473,paullinia_spicata,serjania_hebecarpa,Incorrect
+39,serjania_laruotteana/serjania_laruotteana (10).jpg,58,56,0.8379712,serjania_laruotteana,serjania_erecta,Incorrect
+41,serjania_laruotteana/serjania_laruotteana (6).jpg,58,56,0.6781435,serjania_laruotteana,serjania_erecta,Incorrect
+47,tabebuia_chysotricha/tabebuia_chysotricha (30).jpg,64,65,0.98864216,tabebuia_chysotricha,tabebuia_rosealba,Incorrect

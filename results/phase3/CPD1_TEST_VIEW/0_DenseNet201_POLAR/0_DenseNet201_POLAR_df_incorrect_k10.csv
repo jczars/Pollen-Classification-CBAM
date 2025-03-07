@@ -1,5 +1,5 @@
 ,file,y_true,y_pred,confidence,true_label,predicted_label,status
-30,ceratonia/Fab.C.silX400wF(479)(0)E-15.png,3,6,0.99763787,castanea,eucalyptus,Incorrect
-53,eucalyptus/Myr.E.camaX400wF(1871)(0)F-9.png,6,10,0.6502495,ebenus,origanum,Incorrect
-147,olea/Ole.O.euroX400wF(4263)(0)C-97.png,9,8,0.8550513,ferula,myrtus,Incorrect
-149,olea/Ole.O.euroX400wF(4265)(0)E-208.png,9,6,0.77930605,ferula,eucalyptus,Incorrect
+30,ceratonia/Fab.C.silX400wF(479)(0)E-15.png,3,6,0.99763787,ceratonia,eucalyptus,Incorrect
+53,eucalyptus/Myr.E.camaX400wF(1871)(0)F-9.png,6,10,0.6502495,eucalyptus,origanum,Incorrect
+147,olea/Ole.O.euroX400wF(4263)(0)C-97.png,9,8,0.8550513,olea,myrtus,Incorrect
+149,olea/Ole.O.euroX400wF(4265)(0)E-208.png,9,6,0.77930605,olea,eucalyptus,Incorrect

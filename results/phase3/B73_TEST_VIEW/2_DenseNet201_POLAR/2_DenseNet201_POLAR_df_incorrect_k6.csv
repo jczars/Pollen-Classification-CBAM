@@ -1,3 +1,3 @@
 ,file,y_true,y_pred,confidence,true_label,predicted_label,status
-12,genipa_auniricana/genipa_auniricana (8).jpg,25,30,0.9937522,caesalpinia_peltophoroides,ligustrum_lucidum,Incorrect
-40,schizolobium_parahyba/guapuruvu_26.jpg,54,66,0.9998299,dianella_tasmanica,tapirira_guianensis,Incorrect
+12,genipa_auniricana/genipa_auniricana (8).jpg,25,30,0.9937522,genipa_auniricana,ligustrum_lucidum,Incorrect
+40,schizolobium_parahyba/guapuruvu_26.jpg,54,66,0.9998299,schizolobium_parahyba,tapirira_guianensis,Incorrect

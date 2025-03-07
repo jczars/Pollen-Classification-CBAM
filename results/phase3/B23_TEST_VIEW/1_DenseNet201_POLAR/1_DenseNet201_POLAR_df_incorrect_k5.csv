@@ -1,2 +1,2 @@
 ,file,y_true,y_pred,confidence,true_label,predicted_label,status
-5,myrcia/myrcia_22.jpg,14,19,0.9987103,combretum,serjania,Incorrect
+5,myrcia/myrcia_22.jpg,14,19,0.9987103,myrcia,serjania,Incorrect

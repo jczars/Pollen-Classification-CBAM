@@ -1,3 +1,3 @@
 ,file,y_true,y_pred,confidence,true_label,predicted_label,status
-8,doliocarpus_dentatus/dolicarpus (11).jpg,21,62,0.9992624,aspilia_grazielae,syagrus_romanzoffiana,Incorrect
-20,matayba_guianensis/matayba_guianensis (25).jpg,36,23,0.6215524,chromolaena_laevigata,eucalyptus_sp,Incorrect
+8,doliocarpus_dentatus/dolicarpus (11).jpg,21,62,0.9992624,doliocarpus_dentatus,syagrus_romanzoffiana,Incorrect
+20,matayba_guianensis/matayba_guianensis (25).jpg,36,23,0.6215524,matayba_guianensis,eucalyptus_sp,Incorrect

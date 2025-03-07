@@ -2,8 +2,8 @@
 13,arrabidaea_florida/arrabidaea_florida (29).jpg,4,20,0.9556316,arrabidaea_florida,dipteryx_alata,Incorrect
 50,cordia_trichotoma/cordia_trichotoma (30).jpg,16,13,0.9997032,cordia_trichotoma,cissus_campestris,Incorrect
 109,matayba_guianensis/matayba_guianensis (4).jpg,36,23,0.99852103,matayba_guianensis,eucalyptus_sp,Incorrect
-146,schinus_sp/schinus_sp (12).jpg,53,10,0.6749619,poaceae_sp,cecropia_pachystachya,Incorrect
-170,tabebuia_chysotricha/tabebuia_chysotricha (10).jpg,64,30,0.51542383,serjania_sp,ligustrum_lucidum,Incorrect
-174,tabebuia_rosealba/tabebuia_rosealba (18).jpg,65,64,0.99760085,sida_cerradoensis,tabebuia_chysotricha,Incorrect
-188,vochysia_divergens/vochysia_divergens (31).jpg,71,52,0.53531295,tabebuia_rosealba,ricinus_communis,Incorrect
-191,zea_mays/zea_30.jpg,72,20,0.9995264,tapirira_guianensis,dipteryx_alata,Incorrect
+146,schinus_sp/schinus_sp (12).jpg,53,10,0.6749619,schinus_sp,cecropia_pachystachya,Incorrect
+170,tabebuia_chysotricha/tabebuia_chysotricha (10).jpg,64,30,0.51542383,tabebuia_chysotricha,ligustrum_lucidum,Incorrect
+174,tabebuia_rosealba/tabebuia_rosealba (18).jpg,65,64,0.99760085,tabebuia_rosealba,tabebuia_chysotricha,Incorrect
+188,vochysia_divergens/vochysia_divergens (31).jpg,71,52,0.53531295,vochysia_divergens,ricinus_communis,Incorrect
+191,zea_mays/zea_30.jpg,72,20,0.9995264,zea_mays,dipteryx_alata,Incorrect

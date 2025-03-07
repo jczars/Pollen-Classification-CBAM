@@ -1,7 +1,7 @@
 ,file,y_true,y_pred,confidence,true_label,predicted_label,status
 77,genipa_auniricana/genipa_auniricana (17).jpg,25,41,0.6208234,genipa_auniricana,myracroduon_urundeuva,Incorrect
-129,poaceae_sp/poaceae_sp (33).jpg,49,72,0.9992675,pachira_aquatica,zea_mays,Incorrect
-134,protium_heptaphyllum/protium_heptaphyllum (35).jpg,50,24,0.9959552,passiflora_gibertii,faramea_sp,Incorrect
-149,serjania_hebecarpa/serjania_hebecarpa (30).jpg,57,19,0.74383587,ricinus_communis,dianella_tasmanica,Incorrect
-165,tabebuia_rosealba/tabebuia_rosealba (24).jpg,65,64,0.7008724,serjania_laruotteana,tabebuia_chysotricha,Incorrect
-181,zea_mays/zea_12.jpg,72,49,0.9688497,tabebuia_chysotricha,poaceae_sp,Incorrect
+129,poaceae_sp/poaceae_sp (33).jpg,49,72,0.9992675,poaceae_sp,zea_mays,Incorrect
+134,protium_heptaphyllum/protium_heptaphyllum (35).jpg,50,24,0.9959552,protium_heptaphyllum,faramea_sp,Incorrect
+149,serjania_hebecarpa/serjania_hebecarpa (30).jpg,57,19,0.74383587,serjania_hebecarpa,dianella_tasmanica,Incorrect
+165,tabebuia_rosealba/tabebuia_rosealba (24).jpg,65,64,0.7008724,tabebuia_rosealba,tabebuia_chysotricha,Incorrect
+181,zea_mays/zea_12.jpg,72,49,0.9688497,zea_mays,poaceae_sp,Incorrect

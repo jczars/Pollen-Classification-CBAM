@@ -35,32 +35,32 @@
 34,mabea/mabea_20.jpg,11,11,0.9998847,mabea,mabea,Correct
 35,mabea/mabea_23.jpg,11,11,0.99960834,mabea,mabea,Correct
 36,mabea/mabea_29.jpg,11,11,0.9997603,mabea,mabea,Correct
-38,myrcia/myrcia_06.jpg,14,14,0.99792635,mimosa,myrcia,Correct
-39,myrcia/myrcia_12.jpg,14,14,0.99983776,mimosa,myrcia,Correct
-40,myrcia/myrcia_18.jpg,14,14,0.9998543,mimosa,myrcia,Correct
-41,protium/protium_26.jpg,15,15,0.9997714,myrcia,protium,Correct
-42,protium/protium_27.jpg,15,15,0.99164975,myrcia,protium,Correct
-43,protium/protium_30.jpg,15,15,0.9994823,myrcia,protium,Correct
-44,protium/protium_32.jpg,15,15,0.6099679,myrcia,protium,Correct
-45,qualea/qualea_06.jpg,16,16,0.9997162,protium,qualea,Correct
-46,qualea/qualea_34.jpg,16,16,0.99984133,protium,qualea,Correct
-47,qualea/qualea_35.jpg,16,16,0.99982834,protium,qualea,Correct
-48,schinus/schinus_04.jpg,17,17,0.9998951,qualea,schinus,Correct
-49,schinus/schinus_10.jpg,17,17,0.99994993,qualea,schinus,Correct
-50,schinus/schinus_23.jpg,17,17,0.9998553,qualea,schinus,Correct
-51,schinus/schinus_28.jpg,17,17,0.9997961,qualea,schinus,Correct
-52,senegalia/senegalia (12).jpg,18,18,0.99977976,schinus,senegalia,Correct
-53,senegalia/senegalia (26).jpg,18,18,0.999856,schinus,senegalia,Correct
-54,senegalia/senegalia (31).jpg,18,18,0.9999125,schinus,senegalia,Correct
-55,serjania/serjania_01.jpg,19,19,0.99970263,senegalia,serjania,Correct
-56,serjania/serjania_15.jpg,19,19,0.9988833,senegalia,serjania,Correct
-57,serjania/serjania_27.jpg,19,19,0.99901557,senegalia,serjania,Correct
-58,serjania/serjania_29.jpg,19,19,0.99977404,senegalia,serjania,Correct
-59,syagrus/syagrus_09.jpg,20,20,0.9997781,serjania,syagrus,Correct
-60,syagrus/syagrus_14.jpg,20,20,0.999961,serjania,syagrus,Correct
-62,tridax/tridax_11.jpg,21,21,0.99977463,syagrus,tridax,Correct
-63,tridax/tridax_19.jpg,21,21,0.9996146,syagrus,tridax,Correct
-64,tridax/tridax_24.jpg,21,21,0.9995964,syagrus,tridax,Correct
-65,urochloa/urochloa (26).jpg,22,22,0.9998759,tridax,urochloa,Correct
-66,urochloa/urochloa (5).jpg,22,22,0.9998958,tridax,urochloa,Correct
-67,urochloa/urochloa_37.jpg,22,22,0.9999176,tridax,urochloa,Correct
+38,myrcia/myrcia_06.jpg,14,14,0.99792635,myrcia,myrcia,Correct
+39,myrcia/myrcia_12.jpg,14,14,0.99983776,myrcia,myrcia,Correct
+40,myrcia/myrcia_18.jpg,14,14,0.9998543,myrcia,myrcia,Correct
+41,protium/protium_26.jpg,15,15,0.9997714,protium,protium,Correct
+42,protium/protium_27.jpg,15,15,0.99164975,protium,protium,Correct
+43,protium/protium_30.jpg,15,15,0.9994823,protium,protium,Correct
+44,protium/protium_32.jpg,15,15,0.6099679,protium,protium,Correct
+45,qualea/qualea_06.jpg,16,16,0.9997162,qualea,qualea,Correct
+46,qualea/qualea_34.jpg,16,16,0.99984133,qualea,qualea,Correct
+47,qualea/qualea_35.jpg,16,16,0.99982834,qualea,qualea,Correct
+48,schinus/schinus_04.jpg,17,17,0.9998951,schinus,schinus,Correct
+49,schinus/schinus_10.jpg,17,17,0.99994993,schinus,schinus,Correct
+50,schinus/schinus_23.jpg,17,17,0.9998553,schinus,schinus,Correct
+51,schinus/schinus_28.jpg,17,17,0.9997961,schinus,schinus,Correct
+52,senegalia/senegalia (12).jpg,18,18,0.99977976,senegalia,senegalia,Correct
+53,senegalia/senegalia (26).jpg,18,18,0.999856,senegalia,senegalia,Correct
+54,senegalia/senegalia (31).jpg,18,18,0.9999125,senegalia,senegalia,Correct
+55,serjania/serjania_01.jpg,19,19,0.99970263,serjania,serjania,Correct
+56,serjania/serjania_15.jpg,19,19,0.9988833,serjania,serjania,Correct
+57,serjania/serjania_27.jpg,19,19,0.99901557,serjania,serjania,Correct
+58,serjania/serjania_29.jpg,19,19,0.99977404,serjania,serjania,Correct
+59,syagrus/syagrus_09.jpg,20,20,0.9997781,syagrus,syagrus,Correct
+60,syagrus/syagrus_14.jpg,20,20,0.999961,syagrus,syagrus,Correct
+62,tridax/tridax_11.jpg,21,21,0.99977463,tridax,tridax,Correct
+63,tridax/tridax_19.jpg,21,21,0.9996146,tridax,tridax,Correct
+64,tridax/tridax_24.jpg,21,21,0.9995964,tridax,tridax,Correct
+65,urochloa/urochloa (26).jpg,22,22,0.9998759,urochloa,urochloa,Correct
+66,urochloa/urochloa (5).jpg,22,22,0.9998958,urochloa,urochloa,Correct
+67,urochloa/urochloa_37.jpg,22,22,0.9999176,urochloa,urochloa,Correct

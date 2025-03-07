@@ -1,10 +1,10 @@
 ,file,y_true,y_pred,confidence,true_label,predicted_label,status
 0,anadenanthera/anadenanthera_30.jpg,0,0,0.9996834,anadenanthera,anadenanthera,Correct
 1,arecaceae/arecaceae_30.jpg,1,1,0.9996482,arecaceae,arecaceae,Correct
-2,hyptis/hyptis_02.jpg,10,10,0.9998148,arrabidaea,hyptis,Correct
-3,matayba/matayba_03.jpg,12,12,0.9999285,cecropia,matayba,Correct
-4,mimosa/mimosa_18.jpg,13,13,0.9999436,chromolaena,mimosa,Correct
-6,myrcia/myrcia_26.jpg,14,14,0.99989617,combretum,myrcia,Correct
-7,schinus/schinus_08.jpg,17,17,0.99998593,croton,schinus,Correct
-8,serjania/serjania_13.jpg,19,19,0.99985373,dipteryx,serjania,Correct
-9,urochloa/urochloa (11).jpg,22,22,0.99980897,eucalipto,urochloa,Correct
+2,hyptis/hyptis_02.jpg,10,10,0.9998148,hyptis,hyptis,Correct
+3,matayba/matayba_03.jpg,12,12,0.9999285,matayba,matayba,Correct
+4,mimosa/mimosa_18.jpg,13,13,0.9999436,mimosa,mimosa,Correct
+6,myrcia/myrcia_26.jpg,14,14,0.99989617,myrcia,myrcia,Correct
+7,schinus/schinus_08.jpg,17,17,0.99998593,schinus,schinus,Correct
+8,serjania/serjania_13.jpg,19,19,0.99985373,serjania,serjania,Correct
+9,urochloa/urochloa (11).jpg,22,22,0.99980897,urochloa,urochloa,Correct

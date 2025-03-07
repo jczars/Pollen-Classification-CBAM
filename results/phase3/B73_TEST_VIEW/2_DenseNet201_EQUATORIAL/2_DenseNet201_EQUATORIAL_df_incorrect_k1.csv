@@ -1,3 +1,3 @@
 ,file,y_true,y_pred,confidence,true_label,predicted_label,status
-139,poaceae_sp/poaceae_sp (34).jpg,49,72,0.9766258,paullinia_spicata,zea_mays,Incorrect
-151,schinus_sp/schinus_sp (32).jpg,53,24,0.9353184,qualea_multiflora,faramea_sp,Incorrect
+139,poaceae_sp/poaceae_sp (34).jpg,49,72,0.9766258,poaceae_sp,zea_mays,Incorrect
+151,schinus_sp/schinus_sp (32).jpg,53,24,0.9353184,schinus_sp,faramea_sp,Incorrect
