@@ -115,11 +115,11 @@ def extract_test_info(folder_path):
 def run(folder, k=10):
    test_id, model_name, view = extract_test_info(folder)
    prefix_correct=f"{test_id}_{model_name}_{view}_df_correct_k"
-   #prefix_incorrect=f"{test_id}_{model_name}_{view}_df_incorrect_k"
+   prefix_incorrect=f"{test_id}_{model_name}_{view}_df_incorrect_k"
    print(prefix_correct)
 
    df_correct=consolidator(folder, prefix_correct, k)
-   #df_incorrect=consolidator(folder, prefix_incorrect, k)
+   df_incorrect=consolidator(folder, prefix_incorrect, k)
    
    fig_correct=plot_confidence_boxplot(df_correct, type='correct')
    #fig_incorrect=plot_confidence_boxplot(df_incorrect, type='incorrect')
@@ -132,7 +132,7 @@ def run(folder, k=10):
    #fig_incorrect.savefig(boxplot_incorrect_image)
 
    df_correct.to_csv(os.path.join(save_dir, 'consolidated_df_correct.csv'), index=False)
-   #df_incorrect.to_csv(os.path.join(save_dir, 'consolidated_df_incorrect.csv'), index=False)    
+   df_incorrect.to_csv(os.path.join(save_dir, 'consolidated_df_incorrect.csv'), index=False)    
 
 
 if __name__ == "__main__":
