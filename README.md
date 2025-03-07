@@ -593,11 +593,11 @@ A YAML configuration file (e.g., config_class_well.yaml) that defines the parame
 
 **Expected Outputs:**
 
-`correct classification´
+`correct classification`
 
-![display with Grad CAM results to correct classification](interpretation/grad_cam/GradCAM_class_well_phase3_pl_k1.png)
+![display with Grad CAM results to correct classification](interpretation/grad_cam/GradCAM_class_well_phase3_eq_k1.png)
 
-**incorrect classification** 
+`incorrect classification` 
 ![display with Grad CAM results to incorrect classification](interpretation/grad_cam/GradCAM_class_wrong_phase3_pl_k9.png)
 
 **Example of Execution:**
