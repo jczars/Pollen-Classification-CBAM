@@ -1,0 +1,20 @@
+;precision;recall;f1-score;support
+anadenanthera;1,0;1,0;1,0;5
+arecaceae;1,0;1,0;1,0;5
+arrabidaea;1,0;1,0;1,0;3
+cecropia;1,0;1,0;1,0;1
+chromolaena;1,0;1,0;1,0;5
+combretum;1,0;1,0;1,0;1
+faramea;1,0;1,0;1,0;1
+hyptis;1,0;1,0;1,0;12
+matayba;1,0;1,0;1,0;5
+mimosa;1,0;1,0;1,0;15
+myrcia;1,0;0,875;0,933;8
+schinus;1,0;1,0;1,0;3
+senegalia;1,0;1,0;1,0;5
+serjania;0,9;1,0;0,947;9
+tridax;1,0;1,0;1,0;3
+urochloa;1,0;1,0;1,0;7
+accuracy;0,989;0,989;0,989;0
+macro avg;0,994;0,992;0,993;88
+weighted avg;0,99;0,989;0,989;88
