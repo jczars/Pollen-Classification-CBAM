@@ -1,7 +1,7 @@
 ;precision;recall;f1-score;support
 asphodelus;1,0;1,0;1,0;29
 calicotome;0,99;0,997;0,993;287
-ceratonia;1,0;0,75;0,857;4
+ceratonia;0,75;0,75;0,75;4
 erica;0,994;1,0;0,997;179
 eucalyptus;0,981;0,97;0,975;164
 ferula;1,0;0,938;0,968;16
@@ -15,7 +15,7 @@ salvia;0,987;1,0;0,993;74
 satureja;1,0;0,935;0,967;31
 sinapis;1,0;1,0;1,0;1
 thymbra;0,988;0,988;0,988;84
-vitis;0,952;1,0;0,976;20
+vitis;0,952;0,952;0,952;21
 accuracy;0,992;0,992;0,992;0
-macro avg;0,991;0,969;0,979;1914
-weighted avg;0,992;0,992;0,992;1914
+macro avg;0,977;0,966;0,971;1915
+weighted avg;0,992;0,992;0,992;1915
