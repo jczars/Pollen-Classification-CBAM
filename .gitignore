@@ -3,6 +3,7 @@ BD/POLLEN23E_RC
 BD/POLLEN23E_RC_400
 BD/POLLEN73S_RC
 BD/POLLEN73S_RC_400
+BD/BI_Cr_5
 
 BD/CPD1_TEST_VIEW
 BD/B23_TEST_VIEW
@@ -15,4 +16,5 @@ results/phase1/AT_densenet+cbam_exp/2_DenseNet201
 
 #outher files
 .sync.ffs_db
-memory_log.log
+memory_log
+models/__pycache__

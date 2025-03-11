@@ -633,7 +633,7 @@ def run(workbook_path, start_index, end_index=None, verbose=0):
 
 if __name__ == "__main__":
     # Configuração do argparse para lidar com argumentos de linha de comando
-    default_path='0_pseudo_labels/Reports/config_pseudo_label_pre.xlsx'
+    default_path='results/phase2/recports_cr/config_pseudo_label_pre_cr.xlsx'
     parser = argparse.ArgumentParser(description="Run the pollen classification process.")
     parser.add_argument(
         '--path', 
