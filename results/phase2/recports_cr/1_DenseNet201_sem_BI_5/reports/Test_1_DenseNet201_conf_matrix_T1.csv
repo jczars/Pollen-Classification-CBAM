@@ -1,0 +1,7 @@
+,equatorial_alongada,equatorial_circular,equatorial_eliptica,polar_circular,polar_triangular,polar_tricircular
+equatorial_alongada,11,0,0,0,0,0
+equatorial_circular,0,42,0,3,0,0
+equatorial_eliptica,0,1,5,0,0,0
+polar_circular,0,3,0,35,0,0
+polar_triangular,0,0,0,1,17,0
+polar_tricircular,0,0,0,0,0,5
