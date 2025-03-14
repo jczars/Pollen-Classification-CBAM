@@ -2,7 +2,7 @@ image_size : 224 # input image size
 batch_size : 16 # Number of images processed in each batch
 bd_src : "BD/CPD1_Cr_Rs_200/Test/" 
 # Source directory containing the isolated image dataset
-bd_dst : "results/phase3/CPD1_TEST_A200/" # Destination directory to save the reprocessed images
+bd_dst : "BD/CPD1_TEST_A200/" # Destination directory to save the reprocessed images
 path_model : "/media/jczars/4C22F02A22F01B22/$WinREAgent/Pollen_classification_view/results/phase1/reports_cr/1_DenseNet201_sem_BI_5/models/1_DenseNet201_bestLoss_13.keras" 
 # Path to the pre-trained model file
 path_labels : "/media/jczars/4C22F02A22F01B22/$WinREAgent/Pollen_classification_view/BD/BI_Cr_5/labels/" 

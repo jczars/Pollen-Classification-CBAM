@@ -1,6 +1,6 @@
 path_model: "results/phase1/AT_densenet+cbam_exp/5_DenseNet201/"
-path_full_labels: "/media/jczars/4C22F02A22F01B22/$WinREAgent/Pollen_classification_view/BD/CPD1_Cr_Rs_200/Test/k1"  
-path_test: "BD/CPD1_TEST_VIEW/"   # Directory to save the distribution chart
+path_full_labels: "BD/CPD1_Cr_Rs_200/Test/k1"  
+path_test: "BD/CPD1_TEST_A200/"   # Directory to save the distribution chart
 save_dir: "results/phase3/"  # Directory to save the distribution graph
 save: 1  # 1 to save resized images, 0 to not save
 verbose: 1  # 1 for detailed output, 0 for silent mode
