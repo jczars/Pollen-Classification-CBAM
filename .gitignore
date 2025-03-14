@@ -33,3 +33,4 @@ results/phase2/recports_cr/1_DenseNet201_sem_BI_5
 .sync.ffs_db
 memory_log
 models/__pycache__
+echo "*.keras" >> .gitignore
