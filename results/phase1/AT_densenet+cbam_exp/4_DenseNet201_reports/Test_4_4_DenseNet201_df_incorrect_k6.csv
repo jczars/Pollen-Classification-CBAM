@@ -1,0 +1,13 @@
+,file,y_true,y_pred,confidence,true_label,predicted_label,status
+4,calicotome/Fab.C.vilX400wF(2016)(0)A-19.png,1,16,0.7816478,calicotome,sinapis,Incorrect
+5,calicotome/Fab.C.vilX400wF(2016)(0)A-22.png,1,19,0.3959552,calicotome,vitis,Incorrect
+8,calicotome/Fab.C.vilX400wF(2017)(0)B-2.png,1,16,0.46823496,calicotome,sinapis,Incorrect
+10,calicotome/Fab.C.vilX400wF(2018)(0)C-16.png,1,17,0.7271267,calicotome,thymbra,Incorrect
+13,calicotome/Fab.C.vilX400wF(2018)(0)C-3.png,1,6,0.63708097,calicotome,eucalyptus,Incorrect
+64,ceratonia/Fab.C.silX400wF(481)(0)G-19.png,3,10,0.73383844,ceratonia,origanum,Incorrect
+213,olea/Ole.O.euroX400wF(4263)(0)C-108.png,9,16,0.9879027,olea,sinapis,Incorrect
+215,olea/Ole.O.euroX400wF(4263)(0)C-135.png,9,16,0.97568524,olea,sinapis,Incorrect
+254,olea/Ole.O.euroX400wF(4265)(0)E-179.png,9,16,0.57531065,olea,sinapis,Incorrect
+298,origanum/Lam.O.micX400wF(889)(0)F-47.png,10,2,0.6119743,origanum,castanea,Incorrect
+321,pistacia/Ana.P.tereX400wF(3224)(0)C-10.png,13,16,0.792292,pistacia,sinapis,Incorrect
+356,sinapis/Bra.S.albX400wF(2153)(0)D-11.png,16,19,0.839481,sinapis,vitis,Incorrect

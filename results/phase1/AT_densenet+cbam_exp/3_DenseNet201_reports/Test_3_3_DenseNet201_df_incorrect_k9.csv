@@ -1,0 +1,5 @@
+,file,y_true,y_pred,confidence,true_label,predicted_label,status
+64,ceratonia/Fab.C.silX400wF(481)(0)G-2.png,3,19,0.7653112,ceratonia,vitis,Incorrect
+178,myrtus/IMG_3744-26.png,8,2,0.9607055,myrtus,castanea,Incorrect
+393,vitis/Vit.V.viniX400wF(4979)(0)B-16.png,19,7,0.7278695,vitis,ferula,Incorrect
+411,vitis/Vit.V.viniX400wF(4984)(0)G-41.png,19,9,0.82222706,vitis,olea,Incorrect

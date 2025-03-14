@@ -1,0 +1,6 @@
+,file,y_true,y_pred,confidence,true_label,predicted_label,status
+2,asphodelus/Asp.A.ramX400wF(1985)(0)B-3.png,0,15,0.7088531,asphodelus,satureja,Incorrect
+60,ceratonia/Fab.C.silX400wF(479)(0)E-15.png,3,6,0.80211663,ceratonia,eucalyptus,Incorrect
+90,eucalyptus/Myr.E.camaX400wF(1869)(0)D-1.png,6,5,0.8709926,eucalyptus,erica,Incorrect
+334,salvia/Lam.S.triX400wF(2190)(0)C-8.png,14,3,0.61810625,salvia,ceratonia,Incorrect
+381,thymbra/x40 f (7)-4.png,17,5,0.95800096,thymbra,erica,Incorrect

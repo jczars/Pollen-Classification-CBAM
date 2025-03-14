@@ -1,0 +1,4 @@
+,file,y_true,y_pred,confidence,true_label,predicted_label,status
+11,calicotome/Fab.C.vilX400wF(2018)(0)C-7.png,1,19,0.65568334,calicotome,vitis,Incorrect
+64,ceratonia/Fab.C.silX400wF(481)(0)G-11.png,3,2,0.9470657,ceratonia,castanea,Incorrect
+341,satureja/Lam.S.thyX400wF(942)(935)B-1.png,15,3,0.842655,satureja,ceratonia,Incorrect

@@ -1,0 +1,5 @@
+,file,y_true,y_pred,confidence,true_label,predicted_label,status
+11,calicotome/Fab.C.vilX400wF(2018)(0)C-7.png,1,19,0.8934752,calicotome,vitis,Incorrect
+64,ceratonia/Fab.C.silX400wF(481)(0)G-11.png,3,1,0.756278,ceratonia,calicotome,Incorrect
+213,olea/Ole.O.euroX400wF(4261)(0)A-44.png,9,16,0.83781195,olea,sinapis,Incorrect
+301,origanum/Lam.O.micX400wF(889)(0)F-62.png,10,6,0.7751488,origanum,eucalyptus,Incorrect

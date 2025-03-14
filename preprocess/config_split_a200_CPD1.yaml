@@ -1,0 +1,17 @@
+# Image file type to be used in augmentation operations
+type: 'png'
+
+# Target number of images per category
+goal: 200
+
+# Number of fold directories (k-folds) in the dataset
+k_folds: 10
+
+# Base directory where the image data is stored
+base_dir: '/media/jczars/4C22F02A22F01B22/$WinREAgent/Pollen_classification_view/BD/CPD1_Cr_Rs'
+
+# List of views (e.g., EQUATORIAL and POLAR) to be processed
+views: None
+
+# Verbosity level for console logs (0 = silent, 1 or more = verbose)
+verbose: 1

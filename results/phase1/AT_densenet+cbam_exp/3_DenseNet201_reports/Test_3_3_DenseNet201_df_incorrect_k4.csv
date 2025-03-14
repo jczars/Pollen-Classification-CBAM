@@ -1,0 +1,6 @@
+,file,y_true,y_pred,confidence,true_label,predicted_label,status
+65,ebenus/Fab.E.creX400wF(694)(0)B-2.png,4,7,0.41696587,ebenus,ferula,Incorrect
+284,olea/Ole.O.euroX400wF(4267)(0)G-9.png,9,7,0.6765868,olea,ferula,Incorrect
+287,origanum/Lam.O.micX400wF(884)(0)A-9.png,10,3,0.97487813,origanum,ceratonia,Incorrect
+342,satureja/Lam.S.thyX400wF(942)(935)B-2.png,15,10,0.930242,satureja,origanum,Incorrect
+358,sinapis/Bra.S.albX400wF(2155)(0)F-24.png,16,9,0.95721126,sinapis,olea,Incorrect

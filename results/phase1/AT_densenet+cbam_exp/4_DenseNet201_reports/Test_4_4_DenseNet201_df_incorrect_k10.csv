@@ -1,0 +1,5 @@
+,file,y_true,y_pred,confidence,true_label,predicted_label,status
+0,asphodelus/Asp.A.ramX400wF(1984)(0)A-9.png,0,11,0.94405335,asphodelus,oxalis,Incorrect
+3,calicotome/Fab.C.vilX400wF(2016)(0)A-21.png,1,19,0.7370473,calicotome,vitis,Incorrect
+285,origanum/Lam.O.micX400wF(884)(0)A-1.png,10,3,0.98777544,origanum,ceratonia,Incorrect
+371,thymbra/Lam.T.capX400wF(1029)(0)A-24.png,17,15,0.94305235,thymbra,satureja,Incorrect
