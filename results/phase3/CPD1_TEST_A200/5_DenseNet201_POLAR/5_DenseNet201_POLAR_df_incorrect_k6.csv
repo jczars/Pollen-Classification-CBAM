@@ -1,0 +1,3 @@
+,file,y_true,y_pred,confidence,true_label,predicted_label,status
+55,eucalyptus/Myr.E.camaX400wF(1871)(0)F-4.png,6,10,0.4973525,eucalyptus,origanum,Incorrect
+68,eucalyptus/Myr.E.camaX400wF(2962)(0)H-27.png,6,8,0.9686392,eucalyptus,myrtus,Incorrect

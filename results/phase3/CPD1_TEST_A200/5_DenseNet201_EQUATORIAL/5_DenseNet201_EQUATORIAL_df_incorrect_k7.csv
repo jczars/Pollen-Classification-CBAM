@@ -1,0 +1,4 @@
+,file,y_true,y_pred,confidence,true_label,predicted_label,status
+53,olea/Ole.O.euroX400wF(4263)(0)C-126.png,9,16,0.73394996,olea,sinapis,Incorrect
+152,sinapis/Bra.S.albX400wF(2151)(0)B-20.png,16,9,0.6423808,sinapis,olea,Incorrect
+160,sinapis/Bra.S.albX400wF(2154)(0)E-9.png,16,9,0.88131815,sinapis,olea,Incorrect

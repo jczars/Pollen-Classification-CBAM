@@ -1,0 +1,4 @@
+,file,y_true,y_pred,confidence,true_label,predicted_label,status
+124,origanum/Lam.O.micX400wF(887)(0)D-8.png,10,15,0.74322987,origanum,satureja,Incorrect
+183,vitis/Vit.V.viniX400wF(4979)(0)B-16.png,19,7,0.27454934,vitis,ferula,Incorrect
+190,vitis/Vit.V.viniX400wF(4982)(0)E-30.png,19,7,0.37232667,vitis,ferula,Incorrect

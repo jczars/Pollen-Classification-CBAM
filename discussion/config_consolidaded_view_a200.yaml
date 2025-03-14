@@ -1,0 +1,9 @@
+# Número de pastas de dobras (k-folds) no dataset
+k_folds: 10
+
+normalize: False
+
+# Diretório onde estão os relatóriios de avaliação
+folder:
+- 'results/phase3/CPD1_TEST_A200/5_DenseNet201_EQUATORIAL/'  
+- 'results/phase3/CPD1_TEST_A200/5_DenseNet201_POLAR/' 

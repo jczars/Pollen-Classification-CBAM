@@ -1,0 +1,4 @@
+,file,y_true,y_pred,confidence,true_label,predicted_label,status
+122,origanum/Lam.O.micX400wF(884)(0)A-2.png,10,3,0.9581281,origanum,ceratonia,Incorrect
+168,sinapis/IMG_3706-11.png,16,3,0.9400528,sinapis,ceratonia,Incorrect
+187,vitis/Vit.V.viniX400wF(4978)(0)A-24.png,19,2,0.813586,vitis,castanea,Incorrect
