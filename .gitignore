@@ -11,11 +11,23 @@ BD/CPD1_Cr_Rs_200
 BD/CPD1_TEST_VIEW
 BD/B23_TEST_VIEW
 BD/B73_TEST_VIEW
+BD/CPD1_TEST_A200
+
+
 
 #ignore models
+#Phase1
 results/phase1/AT_densenet+cbam_exp/0_DenseNet201
 results/phase1/AT_densenet+cbam_exp/1_DenseNet201
 results/phase1/AT_densenet+cbam_exp/2_DenseNet201
+results/phase1/AT_densenet+cbam_exp/3_DenseNet201
+results/phase1/AT_densenet+cbam_exp/4_DenseNet201
+results/phase1/AT_densenet+cbam_exp/5_DenseNet201
+
+#phase 2
+results/phase2/recports_cr/0_MobileNet_sem_BI_5
+results/phase2/recports_cr/1_DenseNet201_sem_BI_5
+
 
 #outher files
 .sync.ffs_db
