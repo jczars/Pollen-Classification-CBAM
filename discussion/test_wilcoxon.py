@@ -8,7 +8,7 @@ import os
 def process_spreadsheet(file_path):
     """
     Reads a spreadsheet from the 'comparar' sheet, performs specific comparisons between the datasets
-    Orig 400 vs EQ 400 and Orig 400 vs PL 400, applies the Wilcoxon test, and adds interpretations of the results.
+    Orig  vs EQ  and Orig  vs PL , applies the Wilcoxon test, and adds interpretations of the results.
     
     :param file_path: Path to the Excel file with data.
     :return: DataFrame with comparative analyses, Wilcoxon test results, and their interpretations.
@@ -17,45 +17,45 @@ def process_spreadsheet(file_path):
     data = pd.read_excel(file_path, sheet_name="comparar")
 
     # Filter the relevant datasets for comparisons
-    data_orig_eq = data[data['Base'].isin(['Orig 400', 'EQ 400'])]
-    data_orig_pl = data[data['Base'].isin(['Orig 400', 'PL 400'])]
+    data_orig_eq = data[data['Base'].isin(['Orig', 'EQ'])]
+    data_orig_pl = data[data['Base'].isin(['Orig', 'PL'])]
 
     # Specific comparisons
-    data_eq_comparison = data_orig_eq[data_orig_eq['Base'].isin(['Orig 400', 'EQ 400'])]
-    data_pl_comparison = data_orig_pl[data_orig_pl['Base'].isin(['Orig 400', 'PL 400'])]
+    data_eq_comparison = data_orig_eq[data_orig_eq['Base'].isin(['Orig', 'EQ'])]
+    data_pl_comparison = data_orig_pl[data_orig_pl['Base'].isin(['Orig', 'PL'])]
 
     # Perform the comparison for each relevant metric
     results = []
 
     for metric in ['Accuracy', 'Precision', 'Recall', 'F1-Score']:
-        # Comparison Orig 400 vs EQ 400
+        # Comparison Orig vs EQ
         try:
             comparison_eq = data_eq_comparison.pivot(index="Classes", columns="Base", values=metric).dropna()
-            stat_eq, p_value_eq = wilcoxon(comparison_eq['Orig 400'], comparison_eq['EQ 400'])
+            stat_eq, p_value_eq = wilcoxon(comparison_eq['Orig'], comparison_eq['EQ'])
             interpretation_eq = "Significant" if p_value_eq < 0.05 else "Not significant"
         except ValueError:
             stat_eq, p_value_eq, interpretation_eq = None, None, "Error"
 
         results.append({
-            "Base_1": "Orig 400",
-            "Base_2": "EQ 400",
+            "Base_1": "Orig",
+            "Base_2": "EQ",
             "Metric": metric,
             "Stat": stat_eq,
             "P-Value": p_value_eq,
             "Interpretation": interpretation_eq
         })
 
-        # Comparison Orig 400 vs PL 400
+        # Comparison Orig vs PL
         try:
             comparison_pl = data_pl_comparison.pivot(index="Classes", columns="Base", values=metric).dropna()
-            stat_pl, p_value_pl = wilcoxon(comparison_pl['Orig 400'], comparison_pl['PL 400'])
+            stat_pl, p_value_pl = wilcoxon(comparison_pl['Orig'], comparison_pl['PL'])
             interpretation_pl = "Significant" if p_value_pl < 0.05 else "Not significant"
         except ValueError:
             stat_pl, p_value_pl, interpretation_pl = None, None, "Error"
 
         results.append({
-            "Base_1": "Orig 400",
-            "Base_2": "PL 400",
+            "Base_1": "Orig",
+            "Base_2": "PL",
             "Metric": metric,
             "Stat": stat_pl,
             "P-Value": p_value_pl,
@@ -71,7 +71,7 @@ def process_spreadsheet(file_path):
 # Main function to handle command-line arguments
 if __name__ == "__main__":
     # Default file path configuration
-    default_path = 'discussion/Comparar_literatura_B23.xlsx'
+    default_path = 'discussion/Comparar_literatura_CPD1_A200.xlsx'
     
     # Set up argparse to handle command-line arguments
     parser = argparse.ArgumentParser(description="Run the pollen classification process.")

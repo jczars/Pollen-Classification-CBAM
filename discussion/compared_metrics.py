@@ -9,9 +9,9 @@ def compare_metrics(input_file):
     df = pd.read_excel(input_file, sheet_name="comparar")
     
     # Criar DataFrames para cada base
-    orig_400 = df[df['Base'] == 'Orig 400']
-    eq_400 = df[df['Base'] == 'EQ 400']
-    pl_400 = df[df['Base'] == 'PL 400']
+    orig_400 = df[df['Base'] == 'Orig']
+    eq_400 = df[df['Base'] == 'EQ']
+    pl_400 = df[df['Base'] == 'PL']
     
     # Função para comparar métricas
     def compare(df1, df2):
@@ -50,7 +50,7 @@ def compare_metrics(input_file):
 # Main function to handle command-line arguments
 if __name__ == "__main__":
     # Default file path configuration
-    default_path = 'discussion/Comparar_literatura_CPD1.xlsx'
+    default_path = 'discussion/Comparar_literatura_CPD1_A200.xlsx'
     
     # Set up argparse to handle command-line arguments
     parser = argparse.ArgumentParser(description="Run the pollen classification process.")
