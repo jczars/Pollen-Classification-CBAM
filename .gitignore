@@ -27,6 +27,7 @@ results/phase1/AT_densenet+cbam_exp/2_DenseNet201
 results/phase1/AT_densenet+cbam_exp/3_DenseNet201
 results/phase1/AT_densenet+cbam_exp/4_DenseNet201
 results/phase1/AT_densenet+cbam_exp/5_DenseNet201
+results/phase1/AT_densenet+cbam_exp/6_DenseNet201
 
 #phase 2
 results/phase2/recports_cr/0_MobileNet_sem_BI_5

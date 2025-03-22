@@ -8,3 +8,6 @@ folder:
 - 'results/phase1/AT_densenet+cbam_exp/0_DenseNet201_reports/'  
 - 'results/phase1/AT_densenet+cbam_exp/1_DenseNet201_reports/' 
 - 'results/phase1/AT_densenet+cbam_exp/2_DenseNet201_reports/'
+- 'results/phase1/AT_densenet+cbam_exp/3_DenseNet201_reports/'
+- 'results/phase1/AT_densenet+cbam_exp/4_DenseNet201_reports/'
+- 'results/phase1/AT_densenet+cbam_exp/5_DenseNet201_reports/'

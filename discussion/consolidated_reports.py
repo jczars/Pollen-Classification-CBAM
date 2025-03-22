@@ -35,12 +35,6 @@ def run(config):
 
 
 if __name__ == "__main__":
-    """
-    folder = './results/phase2/reports_cr_13_500/0_DenseNet201_reports/'    
-    k=10
-    normalize=True
-    run(folder, k, normalize)
-    """
     parser = argparse.ArgumentParser(description="Run data augmentation with specified configuration.")
     parser.add_argument("--config", type=str, default="discussion/config_consolidaded.yaml", 
                         help="Path to the configuration YAML file.")
