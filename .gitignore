@@ -29,6 +29,13 @@ results/phase1/AT_densenet+cbam_exp/4_DenseNet201
 results/phase1/AT_densenet+cbam_exp/5_DenseNet201
 results/phase1/AT_densenet+cbam_exp/6_DenseNet201
 
+##FT
+results/phase1/FT/1_MobileNet
+results/phase1/FT/2_InceptionV3
+results/phase1/FT/3_Xception
+results/phase1/FT/4_ResNet152V2
+
+
 #phase 2
 results/phase2/recports_cr/0_MobileNet_sem_BI_5
 results/phase2/recports_cr/1_DenseNet201_sem_BI_5
