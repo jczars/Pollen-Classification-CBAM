@@ -1,0 +1,10 @@
+,file,y_true,y_pred,confidence,true_label,predicted_label,status
+24,calicotome/Fab.C.vilX400wF(2020)(0)E-113.png,1,19,0.9457702,calicotome,vitis,Incorrect
+63,ceratonia/Fab.C.silX400wF(481)(0)G-12.png,3,6,0.58116114,ceratonia,eucalyptus,Incorrect
+64,ceratonia/Fab.C.silX400wF(481)(0)G-19.png,3,10,0.99919444,ceratonia,origanum,Incorrect
+87,eucalyptus/Myr.E.camaX400wF(1866)(0)A-6.png,6,8,0.74600655,eucalyptus,myrtus,Incorrect
+191,olea/Ole.O.euroX400wF(4261)(0)A-54.png,9,16,0.9987865,olea,sinapis,Incorrect
+270,origanum/Lam.O.micX400wF(884)(0)A-2.png,10,3,0.5004092,origanum,ceratonia,Incorrect
+294,oxalis/Oxa.O.pes.cX400wF(1739)(0)G-3.png,11,18,0.3765769,oxalis,urginea,Incorrect
+326,satureja/Lam.S.thyX400wF(944)(940)E-17.png,15,14,0.5183163,satureja,salvia,Incorrect
+395,vitis/Vit.V.viniX400wF(4984)(0)G-18.png,19,9,0.5045293,vitis,olea,Incorrect

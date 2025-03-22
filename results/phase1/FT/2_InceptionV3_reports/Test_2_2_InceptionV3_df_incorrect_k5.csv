@@ -1,0 +1,6 @@
+,file,y_true,y_pred,confidence,true_label,predicted_label,status
+267,olea/Ole.O.euroX400wF(4267)(0)G-9.png,9,16,0.9691153,olea,sinapis,Incorrect
+289,oxalis/Oxa.O.pes.cX400wF(1738)(0)F-9.png,11,1,0.99245,oxalis,calicotome,Incorrect
+364,thymbra/x40 f (7)-4.png,17,14,0.9635724,thymbra,salvia,Incorrect
+381,vitis/Vit.V.viniX400wF(4981)(0)D-28.png,19,6,0.5672864,vitis,eucalyptus,Incorrect
+395,vitis/Vit.V.viniX400wF(4984)(0)G-29.png,19,1,0.55783415,vitis,calicotome,Incorrect

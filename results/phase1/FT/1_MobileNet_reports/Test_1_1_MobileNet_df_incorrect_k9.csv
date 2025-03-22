@@ -1,0 +1,12 @@
+,file,y_true,y_pred,confidence,true_label,predicted_label,status
+63,ceratonia/Fab.C.silX400wF(481)(0)G-4.png,3,19,0.99469215,ceratonia,vitis,Incorrect
+85,eucalyptus/Myr.E.camaX400wF(1866)(0)A-1.png,6,8,0.9979978,eucalyptus,myrtus,Incorrect
+218,olea/Ole.O.euroX400wF(4264)(0)D-126.png,9,4,0.9921936,olea,ebenus,Incorrect
+268,origanum/Lam.O.micX400wF(884)(0)A-1.png,10,8,0.46383253,origanum,myrtus,Incorrect
+283,origanum/Lam.O.micX400wF(889)(0)F-47.png,10,2,0.8444252,origanum,castanea,Incorrect
+303,pistacia/Ana.P.tereX400wF(3224)(0)C-10.png,13,16,0.63448286,pistacia,sinapis,Incorrect
+323,satureja/Lam.S.thyX400wF(941)(937)A-4.png,15,10,0.8039533,satureja,origanum,Incorrect
+327,satureja/Lam.S.thyX400wF(944)(940)E-19.png,15,17,0.999894,satureja,thymbra,Incorrect
+354,thymbra/x40 f (1)-1.png,17,5,0.999403,thymbra,erica,Incorrect
+385,vitis/Vit.V.viniX400wF(4981)(0)D-23.png,19,1,0.75809354,vitis,calicotome,Incorrect
+391,vitis/Vit.V.viniX400wF(4983)(0)F-26.png,19,16,0.999938,vitis,sinapis,Incorrect

@@ -1,0 +1,3 @@
+,file,y_true,y_pred,confidence,true_label,predicted_label,status
+164,myrtus/IMG_3744-1.png,8,1,0.546574,myrtus,calicotome,Incorrect
+246,olea/Ole.O.euroX400wF(4265)(0)E-33.png,9,6,0.997897,olea,eucalyptus,Incorrect

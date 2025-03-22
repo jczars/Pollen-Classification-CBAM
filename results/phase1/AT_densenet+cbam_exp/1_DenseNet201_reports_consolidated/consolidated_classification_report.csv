@@ -1,0 +1,27 @@
+;precision;recall;f1-score;support
+anadenanthera;0,952;1,0;0,976;20
+arecaceae;0,882;0,857;0,87;35
+arrabidaea;0,972;1,0;0,986;35
+cecropia;0,944;0,971;0,958;35
+chromolaena;1,0;1,0;1,0;35
+combretum;1,0;1,0;1,0;35
+croton;1,0;1,0;1,0;35
+dipteryx;0,943;0,943;0,943;35
+eucalipto;0,944;0,971;0,958;35
+faramea;0,897;1,0;0,946;35
+hyptis;1,0;1,0;1,0;35
+mabea;1,0;1,0;1,0;35
+matayba;0,971;0,943;0,957;35
+mimosa;0,971;0,971;0,971;35
+myrcia;0,917;0,943;0,93;35
+protium;0,968;0,857;0,909;35
+qualea;1,0;0,943;0,971;35
+schinus;0,971;0,943;0,957;35
+senegalia;1,0;1,0;1,0;35
+serjania;0,944;0,971;0,958;35
+syagrus;0,889;0,914;0,901;35
+tridax;1,0;1,0;1,0;35
+urochloa;0,97;0,914;0,941;35
+accuracy;0,962;0,962;0,962;0
+macro avg;0,962;0,963;0,962;790
+weighted avg;0,963;0,962;0,962;790

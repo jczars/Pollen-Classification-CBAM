@@ -1,0 +1,4 @@
+,file,y_true,y_pred,confidence,true_label,predicted_label,status
+207,olea/Ole.O.euroX400wF(4263)(0)C-115.png,9,10,0.9784107,olea,origanum,Incorrect
+247,olea/Ole.O.euroX400wF(4265)(0)E-39.png,9,19,0.66982585,olea,vitis,Incorrect
+364,thymbra/x40 f (7)-4.png,17,5,0.9949421,thymbra,erica,Incorrect
