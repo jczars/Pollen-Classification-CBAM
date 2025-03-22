@@ -1,0 +1,4 @@
+,file,y_true,y_pred,confidence,true_label,predicted_label,status
+163,olea/Ole.O.euroX400wF(4265)(0)E-40.png,9,7,0.729149,olea,ferula,Incorrect
+170,oxalis/Oxa.O.pes.cX400wF(1733)(0)A-3.png,11,1,0.9739221,oxalis,calicotome,Incorrect
+176,oxalis/Oxa.O.pes.cX400wF(1739)(0)G-3.png,11,17,0.8670338,oxalis,thymbra,Incorrect

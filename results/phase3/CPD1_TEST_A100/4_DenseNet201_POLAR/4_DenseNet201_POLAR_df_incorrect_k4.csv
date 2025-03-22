@@ -1,0 +1,4 @@
+,file,y_true,y_pred,confidence,true_label,predicted_label,status
+58,eucalyptus/Myr.E.camaX400wF(1871)(0)F-9.png,6,1,0.9702874,eucalyptus,calicotome,Incorrect
+128,myrtus/IMG_3738-61.png,8,1,0.46781605,myrtus,calicotome,Incorrect
+178,oxalis/Oxa.O.pes.cX400wF(1738)(0)F-9.png,11,1,0.98949254,oxalis,calicotome,Incorrect

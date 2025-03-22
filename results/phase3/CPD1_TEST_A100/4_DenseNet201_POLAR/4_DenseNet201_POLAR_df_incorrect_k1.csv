@@ -1,0 +1,4 @@
+,file,y_true,y_pred,confidence,true_label,predicted_label,status
+33,ceratonia/Fab.C.silX400wF(479)(0)E-15.png,3,19,0.49553508,ceratonia,vitis,Incorrect
+56,eucalyptus/Myr.E.camaX400wF(1869)(0)D-1.png,6,5,0.9022911,eucalyptus,erica,Incorrect
+211,thymbra/x40 f (7)-4.png,17,14,0.91977113,thymbra,salvia,Incorrect

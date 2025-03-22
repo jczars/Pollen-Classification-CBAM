@@ -1,0 +1,4 @@
+,file,y_true,y_pred,confidence,true_label,predicted_label,status
+33,ceratonia/Fab.C.silX400wF(479)(0)E-15.png,3,19,0.4993464,ceratonia,vitis,Incorrect
+176,oxalis/Oxa.O.pes.cX400wF(1738)(0)F-1.png,11,1,0.9867219,oxalis,calicotome,Incorrect
+211,thymbra/x40 f (7)-4.png,17,14,0.38827008,thymbra,salvia,Incorrect

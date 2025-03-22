@@ -1,0 +1,5 @@
+,file,y_true,y_pred,confidence,true_label,predicted_label,status
+32,ebenus/Fab.E.creX400wF(694)(0)B-2.png,4,19,0.80267656,ebenus,vitis,Incorrect
+121,origanum/Lam.O.micX400wF(884)(0)A-9.png,10,3,0.9968354,origanum,ceratonia,Incorrect
+148,satureja/Lam.S.thyX400wF(942)(935)B-2.png,15,3,0.82768995,satureja,ceratonia,Incorrect
+204,vitis/Vit.V.viniX400wF(4981)(0)D-38.png,19,9,0.427033,vitis,olea,Incorrect

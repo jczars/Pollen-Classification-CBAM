@@ -1,0 +1,4 @@
+,file,y_true,y_pred,confidence,true_label,predicted_label,status
+1,calicotome/Fab.C.vilX400wF(2018)(0)C-23.png,1,17,0.8434379,calicotome,thymbra,Incorrect
+164,sinapis/Bra.S.albX400wF(2153)(0)D-6.png,16,9,0.8972117,sinapis,olea,Incorrect
+177,thymbra/x40 f (3)-9.png,17,10,0.60475385,thymbra,origanum,Incorrect

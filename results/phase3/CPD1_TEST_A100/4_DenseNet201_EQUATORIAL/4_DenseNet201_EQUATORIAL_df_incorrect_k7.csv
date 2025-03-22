@@ -1,0 +1,4 @@
+,file,y_true,y_pred,confidence,true_label,predicted_label,status
+24,ceratonia/Fab.C.silX400wF(477)(0)C-3.png,3,5,0.5432984,ceratonia,erica,Incorrect
+160,sinapis/Bra.S.albX400wF(2154)(0)E-9.png,16,9,0.9922186,sinapis,olea,Incorrect
+175,thymbra/x40 f (2)-1.png,17,10,0.43637815,thymbra,origanum,Incorrect

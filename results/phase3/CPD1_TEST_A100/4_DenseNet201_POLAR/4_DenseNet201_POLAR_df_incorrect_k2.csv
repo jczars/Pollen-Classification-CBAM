@@ -1,0 +1,5 @@
+,file,y_true,y_pred,confidence,true_label,predicted_label,status
+6,calicotome/Fab.C.vilX400wF(2018)(0)C-20.png,1,16,0.92580175,calicotome,sinapis,Incorrect
+51,eucalyptus/Myr.E.camaX400wF(1866)(0)A-8.png,6,1,0.9500135,eucalyptus,calicotome,Incorrect
+119,myrtus/IMG_3738-53.png,8,1,0.3628745,myrtus,calicotome,Incorrect
+200,vitis/Vit.V.viniX400wF(4983)(0)F-24.png,19,3,0.4952955,vitis,ceratonia,Incorrect
