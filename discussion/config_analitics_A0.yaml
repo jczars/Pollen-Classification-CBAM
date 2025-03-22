@@ -1,0 +1,4 @@
+orignal_path: 'results/phase1/AT_densenet+cbam_exp/3_DenseNet201_reports_consolidated/class_report_test_3_DenseNet201.csv'
+equatorial_path: 'results/phase3/CPD1_TEST_A0/3_DenseNet201_EQUATORIAL_consolidated/class_report_test_3_DenseNet201.csv'
+polar_path: 'results/phase3/CPD1_TEST_A0/3_DenseNet201_POLAR_consolidated/class_report_test_3_DenseNet201.csv'
+excel_path: 'results/discussion/Comparisons_metrics_A0.xlsx'

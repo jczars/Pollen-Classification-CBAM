@@ -1,125 +1,164 @@
-import pandas as pd
-from openpyxl import Workbook
-from openpyxl.styles import Font
+import argparse
 import os
+import sys
+import pandas as pd
+from openpyxl import Workbook, load_workbook
+from openpyxl.styles import PatternFill
+import yaml
 
-def compare_and_format_metrics(original_df, view_df, sheet_name, writer):
-    # Filtrar classes com Support > 0 na base consolidada
-    view_df = view_df[view_df['Support'] > 0]
+#Add the current directory to the PYTHONPATH
+sys.path.insert(0, os.getcwd())
+print(sys.path)
+from models import sound_test_finalizado
 
-    # Verificar se há interseção de classes entre os dois DataFrames
-    common_classes = original_df['Classes'].isin(view_df['Classes'])
-    original_filtered = original_df[common_classes]
-    view_filtered = view_df[view_df['Classes'].isin(original_df['Classes'])]
+# Função para carregar e filtrar um CSV
+def load_and_filter_csv(file_path):
+    # Carregar o CSV
+    df = pd.read_csv(file_path, sep=";", decimal=",")
+    
+    # Filtrar classes com Support > 0
+    df_filtered = df[df['Support'] > 0]
+    
+    # Converter colunas numéricas para float (se necessário)
+    numeric_columns = ['Accuracy', 'Precision', 'Recall', 'F1-Score', 'Support']
+    df_filtered[numeric_columns] = df_filtered[numeric_columns].astype(float)
+    
+    return df_filtered
 
-    if original_filtered.empty or view_filtered.empty:
-        print(f"Nenhuma classe em comum encontrada para a aba {sheet_name}.")
+def compare_and_format(df_orig, df_comp, sheet_name, output_path):
+    # Filtrar classes em comum entre os DataFrames
+    common_classes = df_orig["Classes"].isin(df_comp["Classes"]) & df_comp["Classes"].isin(df_orig["Classes"])
+    df_orig_filtered = df_orig[common_classes].copy()
+    df_comp_filtered = df_comp[df_comp["Classes"].isin(df_orig_filtered["Classes"])].copy()
+
+    if df_orig_filtered.empty or df_comp_filtered.empty:
+        print(f"Nenhuma classe em comum encontrada para {sheet_name}.")
         return
 
-    # Criar um DataFrame para armazenar os resultados
+    # Criar um DataFrame de comparação
     comparison_df = pd.DataFrame()
-    comparison_df["Classes"] = original_filtered["Classes"]
+    comparison_df["Classes"] = df_orig_filtered["Classes"]
 
-    # Iterar sobre as colunas relevantes (métricas)
-    metrics = ['Accuracy', 'Precision', 'Recall', 'F1-Score']
-    
-    for metric in metrics:
-        original_metric = f"{metric}_orig"
-        view_metric = f"{metric}_comp"
+    # Definir as métricas renomeadas
+    metric_mapping = {
+        "Accuracy": "Acc",
+        "Precision": "P",
+        "Recall": "R",
+        "F1-Score": "F1",
+        "Support": "Support"
+    }
 
-        # Substituir vírgulas por pontos e converter para float
-        original_filtered[metric] = original_filtered[metric].astype(str).str.replace(",", ".").astype(float)
-        view_filtered[metric] = view_filtered[metric].astype(str).str.replace(",", ".").astype(float)
+    # Adicionar métricas da base original
+    for metric, short_name in metric_mapping.items():
+        orig_metric = f"{short_name}_Orig"
+        comparison_df[orig_metric] = df_orig_filtered[metric].round(3)
 
-        # Adicionar colunas ao DataFrame de comparação
-        comparison_df[original_metric] = original_filtered[metric]
-        comparison_df[view_metric] = view_filtered[metric]
+    # Adicionar métricas da base comparada
+    for metric, short_name in metric_mapping.items():
+        comp_metric = f"{short_name}_Comp"
+        comparison_df[comp_metric] = df_comp_filtered[metric].round(3)
 
-        # Identificar casos iguais, superiores ou inferiores
-        comparison_df[f"{metric}_Comparison"] = "Equal"
-        comparison_df.loc[
-            original_filtered[metric] < view_filtered[metric], f"{metric}_Comparison"
-        ] = "Better"
-        comparison_df.loc[
-            original_filtered[metric] > view_filtered[metric], f"{metric}_Comparison"
-        ] = "Worse"
+    # Reorganizar as colunas: Classes, métricas Originais, métricas Comparadas
+    columns_order = ["Classes"]
+    for metric in metric_mapping.values():
+        columns_order.append(f"{metric}_Orig")
+    for metric in metric_mapping.values():
+        columns_order.append(f"{metric}_Comp")
 
-    # Salvar o DataFrame de comparação na aba correspondente
-    if not comparison_df.empty:
+    comparison_df = comparison_df[columns_order]
+
+    # Salvar o DataFrame no Excel
+    with pd.ExcelWriter(output_path, engine="openpyxl", mode="a", if_sheet_exists="replace") as writer:
         comparison_df.to_excel(writer, sheet_name=sheet_name, index=False)
 
-        # Acessar a aba para aplicar formatação
-        worksheet = writer.sheets[sheet_name]
+    # Aplicar formatação no Excel
+    workbook = load_workbook(output_path)
+    worksheet = workbook[sheet_name]
 
-        # Iterar sobre as linhas e aplicar formatação
-        for row in range(2, len(comparison_df) + 2):  # Linhas começam no índice 2 (cabeçalho na linha 1)
-            for col, metric in enumerate(metrics, start=2):  # Colunas começam no índice 2 (após "Classes")
-                cell_orig = worksheet.cell(row=row, column=col * 2)      # Coluna da métrica original
-                cell_view = worksheet.cell(row=row, column=col * 2 + 1)  # Coluna da métrica da vista
+    # Definição de estilos
+    equal_style = PatternFill(start_color="D3D3D3", end_color="D3D3D3", fill_type="solid")  # Cinza
+    better_style = PatternFill(start_color="ADD8E6", end_color="ADD8E6", fill_type="solid")  # Azul claro
+    worse_style = PatternFill(start_color="FF0000", end_color="FF0000", fill_type="solid")  # Vermelho
 
-                comparison = comparison_df.iloc[row - 2][f"{metric}_Comparison"]
+    for row in range(2, len(comparison_df) + 2):  # Começa na linha 2 para ignorar cabeçalhos
+        for col_idx, metric in enumerate(metric_mapping.values(), start=1):
+            orig_col = col_idx + 1  # Coluna do valor original (depois de "Classes")
+            comp_col = orig_col + len(metric_mapping)  # Coluna do valor comparado
 
-                if comparison == "Equal":
-                    cell_orig.font = Font(italic=True)
-                    cell_view.font = Font(italic=True)
-                elif comparison == "Better":
-                    cell_view.font = Font(bold=True)
-                elif comparison == "Worse":
-                    cell_view.font = Font(color="FF0000")  # Vermelho
-    else:
-        print(f"Nenhum dado disponível para comparação na aba {sheet_name}.")
+            orig_value = worksheet.cell(row=row, column=orig_col).value
+            comp_value = worksheet.cell(row=row, column=comp_col).value
 
-def initialize_excel(output_dir):
-    try:
-        # Criar o diretório de saída, se necessário
-        if not os.path.exists(output_dir):
-            os.makedirs(output_dir)
+            if isinstance(orig_value, (int, float)) and isinstance(comp_value, (int, float)):
+                if comp_value > orig_value:
+                    worksheet.cell(row=row, column=comp_col).fill = better_style
+                elif comp_value < orig_value:
+                    worksheet.cell(row=row, column=comp_col).fill = worse_style
+                else:
+                    worksheet.cell(row=row, column=comp_col).fill = equal_style
 
-        # Criar um arquivo Excel vazio com uma aba padrão
-        excel_path = os.path.join(output_dir, "Comparison_Metrics.xlsx")
-        workbook = Workbook()
-        workbook.save(excel_path)
-        print(f"Arquivo Excel criado com sucesso: {excel_path}")
-        return excel_path
-    except Exception as e:
-        print(f"Erro ao criar o arquivo Excel: {e}")
-        return None
+    workbook.save(output_path)
+    workbook.close()
+    print(f"Planilha {sheet_name} formatada com sucesso: {output_path}")
 
-def main():
+
+
+def load_config(config_path="config.yaml"):
+    """
+    Loads configuration from a YAML file.
+
+    Parameters:
+    - config_path (str): Path to the YAML configuration file.
+
+    Returns:
+    - dict: Dictionary with configuration parameters.
+    """
+    with open(config_path, 'r') as file:
+        config = yaml.safe_load(file)
+    return config
+
+# Função principal
+def run(config):
     # Caminhos dos arquivos CSV
-    original_path = "results/phase1/AT_densenet+cbam_exp/0_DenseNet201_reports_consolidated/class_report_test_0_DenseNet201.csv"
-    equatorial_path = "results/phase3/CPD1_TEST_VIEW/0_DenseNet201_EQUATORIAL_consolidated/class_report_test_0_DenseNet201.csv"
-    polar_path = "results/phase3/CPD1_TEST_VIEW/0_DenseNet201_POLAR_consolidated/class_report_test_0_DenseNet201.csv"
+    original_path = config['orignal_path']
+    equatorial_path = config['equatorial_path']
+    polar_path = config['polar_path']
+    excel_path = config['excel_path']
 
-    try:
-        # Carregar os arquivos CSV com delimitador ;
-        original_df = pd.read_csv(original_path, sep=";")
-        equatorial_df = pd.read_csv(equatorial_path, sep=";")
-        polar_df = pd.read_csv(polar_path, sep=";")
 
-        # Diretório de saída
-        output_dir = "discussion/"
+    # Carregar e filtrar os DataFrames
+    original_df = load_and_filter_csv(original_path)
+    equatorial_df = load_and_filter_csv(equatorial_path)
+    polar_df = load_and_filter_csv(polar_path)
 
-        # Criar a planilha inicial
-        excel_path = initialize_excel(output_dir)
-        if not excel_path:
-            return
+    # Salvar os DataFrames originais no Excel
+    with pd.ExcelWriter(excel_path, engine="openpyxl") as writer:
+        original_df.to_excel(writer, sheet_name="Original", index=False)
+        equatorial_df.to_excel(writer, sheet_name="Equatorial", index=False)
+        polar_df.to_excel(writer, sheet_name="Polar", index=False)
 
-        # Preencher a planilha com as comparações
-        with pd.ExcelWriter(excel_path, engine="openpyxl", mode="a", if_sheet_exists="replace") as writer:
-            # Comparação Original x Equatorial
-            compare_and_format_metrics(original_df, equatorial_df, "Original_vs_Equatorial", writer)
+    print(f"DataFrames salvos no arquivo Excel: {excel_path}")
 
-            # Comparação Original x Polar
-            compare_and_format_metrics(original_df, polar_df, "Original_vs_Polar", writer)
+    # Comparar Original x Equatorial
+    #compare_and_format(original_df, equatorial_df, "Original vs Equatorial", excel_path)
+    compare_and_format(original_df, equatorial_df, "Original vs Equatorial", excel_path)
+    print("Comparação Original x Equatorial:")
+    
 
-            # Se nenhuma aba foi criada, criar uma aba padrão
-            if not writer.sheets:
-                workbook = writer.book
-                workbook.create_sheet("Empty")
-                print("Nenhuma aba válida foi criada. Uma aba padrão foi adicionada.")
-    except Exception as e:
-        print(f"Erro ao salvar o arquivo Excel: {e}")
+    # Comparar Original x Polar
+    #compare_and_format(original_df, polar_df, "Original vs Polar", excel_path)
+    compare_and_format(original_df, polar_df, "Original vs Polar", excel_path)
+    print("Comparação Original x Polar:")
+
+    print("Processo concluido com sucesso.")
 
 if __name__ == "__main__":
-    main()
+    parser = argparse.ArgumentParser(description="Run data augmentation with specified configuration.")
+    parser.add_argument("--config", type=str, default="discussion/config_analitics_A100.yaml", 
+                        help="Path to the configuration YAML file.")
+    args = parser.parse_args()
+
+    # Load parameters from config file and process augmentation
+    #python3 preprocess/aug_balanc_bd_k.py --config preprocess/config_balanced.yaml
+    config = load_config(args.config)
+    run(config)
+    sound_test_finalizado.beep(2)
