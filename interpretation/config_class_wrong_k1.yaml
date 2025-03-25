@@ -1,12 +1,12 @@
 path_model: "results/phase1/AT_densenet+cbam_exp/5_DenseNet201/5_DenseNet201_bestLoss_1.keras"
-nome: "GradCAM_class_well_phase1_k1.png"
+nome: "GradCAM_class_wrong_phase1_k1.png"
 conv_layer_name: "activation_1"
 img_size: 224
 saved_dir: "results/interpretation/"
 
 path_data: "BD/CPD1_Cr_Rs_200/Test/k1/"
 images_labels:
-- "ceratonia/Fab.C.silX400wF(476)(0)B-10.png"
-- "eucalyptus/Myr.E.camaX400wF(1869)(0)D-3_2.png" 
-- "salvia/Lam.S.triX400wF(2189)(0)B-47.png"
-- "thymbra/Lam.T.capX400wF(1029)(0)A-22.png"
+- "ceratonia/Fab.C.silX400wF(479)(0)E-15.png"
+- "eucalyptus/Myr.E.camaX400wF(1869)(0)D-1.png" 
+- "salvia/Lam.S.triX400wF(2190)(0)C-8.png"
+- "thymbra/x40 f (7)-4.png"

@@ -65,8 +65,11 @@ def run(config):
     # for index in range(len(classes)): 
     #     classes_list.append(classes[index])
 
+    print(f"[INFO] load model")
     model=cam.load_model(path_model)
-    CATEGORIES = sorted(os.listdir(config['path_full_labels']))
+    
+    CATEGORIES = sorted(os.listdir(config['path_data']))
+    print(f'[INFO] categories: {CATEGORIES}')
     images=load_imgs(path_data, images_list, target_size)
 
     fig=cam.display_cam_grid(images, classes_list, model, conv_layer_name, CATEGORIES)
@@ -78,6 +81,8 @@ def run(config):
     image_saved = os.path.join(saved_dir, nome)
     fig.savefig(image_saved)
 
+    print(f'[INFO] image saved: {image_saved}')
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Run data augmentation with specified configuration.")
     parser.add_argument("--config", type=str, default="./interpretation/config_class_well_k1.yaml", 
@@ -85,7 +90,6 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     # Load parameters from config file and process augmentation
-    #python3 preprocess/aug_balanc_bd_k.py --config preprocess/config_balanced.yaml
     try:
         config = load_config(args.config)
         run(config)
