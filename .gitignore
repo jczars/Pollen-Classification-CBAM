@@ -30,6 +30,9 @@ results/phase1/AT_densenet+cbam_exp/3_DenseNet201
 results/phase1/AT_densenet+cbam_exp/4_DenseNet201
 results/phase1/AT_densenet+cbam_exp/5_DenseNet201
 results/phase1/AT_densenet+cbam_exp/6_DenseNet201
+results/phase1/AT_densenet+cbam_exp/7_DenseNet201
+results/phase1/AT_densenet+cbam_exp/8_DenseNet201
+results/phase1/AT_densenet+cbam_exp/9_DenseNet201
 
 ##FT
 results/phase1/FT/1_MobileNet
