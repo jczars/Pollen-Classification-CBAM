@@ -1,0 +1,6 @@
+,file,y_true,y_pred,confidence,true_label,predicted_label,status
+11,cecropia/cecropia_17.jpg,3,13,0.9312035,cecropia,mimosa,Incorrect
+12,cecropia/cecropia_35.jpg,3,13,0.9902755,cecropia,mimosa,Incorrect
+25,dipteryx/dipteryx_19.jpg,7,1,0.9774221,dipteryx,arecaceae,Incorrect
+31,faramea/faramea_05.jpg,9,17,0.8326531,faramea,schinus,Incorrect
+53,protium/protium_18.jpg,15,22,0.89496547,protium,urochloa,Incorrect

@@ -1,0 +1,5 @@
+,file,y_true,y_pred,confidence,true_label,predicted_label,status
+7,arachis_sp/arachis_sp (13).jpg,2,41,0.54277325,arachis_sp,myracroduon_urundeuva,Incorrect
+173,protium_heptaphyllum/protium_heptaphyllum (18).jpg,50,49,0.546342,protium_heptaphyllum,poaceae_sp,Incorrect
+228,tabebuia_rosealba/tabebuia_rosealba (7).jpg,65,64,0.985694,tabebuia_rosealba,tabebuia_chysotricha,Incorrect
+241,trembleya_phlogiformis/trembleya_phlogiformis (27).jpg,69,48,0.9180391,trembleya_phlogiformis,piper_aduncum,Incorrect

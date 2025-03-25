@@ -1,0 +1,8 @@
+,file,y_true,y_pred,confidence,true_label,predicted_label,status
+8,arachis_sp/arachis_sp (30).jpg,2,44,0.8791778,arachis_sp,ouratea_hexasperma,Incorrect
+36,cecropia_pachystachya/cecropia_pachystachya (31).jpg,10,38,0.9981603,cecropia_pachystachya,mimosa_ditans,Incorrect
+37,cecropia_pachystachya/cecropia_pachystachya (33).jpg,10,38,0.9993881,cecropia_pachystachya,mimosa_ditans,Incorrect
+124,matayba_guianensis/matayba_guianensis (19).jpg,36,23,0.9777207,matayba_guianensis,eucalyptus_sp,Incorrect
+143,myracroduon_urundeuva/myracroduon (21).jpg,41,2,0.5546917,myracroduon_urundeuva,arachis_sp,Incorrect
+170,poaceae_sp/poaceae_sp (28).jpg,49,72,0.5104186,poaceae_sp,zea_mays,Incorrect
+184,schinus_sp/schinus_sp (25).jpg,53,50,0.5606727,schinus_sp,protium_heptaphyllum,Incorrect

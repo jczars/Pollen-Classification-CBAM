@@ -1,0 +1,7 @@
+,file,y_true,y_pred,confidence,true_label,predicted_label,status
+65,croton_urucurana/croton_20.jpg,18,70,0.6584145,croton_urucurana,tridax_procumbens,Incorrect
+67,dianella_tasmanica/dianella_ (21).jpg,19,58,0.94698864,dianella_tasmanica,serjania_laruotteana,Incorrect
+71,dipteryx_alata/dipteryx_alata (19).jpg,20,72,0.62307376,dipteryx_alata,zea_mays,Incorrect
+171,poaceae_sp/poaceae_sp (17).jpg,49,59,0.98716545,poaceae_sp,serjania_sp,Incorrect
+228,tabebuia_rosealba/tabebuia_rosealba (8).jpg,65,62,0.8291543,tabebuia_rosealba,syagrus_romanzoffiana,Incorrect
+250,zea_mays/zea_1.jpg,72,49,0.71918404,zea_mays,poaceae_sp,Incorrect

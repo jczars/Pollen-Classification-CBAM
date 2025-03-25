@@ -1,0 +1,11 @@
+,file,y_true,y_pred,confidence,true_label,predicted_label,status
+15,arrabidaea_florida/arrabidaea_florida (29).jpg,4,20,0.624051,arrabidaea_florida,dipteryx_alata,Incorrect
+57,cordia_trichotoma/cordia_trichotoma (30).jpg,16,13,0.9997563,cordia_trichotoma,cissus_campestris,Incorrect
+84,faramea_sp/faramea_sp (12).jpg,24,36,0.6847502,faramea_sp,matayba_guianensis,Incorrect
+125,matayba_guianensis/matayba_guianensis (4).jpg,36,23,0.5034064,matayba_guianensis,eucalyptus_sp,Incorrect
+183,schinus_sp/schinus_sp (12).jpg,53,24,0.794327,schinus_sp,faramea_sp,Incorrect
+189,schizolobium_parahyba/guapuruvu_26.jpg,54,66,0.9916931,schizolobium_parahyba,tapirira_guianensis,Incorrect
+217,syagrus_romanzoffiana/syagrus_romanzoffiana (33).jpg,62,14,0.4111631,syagrus_romanzoffiana,cissus_spinosa,Incorrect
+222,tabebuia_chysotricha/tabebuia_chysotricha (22).jpg,64,65,0.8830578,tabebuia_chysotricha,tabebuia_rosealba,Incorrect
+225,tabebuia_rosealba/tabebuia_rosealba (18).jpg,65,64,0.95504063,tabebuia_rosealba,tabebuia_chysotricha,Incorrect
+251,zea_mays/zea_30.jpg,72,20,0.9878641,zea_mays,dipteryx_alata,Incorrect

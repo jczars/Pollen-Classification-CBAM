@@ -1,0 +1,74 @@
+,file,y_true,y_pred,confidence,true_label,predicted_label,status
+0,anadenanthera/anadenanthera_17.jpg,0,0,0.9882853,anadenanthera,anadenanthera,Correct
+1,anadenanthera/anadenanthera_29.jpg,0,0,0.98658645,anadenanthera,anadenanthera,Correct
+2,arecaceae/arecaceae_02.jpg,1,1,0.98007375,arecaceae,arecaceae,Correct
+3,arecaceae/arecaceae_17.jpg,1,1,0.9840943,arecaceae,arecaceae,Correct
+4,arecaceae/arecaceae_21.jpg,1,1,0.9820018,arecaceae,arecaceae,Correct
+5,arrabidaea/arrabidaea_25.jpg,2,2,0.97417307,arrabidaea,arrabidaea,Correct
+6,arrabidaea/arrabidaea_26.jpg,2,2,0.97945595,arrabidaea,arrabidaea,Correct
+7,arrabidaea/arrabidaea_28.jpg,2,2,0.97753775,arrabidaea,arrabidaea,Correct
+8,arrabidaea/arrabidaea_32.jpg,2,2,0.9749561,arrabidaea,arrabidaea,Correct
+9,cecropia/cecropia_05.jpg,3,3,0.9809574,cecropia,cecropia,Correct
+10,cecropia/cecropia_13.jpg,3,3,0.98506933,cecropia,cecropia,Correct
+11,cecropia/cecropia_19.jpg,3,3,0.98528326,cecropia,cecropia,Correct
+12,chromolaena/chromolaena_11.jpg,4,4,0.98781556,chromolaena,chromolaena,Correct
+13,chromolaena/chromolaena_20.jpg,4,4,0.9878485,chromolaena,chromolaena,Correct
+14,chromolaena/chromolaena_23.jpg,4,4,0.98498166,chromolaena,chromolaena,Correct
+15,chromolaena/chromolaena_35.jpg,4,4,0.9855503,chromolaena,chromolaena,Correct
+16,combretum/combretum_08.jpg,5,5,0.98691505,combretum,combretum,Correct
+17,combretum/combretum_17.jpg,5,5,0.98624134,combretum,combretum,Correct
+18,combretum/combretum_32.jpg,5,5,0.98954624,combretum,combretum,Correct
+19,croton/croton_03.jpg,6,6,0.9858292,croton,croton,Correct
+20,croton/croton_07.jpg,6,6,0.98751163,croton,croton,Correct
+21,croton/croton_16.jpg,6,6,0.9901282,croton,croton,Correct
+22,croton/croton_19.jpg,6,6,0.9883365,croton,croton,Correct
+23,dipteryx/dipteryx_06.jpg,7,7,0.9694119,dipteryx,dipteryx,Correct
+24,dipteryx/dipteryx_22.jpg,7,7,0.9799801,dipteryx,dipteryx,Correct
+25,dipteryx/dipteryx_33.jpg,7,7,0.96762687,dipteryx,dipteryx,Correct
+27,eucalipto/eucalipto_08.jpg,8,8,0.9793132,eucalipto,eucalipto,Correct
+28,eucalipto/eucalipto_17.jpg,8,8,0.97923,eucalipto,eucalipto,Correct
+29,eucalipto/eucalipto_31.jpg,8,8,0.9767626,eucalipto,eucalipto,Correct
+30,faramea/faramea_01.jpg,9,9,0.9839256,faramea,faramea,Correct
+31,faramea/faramea_20.jpg,9,9,0.9824996,faramea,faramea,Correct
+32,faramea/faramea_31.jpg,9,9,0.98894906,faramea,faramea,Correct
+33,hyptis/hyptis_14.jpg,10,10,0.9864699,hyptis,hyptis,Correct
+34,hyptis/hyptis_15.jpg,10,10,0.9887811,hyptis,hyptis,Correct
+35,hyptis/hyptis_17.jpg,10,10,0.98571545,hyptis,hyptis,Correct
+36,hyptis/hyptis_32.jpg,10,10,0.9870799,hyptis,hyptis,Correct
+37,mabea/mabea_09.jpg,11,11,0.98787016,mabea,mabea,Correct
+38,mabea/mabea_15.jpg,11,11,0.9879744,mabea,mabea,Correct
+39,mabea/mabea_26.jpg,11,11,0.9880943,mabea,mabea,Correct
+41,matayba/matayba_02.jpg,12,12,0.9856602,matayba,matayba,Correct
+42,matayba/matayba_09.jpg,12,12,0.9825806,matayba,matayba,Correct
+43,matayba/matayba_23.jpg,12,12,0.9717458,matayba,matayba,Correct
+44,mimosa/mimosa_32.jpg,13,13,0.9887771,mimosa,mimosa,Correct
+45,mimosa/mimosa_34.jpg,13,13,0.9902418,mimosa,mimosa,Correct
+46,mimosa/mimosa_35.jpg,13,13,0.9885202,mimosa,mimosa,Correct
+47,myrcia/myrcia_02.jpg,14,14,0.98423845,myrcia,myrcia,Correct
+48,myrcia/myrcia_05.jpg,14,14,0.98382646,myrcia,myrcia,Correct
+49,myrcia/myrcia_13.jpg,14,14,0.97577137,myrcia,myrcia,Correct
+50,myrcia/myrcia_17.jpg,14,14,0.9792109,myrcia,myrcia,Correct
+51,protium/protium_20.jpg,15,15,0.97720236,protium,protium,Correct
+52,protium/protium_22.jpg,15,15,0.9786719,protium,protium,Correct
+53,protium/protium_34.jpg,15,15,0.97930807,protium,protium,Correct
+54,qualea/qualea_02.jpg,16,16,0.99011385,qualea,qualea,Correct
+56,qualea/qualea_10.jpg,16,16,0.9905285,qualea,qualea,Correct
+57,qualea/qualea_17.jpg,16,16,0.992094,qualea,qualea,Correct
+58,schinus/schinus_09.jpg,17,17,0.98313695,schinus,schinus,Correct
+59,schinus/schinus_26.jpg,17,17,0.9842091,schinus,schinus,Correct
+61,senegalia/senegalia (10).jpg,18,18,0.98421854,senegalia,senegalia,Correct
+62,senegalia/senegalia (23).jpg,18,18,0.98532885,senegalia,senegalia,Correct
+63,senegalia/senegalia (8).jpg,18,18,0.9784574,senegalia,senegalia,Correct
+64,senegalia/senegalia (9).jpg,18,18,0.9853044,senegalia,senegalia,Correct
+65,serjania/serjania_06.jpg,19,19,0.9492696,serjania,serjania,Correct
+66,serjania/serjania_09.jpg,19,19,0.985954,serjania,serjania,Correct
+67,serjania/serjania_32.jpg,19,19,0.98808783,serjania,serjania,Correct
+68,syagrus/syagrus_11.jpg,20,20,0.9805549,syagrus,syagrus,Correct
+69,syagrus/syagrus_24.jpg,20,20,0.9802901,syagrus,syagrus,Correct
+70,syagrus/syagrus_26.jpg,20,20,0.9851053,syagrus,syagrus,Correct
+72,tridax/tridax_08.jpg,21,21,0.988983,tridax,tridax,Correct
+73,tridax/tridax_10.jpg,21,21,0.9896604,tridax,tridax,Correct
+74,tridax/tridax_13.jpg,21,21,0.98573315,tridax,tridax,Correct
+76,urochloa/urochloa (25).jpg,22,22,0.9810836,urochloa,urochloa,Correct
+77,urochloa/urochloa (6).jpg,22,22,0.985609,urochloa,urochloa,Correct
+78,urochloa/urochloa_39.jpg,22,22,0.9773596,urochloa,urochloa,Correct

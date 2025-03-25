@@ -1,0 +1,5 @@
+,file,y_true,y_pred,confidence,true_label,predicted_label,status
+26,dipteryx/dipteryx_17.jpg,7,2,0.96004385,dipteryx,arrabidaea,Incorrect
+41,matayba/matayba_04.jpg,12,8,0.51031876,matayba,eucalipto,Incorrect
+54,protium/protium_32.jpg,15,17,0.77912575,protium,schinus,Incorrect
+71,syagrus/syagrus_32.jpg,20,1,0.5406954,syagrus,arecaceae,Incorrect

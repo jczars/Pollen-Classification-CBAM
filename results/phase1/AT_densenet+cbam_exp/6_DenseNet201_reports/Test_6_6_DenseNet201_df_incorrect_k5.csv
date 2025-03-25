@@ -1,0 +1,5 @@
+,file,y_true,y_pred,confidence,true_label,predicted_label,status
+12,cecropia/cecropia_31.jpg,3,13,0.95189446,cecropia,mimosa,Incorrect
+49,myrcia/myrcia_22.jpg,14,19,0.99023813,myrcia,serjania,Incorrect
+59,schinus/schinus_12.jpg,17,3,0.94752634,schinus,cecropia,Incorrect
+77,urochloa/urochloa (16).jpg,22,14,0.57160544,urochloa,myrcia,Incorrect

@@ -1,0 +1,7 @@
+,file,y_true,y_pred,confidence,true_label,predicted_label,status
+36,cecropia_pachystachya/cecropia_pachystachya (31).jpg,10,38,0.98923934,cecropia_pachystachya,mimosa_ditans,Incorrect
+37,cecropia_pachystachya/cecropia_pachystachya (33).jpg,10,38,0.999858,cecropia_pachystachya,mimosa_ditans,Incorrect
+124,matayba_guianensis/matayba_guianensis (19).jpg,36,23,0.9955058,matayba_guianensis,eucalyptus_sp,Incorrect
+184,schinus_sp/schinus_sp (25).jpg,53,48,0.3251772,schinus_sp,piper_aduncum,Incorrect
+199,serjania_hebecarpa/serjania_hebecarpa (29).jpg,57,47,0.98929465,serjania_hebecarpa,paullinia_spicata,Incorrect
+223,tabebuia_chysotricha/tabebuia_chysotricha (5).jpg,64,21,0.8158746,tabebuia_chysotricha,doliocarpus_dentatus,Incorrect

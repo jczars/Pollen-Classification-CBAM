@@ -1,0 +1,6 @@
+,file,y_true,y_pred,confidence,true_label,predicted_label,status
+68,dianella_tasmanica/dianella_ (34).jpg,19,2,0.36928132,dianella_tasmanica,arachis_sp,Incorrect
+171,poaceae_sp/poaceae_sp (17).jpg,49,53,0.5265194,poaceae_sp,schinus_sp,Incorrect
+175,protium_heptaphyllum/protium_heptaphyllum (21).jpg,50,53,0.91997164,protium_heptaphyllum,schinus_sp,Incorrect
+228,tabebuia_rosealba/tabebuia_rosealba (8).jpg,65,64,0.9927545,tabebuia_rosealba,tabebuia_chysotricha,Incorrect
+231,tapirira_guianensis/tapirira_guianensis_9.jpg,66,54,0.5666818,tapirira_guianensis,schizolobium_parahyba,Incorrect

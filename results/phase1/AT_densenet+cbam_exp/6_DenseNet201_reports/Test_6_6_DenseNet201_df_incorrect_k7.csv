@@ -1,0 +1,6 @@
+,file,y_true,y_pred,confidence,true_label,predicted_label,status
+11,cecropia/cecropia_33.jpg,3,13,0.9807811,cecropia,mimosa,Incorrect
+25,dipteryx/dipteryx_21.jpg,7,18,0.16304395,dipteryx,senegalia,Incorrect
+58,schinus/schinus_14.jpg,17,14,0.90422,schinus,myrcia,Incorrect
+59,schinus/schinus_25.jpg,17,14,0.98409504,schinus,myrcia,Incorrect
+75,urochloa/urochloa (10).jpg,22,20,0.5995673,urochloa,syagrus,Incorrect

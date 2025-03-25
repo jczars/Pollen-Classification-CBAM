@@ -1,0 +1,14 @@
+,file,y_true,y_pred,confidence,true_label,predicted_label,status
+28,caesalpinia_peltophoroides/caesalpinia_peltophoroides (32).jpg,8,41,0.59526163,caesalpinia_peltophoroides,myracroduon_urundeuva,Incorrect
+57,cordia_trichotoma/cordia_trichotoma (30).jpg,16,13,0.9890224,cordia_trichotoma,cissus_campestris,Incorrect
+72,dipteryx_alata/dipteryx_alata (5).jpg,20,72,0.7461449,dipteryx_alata,zea_mays,Incorrect
+88,genipa_auniricana/genipa_auniricana (31).jpg,25,41,0.86724627,genipa_auniricana,myracroduon_urundeuva,Incorrect
+92,guazuma_ulmifolia/guazuma_ulmifolia (21).jpg,27,25,0.41787982,guazuma_ulmifolia,genipa_auniricana,Incorrect
+125,matayba_guianensis/matayba_guianensis (4).jpg,36,23,0.99380034,matayba_guianensis,eucalyptus_sp,Incorrect
+183,schinus_sp/schinus_sp (12).jpg,53,10,0.4344059,schinus_sp,cecropia_pachystachya,Incorrect
+189,schizolobium_parahyba/guapuruvu_26.jpg,54,66,0.99042016,schizolobium_parahyba,tapirira_guianensis,Incorrect
+199,serjania_hebecarpa/serjania_hebecarpa (6).jpg,57,58,0.7887507,serjania_hebecarpa,serjania_laruotteana,Incorrect
+221,tabebuia_chysotricha/tabebuia_chysotricha (10).jpg,64,44,0.8420564,tabebuia_chysotricha,ouratea_hexasperma,Incorrect
+225,tabebuia_rosealba/tabebuia_rosealba (18).jpg,65,64,0.9198481,tabebuia_rosealba,tabebuia_chysotricha,Incorrect
+227,tabebuia_rosealba/tabebuia_rosealba (9).jpg,65,64,0.92790455,tabebuia_rosealba,tabebuia_chysotricha,Incorrect
+251,zea_mays/zea_30.jpg,72,20,0.98934525,zea_mays,dipteryx_alata,Incorrect

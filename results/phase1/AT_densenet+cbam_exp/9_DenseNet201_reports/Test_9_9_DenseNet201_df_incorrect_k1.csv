@@ -1,0 +1,7 @@
+,file,y_true,y_pred,confidence,true_label,predicted_label,status
+92,guazuma_ulmifolia/guazuma_ulmifolia (15).jpg,27,71,0.68252057,guazuma_ulmifolia,vochysia_divergens,Incorrect
+148,ochroma pyramidale/ochroma (14).jpg,43,42,0.35764888,ochroma pyramidale,myrcia_guianensis,Incorrect
+162,paullinia_spicata/paullinia (2).jpg,47,57,0.9272463,paullinia_spicata,serjania_hebecarpa,Incorrect
+197,serjania_hebecarpa/serjania_hebecarpa (14).jpg,57,34,0.51426065,serjania_hebecarpa,magnolia_champaca,Incorrect
+223,tabebuia_chysotricha/tabebuia_chysotricha (11).jpg,64,65,0.94180053,tabebuia_chysotricha,tabebuia_rosealba,Incorrect
+224,tabebuia_chysotricha/tabebuia_chysotricha (30).jpg,64,65,0.8922298,tabebuia_chysotricha,tabebuia_rosealba,Incorrect

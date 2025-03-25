@@ -1,0 +1,10 @@
+,file,y_true,y_pred,confidence,true_label,predicted_label,status
+71,dipteryx_alata/dipteryx_alata (17).jpg,20,4,0.8275718,dipteryx_alata,arrabidaea_florida,Incorrect
+88,genipa_auniricana/genipa_auniricana (18).jpg,25,41,0.70223415,genipa_auniricana,myracroduon_urundeuva,Incorrect
+171,poaceae_sp/poaceae_sp (32).jpg,49,72,0.96918195,poaceae_sp,zea_mays,Incorrect
+172,protium_heptaphyllum/protium_heptaphyllum (15).jpg,50,53,0.99599993,protium_heptaphyllum,schinus_sp,Incorrect
+177,qualea_multiflora/qualea_multiflora (30).jpg,51,23,0.8925725,qualea_multiflora,eucalyptus_sp,Incorrect
+178,qualea_multiflora/qualea_multiflora (4).jpg,51,20,0.94843376,qualea_multiflora,dipteryx_alata,Incorrect
+189,schizolobium_parahyba/guapuruvu_33.jpg,54,66,0.9664227,schizolobium_parahyba,tapirira_guianensis,Incorrect
+222,tabebuia_chysotricha/tabebuia_chysotricha (16).jpg,64,65,0.96920455,tabebuia_chysotricha,tabebuia_rosealba,Incorrect
+224,tabebuia_chysotricha/tabebuia_chysotricha (24).jpg,64,65,0.54189897,tabebuia_chysotricha,tabebuia_rosealba,Incorrect

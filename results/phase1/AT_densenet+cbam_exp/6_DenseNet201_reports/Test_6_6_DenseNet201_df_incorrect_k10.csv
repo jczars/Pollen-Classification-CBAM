@@ -1,0 +1,7 @@
+,file,y_true,y_pred,confidence,true_label,predicted_label,status
+2,arecaceae/arecaceae_01.jpg,1,14,0.81823033,arecaceae,myrcia,Incorrect
+20,croton/croton_20.jpg,6,11,0.6861183,croton,mabea,Incorrect
+21,croton/croton_32.jpg,6,16,0.46402538,croton,qualea,Incorrect
+29,eucalipto/eucalipto_34.jpg,8,12,0.47661152,eucalipto,matayba,Incorrect
+51,protium/protium_15.jpg,15,17,0.9832965,protium,schinus,Incorrect
+52,protium/protium_21.jpg,15,19,0.9802918,protium,serjania,Incorrect

@@ -1,0 +1,7 @@
+,file,y_true,y_pred,confidence,true_label,predicted_label,status
+5,arrabidaea/arrabidaea_11.jpg,2,7,0.9362805,arrabidaea,dipteryx,Incorrect
+7,arrabidaea/arrabidaea_29.jpg,2,7,0.8873394,arrabidaea,dipteryx,Incorrect
+11,cecropia/cecropia_33.jpg,3,13,0.99729246,cecropia,mimosa,Incorrect
+25,dipteryx/dipteryx_21.jpg,7,11,0.38924333,dipteryx,mabea,Incorrect
+31,faramea/faramea_21.jpg,9,12,0.81688464,faramea,matayba,Incorrect
+59,schinus/schinus_25.jpg,17,14,0.99331796,schinus,myrcia,Incorrect

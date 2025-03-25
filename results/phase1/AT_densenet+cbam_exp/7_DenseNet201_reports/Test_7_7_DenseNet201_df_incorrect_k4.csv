@@ -1,0 +1,6 @@
+,file,y_true,y_pred,confidence,true_label,predicted_label,status
+24,bacopa_australis/bacopa_australis (35).jpg,6,13,0.73164636,bacopa_australis,cissus_campestris,Incorrect
+38,cecropia_pachystachya/cecropia_pachystachya (34).jpg,10,38,0.8671657,cecropia_pachystachya,mimosa_ditans,Incorrect
+194,serjania_erecta/serjania (14).jpg,56,47,0.996289,serjania_erecta,paullinia_spicata,Incorrect
+229,tapirira_guianensis/tapirira_guianensis_20.jpg,66,54,0.66760343,tapirira_guianensis,schizolobium_parahyba,Incorrect
+251,zea_mays/zea_6.jpg,72,23,0.9874796,zea_mays,eucalyptus_sp,Incorrect

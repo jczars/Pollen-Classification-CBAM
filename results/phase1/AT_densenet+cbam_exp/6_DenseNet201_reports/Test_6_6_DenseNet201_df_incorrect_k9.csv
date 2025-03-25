@@ -1,0 +1,7 @@
+,file,y_true,y_pred,confidence,true_label,predicted_label,status
+26,eucalipto/eucalipto_06.jpg,8,12,0.95514786,eucalipto,matayba,Incorrect
+40,matayba/matayba_01.jpg,12,9,0.9804701,matayba,faramea,Incorrect
+55,qualea/qualea_04.jpg,16,7,0.97301304,qualea,dipteryx,Incorrect
+60,schinus/schinus_32.jpg,17,9,0.9680273,schinus,faramea,Incorrect
+71,syagrus/syagrus_35.jpg,20,1,0.79490894,syagrus,arecaceae,Incorrect
+75,urochloa/urochloa (17).jpg,22,14,0.96683496,urochloa,myrcia,Incorrect

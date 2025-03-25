@@ -1,0 +1,5 @@
+,file,y_true,y_pred,confidence,true_label,predicted_label,status
+2,arecaceae/arecaceae_01.jpg,1,12,0.9210771,arecaceae,matayba,Incorrect
+20,croton/croton_20.jpg,6,11,0.5017343,croton,mabea,Incorrect
+51,protium/protium_15.jpg,15,17,0.96784514,protium,schinus,Incorrect
+77,urochloa/urochloa (4).jpg,22,20,0.54916006,urochloa,syagrus,Incorrect

@@ -1,0 +1,12 @@
+,file,y_true,y_pred,confidence,true_label,predicted_label,status
+93,guazuma_ulmifolia/guazuma_ulmifolia (2).jpg,27,25,0.5908888,guazuma_ulmifolia,genipa_auniricana,Incorrect
+115,machaerium_aculeatum/machaerium (26).jpg,33,39,0.428398,machaerium_aculeatum,mimosa_pigra,Incorrect
+141,myracroduon_urundeuva/myracroduon (24).jpg,41,25,0.4870074,myracroduon_urundeuva,genipa_auniricana,Incorrect
+144,myracroduon_urundeuva/myracroduon (30).jpg,41,25,0.55237263,myracroduon_urundeuva,genipa_auniricana,Incorrect
+148,ochroma pyramidale/ochroma (14).jpg,43,15,0.3308035,ochroma pyramidale,combretum_discolor,Incorrect
+162,paullinia_spicata/paullinia (2).jpg,47,57,0.99421483,paullinia_spicata,serjania_hebecarpa,Incorrect
+163,paullinia_spicata/paullinia (20).jpg,47,57,0.93701226,paullinia_spicata,serjania_hebecarpa,Incorrect
+185,schinus_sp/schinus_sp (32).jpg,53,50,0.50669444,schinus_sp,protium_heptaphyllum,Incorrect
+197,serjania_hebecarpa/serjania_hebecarpa (14).jpg,57,69,0.8426372,serjania_hebecarpa,trembleya_phlogiformis,Incorrect
+223,tabebuia_chysotricha/tabebuia_chysotricha (11).jpg,64,65,0.9350985,tabebuia_chysotricha,tabebuia_rosealba,Incorrect
+224,tabebuia_chysotricha/tabebuia_chysotricha (30).jpg,64,65,0.9954145,tabebuia_chysotricha,tabebuia_rosealba,Incorrect

@@ -1,0 +1,9 @@
+,file,y_true,y_pred,confidence,true_label,predicted_label,status
+71,dipteryx_alata/dipteryx_alata (17).jpg,20,4,0.9995073,dipteryx_alata,arrabidaea_florida,Incorrect
+177,qualea_multiflora/qualea_multiflora (30).jpg,51,24,0.6025202,qualea_multiflora,faramea_sp,Incorrect
+178,qualea_multiflora/qualea_multiflora (4).jpg,51,20,0.9965125,qualea_multiflora,dipteryx_alata,Incorrect
+222,tabebuia_chysotricha/tabebuia_chysotricha (16).jpg,64,65,0.9696941,tabebuia_chysotricha,tabebuia_rosealba,Incorrect
+223,tabebuia_chysotricha/tabebuia_chysotricha (21).jpg,64,65,0.8904502,tabebuia_chysotricha,tabebuia_rosealba,Incorrect
+224,tabebuia_chysotricha/tabebuia_chysotricha (24).jpg,64,65,0.9872643,tabebuia_chysotricha,tabebuia_rosealba,Incorrect
+229,tapirira_guianensis/tapirira_guianensis_12.jpg,66,42,0.67289895,tapirira_guianensis,myrcia_guianensis,Incorrect
+239,trembleya_phlogiformis/trembleya_phlogiformis (18).jpg,69,41,0.43738237,trembleya_phlogiformis,myracroduon_urundeuva,Incorrect
