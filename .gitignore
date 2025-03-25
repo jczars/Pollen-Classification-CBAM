@@ -48,6 +48,8 @@ results/phase2/recports_cr/1_DenseNet201_sem_BI_5
 
 #outher files
 .sync.ffs_db
-memory_log
+sync.ffs_lock
+memory_log.log
 models/__pycache__
 echo "*.keras" >> .gitignore
+echo "*.log" >> .gitignore
