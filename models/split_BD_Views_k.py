@@ -247,7 +247,9 @@ def run_split(params):
     k_folds = params['k_folds']
     goal = params['goal']
 
-    base_path = os.path.dirname(os.path.dirname(base_dir))
+    # Obter o caminho base (diretório)
+    base_path = os.path.dirname(base_dir)
+
     print(f"base_path: {base_path}")
     base_name = os.path.basename(os.path.normpath(base_dir))
     new_base_name = f"{base_name}_{goal}"
