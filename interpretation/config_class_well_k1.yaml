@@ -7,6 +7,6 @@ saved_dir: "results/interpretation/"
 path_data: "BD/CPD1_Cr_Rs_200/Test/k1/"
 images_labels:
 - "ceratonia/Fab.C.silX400wF(476)(0)B-10.png"
-- "eucalyptus/Myr.E.camaX400wF(1869)(0)D-3_2.png" 
+- "eucalyptus/Myr.E.camaX400wF(1868)(0)C-8.png" 
 - "salvia/Lam.S.triX400wF(2189)(0)B-47.png"
 - "thymbra/Lam.T.capX400wF(1029)(0)A-22.png"
