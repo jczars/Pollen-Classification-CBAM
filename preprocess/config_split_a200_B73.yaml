@@ -1,0 +1,17 @@
+# Image file type to be used in augmentation operations
+type: 'jpg'
+
+# Target number of images per category
+goal: 200
+
+# Number of fold directories (k-folds) in the dataset
+k_folds: 10
+
+# Base directory where the image data is stored
+base_dir: 'BD/POLLEN73S_RC'
+
+# List of views (e.g., EQUATORIAL and POLAR) to be processed
+views: None
+
+# Verbosity level for console logs (0 = silent, 1 or more = verbose)
+verbose: 1
